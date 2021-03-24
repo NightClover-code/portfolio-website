@@ -1,0 +1,13 @@
+header {
+  height: 70vh;
+  width: 100%;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=default.css.map */
