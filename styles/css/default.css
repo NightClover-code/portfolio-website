@@ -1,8 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap");
+header {
+  font-family: 'Bebas Neue', serif;
+  background-color: #f9efe7;
+}
+
 header .container {
   margin: auto;
   overflow: hidden;
   width: 80%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo__container {
+  cursor: pointer;
+}
+
+nav .logo__container h1 {
+  font-weight: normal;
+}
+
+nav .logo__container h1 span {
+  color: #d67513;
+}
+
+nav ul {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav ul .portfolio__list__item {
+  color: #d67513;
 }
 
 * {

@@ -1,8 +1,15 @@
+//importing next utils
+import Link from 'next/link';
+//nav bar
 const NavBar = () => {
   return (
     <nav>
       <div className="logo__container">
-        <h1>AchrafDev.</h1>
+        <Link href="/">
+          <h1>
+            <span>Achraf</span>Dev.
+          </h1>
+        </Link>
       </div>
       <div className="nav__list">
         <ul>

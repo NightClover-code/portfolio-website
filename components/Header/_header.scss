@@ -1,4 +1,7 @@
+@import '../../styles/variables';
 header {
+  font-family: 'Bebas Neue', serif;
+  background-color: $beige;
   .container {
     margin: auto;
     overflow: hidden;

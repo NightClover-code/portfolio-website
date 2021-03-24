@@ -1,0 +1,30 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  @include flexSpaceBetween();
+  .logo__container {
+    cursor: pointer;
+    h1 {
+      font-weight: normal;
+      span {
+        color: $dark-caramel;
+      }
+    }
+  }
+  ul {
+    padding: 20px 0;
+    display: flex;
+    list-style: none;
+    li {
+      padding: 0 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .portfolio__list__item {
+      color: $dark-caramel;
+    }
+  }
+}
