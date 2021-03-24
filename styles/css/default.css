@@ -29,6 +29,8 @@ nav .logo__container {
 
 nav .logo__container h1 {
   font-weight: normal;
+  font-size: 30px;
+  color: #262626;
 }
 
 nav .logo__container h1 span {
@@ -36,7 +38,7 @@ nav .logo__container h1 span {
 }
 
 nav ul {
-  padding: 20px 0;
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,20 +47,99 @@ nav ul {
 
 nav ul li {
   padding: 0 10px;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
+  color: #262626;
 }
 
 nav ul .portfolio__list__item {
   color: #d67513;
 }
 
-.hero__section .illustration__container {
+.hero__section {
+  padding-top: 60px;
+  background-color: #f9efe7;
+  min-height: calc(100vh - 66px);
+}
+
+.hero__section .container {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__section .container .illustration__container {
   width: 438px;
   height: 418px;
   background: url("../../public/images/hero.jpeg");
   background-size: cover;
   background-position: 0% 40%;
+}
+
+.hero__section .container .text__content {
+  width: 75%;
+}
+
+.hero__section .container .text__content h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  color: #262626;
+}
+
+.hero__section .container .text__content p {
+  width: 60%;
+  color: #262626;
+  font-size: 20px;
+  opacity: 65%;
+  margin: 20px 0;
+}
+
+.hero__section .container .text__content .primary__btn__container {
+  margin-top: 20px;
+}
+
+.primary__btn__container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.primary__btn__container:hover .primary__btn {
+  -webkit-transform: translate(6px, 5px);
+          transform: translate(6px, 5px);
+}
+
+.primary__btn__container .primary__btn {
+  padding: 16px 40px;
+  background-color: #262626;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary__btn__container .ghost__button {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 56px;
+  border: 2px solid #262626;
+  left: 6px;
+  top: 5px;
 }
 
 * {

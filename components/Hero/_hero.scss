@@ -1,9 +1,42 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero__section {
-  .illustration__container {
-    width: 438px;
-    height: 418px;
-    background: url('../../public/images/hero.jpeg');
-    background-size: cover;
-    background-position: 0% 40%;
+  padding-top: 60px;
+  background-color: $beige;
+  min-height: calc(100vh - 66px);
+  .container {
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
+    @include flexSpaceBetween();
+    .illustration__container {
+      width: 438px;
+      height: 418px;
+      background: url('../../public/images/hero.jpeg');
+      background-size: cover;
+      background-position: 0% 40%;
+    }
+    .text__content {
+      width: 75%;
+      h1 {
+        font-family: 'Abril Fatface', sans-serif;
+        font-weight: normal;
+        font-size: 50px;
+        color: $very-dark-gray;
+      }
+      p {
+        width: 60%;
+        color: $very-dark-gray;
+        font-size: 20px;
+        opacity: 65%;
+        margin: 20px 0;
+      }
+      .primary__btn__container {
+        margin-top: 20px;
+      }
+    }
   }
 }

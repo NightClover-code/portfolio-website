@@ -1,0 +1,28 @@
+.primary__btn__container {
+  position: relative;
+  display: inline-block;
+  &:hover .primary__btn {
+    transform: translate(6px, 5px);
+  }
+  cursor: pointer;
+  .primary__btn {
+    padding: 16px 40px;
+    background-color: $very-dark-gray;
+    outline: 0;
+    border: 0;
+    color: $white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+  }
+  .ghost__button {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 56px;
+    border: 2px solid $very-dark-gray;
+    left: 6px;
+    top: 5px;
+  }
+}
