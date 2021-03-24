@@ -1,3 +1,4 @@
+import Image from 'next/image';
 //hero
 const Hero = () => {
   return (
@@ -15,7 +16,10 @@ const Hero = () => {
             <div className="ghost__button"></div>
           </div>
         </div>
-        <div className="illustration__container"></div>
+        <div className="illustration__container">
+          <div className="hero__avatar"></div>
+          <div className="hero__dots"></div>
+        </div>
       </div>
     </section>
   );

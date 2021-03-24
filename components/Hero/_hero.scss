@@ -9,30 +9,48 @@
   min-height: calc(100vh - 66px);
   .container {
     margin: auto;
-    overflow: hidden;
-    width: 80%;
+    width: 85%;
     @include flexSpaceBetween();
     .illustration__container {
+      position: relative;
       width: 438px;
       height: 418px;
-      background: url('../../public/images/hero.jpeg');
-      background-size: cover;
-      background-position: 0% 40%;
+      .hero__avatar {
+        background: url('../../public/images/hero.jpeg') no-repeat;
+        background-position: 0 45%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+      .hero__dots {
+        background: url('../../public/images/dots-hero.svg') no-repeat;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .text__content {
       width: 75%;
       h1 {
         font-family: 'Abril Fatface', sans-serif;
         font-weight: normal;
-        font-size: 50px;
+        font-size: 55px;
         color: $very-dark-gray;
       }
       p {
         width: 60%;
         color: $very-dark-gray;
         font-size: 20px;
-        opacity: 65%;
+        opacity: 85%;
         margin: 20px 0;
+        line-height: 1.5;
       }
       .primary__btn__container {
         margin-top: 20px;

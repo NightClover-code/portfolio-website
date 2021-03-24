@@ -8,7 +8,7 @@ header {
 header .container {
   margin: auto;
   overflow: hidden;
-  width: 80%;
+  width: 85%;
 }
 
 nav {
@@ -64,8 +64,7 @@ nav ul .portfolio__list__item {
 
 .hero__section .container {
   margin: auto;
-  overflow: hidden;
-  width: 80%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,11 +77,32 @@ nav ul .portfolio__list__item {
 }
 
 .hero__section .container .illustration__container {
+  position: relative;
   width: 438px;
   height: 418px;
-  background: url("../../public/images/hero.jpeg");
+}
+
+.hero__section .container .illustration__container .hero__avatar {
+  background: url("../../public/images/hero.jpeg") no-repeat;
+  background-position: 0 45%;
   background-size: cover;
-  background-position: 0% 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.hero__section .container .illustration__container .hero__dots {
+  background: url("../../public/images/dots-hero.svg") no-repeat;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero__section .container .text__content {
@@ -92,7 +112,7 @@ nav ul .portfolio__list__item {
 .hero__section .container .text__content h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 55px;
   color: #262626;
 }
 
@@ -100,8 +120,9 @@ nav ul .portfolio__list__item {
   width: 60%;
   color: #262626;
   font-size: 20px;
-  opacity: 65%;
+  opacity: 85%;
   margin: 20px 0;
+  line-height: 1.5;
 }
 
 .hero__section .container .text__content .primary__btn__container {
