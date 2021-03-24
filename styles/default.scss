@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 @import '../components/Header/header';
 @import '../components/Footer/footer';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.main__layout {
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  .wrapper {
+    min-width: 250px;
+    max-width: 2000px;
+    width: 80%;
+    margin: auto;
+  }
 }

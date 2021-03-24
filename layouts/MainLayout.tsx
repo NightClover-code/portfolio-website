@@ -4,11 +4,11 @@ import Header from '../components/Header';
 //main layout
 const MainLayout: React.FC = ({ children }) => {
   return (
-    <>
+    <div className="main__layout">
       <Header />
-      {children}
+      <div className="wrapper">{children}</div>
       <Footer />
-    </>
+    </div>
   );
 };
 
