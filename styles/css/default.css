@@ -154,8 +154,8 @@ nav ul .portfolio__list__item::after {
   z-index: -1;
   position: absolute;
   left: 10px;
-  top: 42px;
-  height: 20px;
+  top: 45px;
+  height: 17px;
   width: 250px;
   background-color: #f08315;
 }
@@ -169,9 +169,9 @@ nav ul .portfolio__list__item::after {
   z-index: -1;
   position: absolute;
   left: 20px;
-  top: 42px;
-  height: 20px;
-  width: 360px;
+  top: 45px;
+  height: 17px;
+  width: 325px;
   background-color: #f08315;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -210,12 +210,12 @@ nav ul .portfolio__list__item::after {
 }
 
 .primary__btn__container:hover .primary__btn {
-  -webkit-transform: translate(6px, 5px);
-          transform: translate(6px, 5px);
+  -webkit-transform: translate(6px, 6px);
+          transform: translate(6px, 6px);
 }
 
 .primary__btn__container .primary__btn {
-  padding: 16px 40px;
+  padding: 18px 45px;
   background-color: #262626;
   outline: 0;
   border: 0;
@@ -230,11 +230,11 @@ nav ul .portfolio__list__item::after {
 .primary__btn__container .ghost__button {
   content: '';
   position: absolute;
-  width: 180px;
-  height: 56px;
+  width: 190px;
+  height: 60px;
   border: 2px solid #262626;
   left: 6px;
-  top: 5px;
+  top: 6px;
 }
 
 * {

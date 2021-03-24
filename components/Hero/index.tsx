@@ -13,7 +13,7 @@ const Hero = () => {
               </span>{' '}
               Web Developer and{' '}
               <span className="web__designer__container">
-                <span>Web Developer</span>
+                <span>Web Designer</span>
                 <div className="line"></div>
               </span>
             </h1>
