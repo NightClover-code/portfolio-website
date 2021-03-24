@@ -6,55 +6,97 @@
 .hero__section {
   padding-top: 60px;
   background-color: $beige;
-  min-height: calc(100vh - 66px);
+  min-height: calc(95vh - 66px);
   .container {
+    position: relative;
     margin: auto;
+    height: 100%;
     width: 85%;
-    @include flexSpaceBetween();
-    .illustration__container {
-      position: relative;
-      width: 438px;
-      height: 418px;
-      .hero__avatar {
-        background: url('../../public/images/hero.jpeg') no-repeat;
-        background-position: 0 45%;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
+    .hero__content {
+      @include flexSpaceBetween();
+      .illustration__container {
+        position: relative;
+        width: 438px;
+        height: 418px;
+        .hero__avatar {
+          background: url('../../public/images/hero.jpeg') no-repeat;
+          background-position: 0 45%;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+        }
+        .hero__dots {
+          background: url('../../public/images/dots-hero.svg') no-repeat;
+          position: absolute;
+          right: 40px;
+          top: 40px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      .hero__dots {
-        background: url('../../public/images/dots-hero.svg') no-repeat;
-        position: absolute;
-        right: 40px;
-        top: 40px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      .text__content {
+        width: 75%;
+        h1 {
+          font-family: 'Abril Fatface', sans-serif;
+          font-weight: normal;
+          font-size: 55px;
+          color: $very-dark-gray;
+          .front__end__container {
+            position: relative;
+            z-index: 100;
+            .line {
+              z-index: -1;
+              position: absolute;
+              left: 10px;
+              top: 42px;
+              height: 20px;
+              width: 250px;
+              background-color: $light-caramel;
+            }
+          }
+          .web__designer__container {
+            position: relative;
+            z-index: 100;
+            .line {
+              z-index: -1;
+              position: absolute;
+              left: 20px;
+              top: 42px;
+              height: 20px;
+              width: 360px;
+              background-color: $light-caramel;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+        }
+        p {
+          width: 60%;
+          color: $very-dark-gray;
+          font-size: 20px;
+          opacity: 85%;
+          margin: 20px 0;
+          line-height: 1.5;
+        }
+        .primary__btn__container {
+          margin-top: 20px;
+        }
       }
     }
-    .text__content {
-      width: 75%;
-      h1 {
-        font-family: 'Abril Fatface', sans-serif;
-        font-weight: normal;
-        font-size: 55px;
-        color: $very-dark-gray;
-      }
-      p {
-        width: 60%;
-        color: $very-dark-gray;
-        font-size: 20px;
-        opacity: 85%;
-        margin: 20px 0;
-        line-height: 1.5;
-      }
-      .primary__btn__container {
-        margin-top: 20px;
-      }
+    .scroll {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      border-bottom: 2px solid $very-dark-gray;
+      padding-right: 50px;
+      font-weight: normal;
+      position: absolute;
+      right: 0;
+      transform: rotate(90deg);
+      bottom: -150px;
     }
   }
 }

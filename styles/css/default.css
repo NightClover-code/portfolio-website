@@ -47,24 +47,53 @@ nav ul {
 
 nav ul li {
   padding: 0 10px;
+  position: relative;
   font-size: 22px;
   cursor: pointer;
   color: #262626;
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  height: 2.1px;
+  background-color: #262626;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 75%;
+}
+
+nav ul li:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 nav ul .portfolio__list__item {
   color: #d67513;
 }
 
+nav ul .portfolio__list__item::after {
+  background-color: #d67513;
+}
+
 .hero__section {
   padding-top: 60px;
   background-color: #f9efe7;
-  min-height: calc(100vh - 66px);
+  min-height: calc(95vh - 66px);
 }
 
 .hero__section .container {
+  position: relative;
   margin: auto;
+  height: 100%;
   width: 85%;
+}
+
+.hero__section .container .hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,13 +105,13 @@ nav ul .portfolio__list__item {
           align-items: center;
 }
 
-.hero__section .container .illustration__container {
+.hero__section .container .hero__content .illustration__container {
   position: relative;
   width: 438px;
   height: 418px;
 }
 
-.hero__section .container .illustration__container .hero__avatar {
+.hero__section .container .hero__content .illustration__container .hero__avatar {
   background: url("../../public/images/hero.jpeg") no-repeat;
   background-position: 0 45%;
   background-size: cover;
@@ -94,7 +123,7 @@ nav ul .portfolio__list__item {
   z-index: 10;
 }
 
-.hero__section .container .illustration__container .hero__dots {
+.hero__section .container .hero__content .illustration__container .hero__dots {
   background: url("../../public/images/dots-hero.svg") no-repeat;
   position: absolute;
   right: 40px;
@@ -105,18 +134,50 @@ nav ul .portfolio__list__item {
      object-fit: cover;
 }
 
-.hero__section .container .text__content {
+.hero__section .container .hero__content .text__content {
   width: 75%;
 }
 
-.hero__section .container .text__content h1 {
+.hero__section .container .hero__content .text__content h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 55px;
   color: #262626;
 }
 
-.hero__section .container .text__content p {
+.hero__section .container .hero__content .text__content h1 .front__end__container {
+  position: relative;
+  z-index: 100;
+}
+
+.hero__section .container .hero__content .text__content h1 .front__end__container .line {
+  z-index: -1;
+  position: absolute;
+  left: 10px;
+  top: 42px;
+  height: 20px;
+  width: 250px;
+  background-color: #f08315;
+}
+
+.hero__section .container .hero__content .text__content h1 .web__designer__container {
+  position: relative;
+  z-index: 100;
+}
+
+.hero__section .container .hero__content .text__content h1 .web__designer__container .line {
+  z-index: -1;
+  position: absolute;
+  left: 20px;
+  top: 42px;
+  height: 20px;
+  width: 360px;
+  background-color: #f08315;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero__section .container .hero__content .text__content p {
   width: 60%;
   color: #262626;
   font-size: 20px;
@@ -125,8 +186,21 @@ nav ul .portfolio__list__item {
   line-height: 1.5;
 }
 
-.hero__section .container .text__content .primary__btn__container {
+.hero__section .container .hero__content .text__content .primary__btn__container {
   margin-top: 20px;
+}
+
+.hero__section .container .scroll {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  border-bottom: 2px solid #262626;
+  padding-right: 50px;
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: -150px;
 }
 
 .primary__btn__container {
