@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+header .container {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
