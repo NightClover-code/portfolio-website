@@ -53,6 +53,14 @@ nav ul .portfolio__list__item {
   color: #d67513;
 }
 
+.hero__section .illustration__container {
+  width: 438px;
+  height: 418px;
+  background: url("../../public/images/hero.jpeg");
+  background-size: cover;
+  background-position: 0% 40%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +78,6 @@ nav ul .portfolio__list__item {
 .main__layout .wrapper {
   min-width: 250px;
   max-width: 2000px;
-  width: 80%;
   margin: auto;
 }
 /*# sourceMappingURL=default.css.map */
