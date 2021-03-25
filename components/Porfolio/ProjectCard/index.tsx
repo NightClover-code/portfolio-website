@@ -13,15 +13,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   objectPosition,
 }) => {
   return (
-    <div className="project__card">
+    <div className="project__card ">
+      <div className="overlay"></div>
       <Image
-        className="portject__preview"
+        className="project__preview "
         src={imgSource}
         alt={`${alt}-project-preview`}
-        width={250}
-        height={250}
+        layout="fill"
         objectFit="cover"
-        quality={85}
+        quality={100}
         objectPosition={objectPosition}
       />
     </div>
