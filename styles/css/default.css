@@ -279,6 +279,7 @@ nav ul .portfolio__list__item::after {
 .skills__section {
   background-color: #f9efe7;
   padding-top: 150px;
+  padding-bottom: 80px;
 }
 
 .skills__section .skills__head {
@@ -306,6 +307,46 @@ nav ul .portfolio__list__item::after {
   line-height: 1.5;
   width: 30%;
   margin: auto;
+}
+
+.skills__section .skills__grid {
+  margin-top: 50px;
+}
+
+.skills__section .skills__grid .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 75%;
+  margin: auto;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  row-gap: 30px;
+}
+
+.skill__card {
+  background-color: #d67513;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 0;
+  font-weight: 600;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill__card p {
+  padding-right: 20px;
 }
 
 .primary__btn__container {

@@ -20,9 +20,11 @@ const Skills = () => {
         </p>
       </div>
       <div className="skills__grid">
-        {skillsInfo.map(skill => (
-          <Skill title={skill.title} logo={skill.logo} />
-        ))}
+        <div className="container">
+          {skillsInfo.map(skill => (
+            <Skill title={skill.title} logo={skill.logo} alt={skill.alt} />
+          ))}
+        </div>
       </div>
     </section>
   );
