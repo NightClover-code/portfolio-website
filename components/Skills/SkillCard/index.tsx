@@ -12,27 +12,15 @@ interface SkillCardInterface {
 const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
   //local state
   const [isHovered, setIsHovered] = useState(false);
-  //on hover handlers
-  const onHoverEnterHandler = () => {
-    setTimeout(() => {
-      setIsHovered(true);
-    }, 200);
-  };
-  const onHoverLeaveHandler = () => {
-    setTimeout(() => {
-      setIsHovered(false);
-    }, 200);
-  };
   return (
     <div
       className="skill__card"
-      onMouseEnter={onHoverEnterHandler}
-      onMouseLeave={onHoverLeaveHandler}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <p>{title}</p>
       {!isHovered && logo.length > 0 && (
         <Image
-          className="skill__logo "
           src={`/images/skills-light/${logo}`}
           alt={alt}
           width={15}
@@ -42,7 +30,6 @@ const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
       )}
       {isHovered && logo.length > 0 && (
         <Image
-          className="skill__logo "
           src={`/images/skills-dark/${logo}`}
           alt={alt}
           width={15}
