@@ -1,3 +1,8 @@
+//importing utils
+import { skillsInfo } from '../../utils';
+//importing components
+import Skill from './SkillCard';
+//skills
 const Skills = () => {
   return (
     <section className="skills__section">
@@ -14,7 +19,11 @@ const Skills = () => {
           make your website fast, modern and secure.
         </p>
       </div>
-      <div className="skills__grid"></div>
+      <div className="skills__grid">
+        {skillsInfo.map(skill => (
+          <Skill title={skill.title} logo={skill.logo} />
+        ))}
+      </div>
     </section>
   );
 };
