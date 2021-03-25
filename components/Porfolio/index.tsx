@@ -1,7 +1,7 @@
 //importing random id's
 import { v4 as uuidv4 } from 'uuid';
 //importing utils
-import imageSources from '../../utils';
+import { imagesInfo } from '../../utils';
 //importing components
 import ProjectCard from './ProjectCard';
 //portfolio
@@ -16,7 +16,7 @@ const Porfolio = () => {
       </div>
       <div className="projects__grid">
         <div className="container">
-          {imageSources.map(source => (
+          {imagesInfo.map(source => (
             <ProjectCard
               key={uuidv4()}
               imgSource={`/images/portfolio/${source.src}`}
