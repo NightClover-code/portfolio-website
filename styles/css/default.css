@@ -3,6 +3,7 @@
 header {
   font-family: 'Bebas Neue', serif;
   background-color: #f9efe7;
+  position: relative;
 }
 
 header .container {
@@ -12,6 +13,7 @@ header .container {
 }
 
 nav {
+  background-color: #f9efe7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

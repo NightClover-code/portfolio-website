@@ -1,10 +1,19 @@
+//importing next utils
+import Head from 'next/head';
 //importing components
 import Hero from '../components/Hero';
+import Porfolio from '../components/Porfolio';
 //homepage
 const Homepage = () => (
-  <main className="app__container">
-    <Hero />
-  </main>
+  <>
+    <Head>
+      <title>AchrafDev | Front End Developer | Web Designer</title>
+    </Head>
+    <main className="app__container">
+      <Hero />
+      <Porfolio />
+    </main>
+  </>
 );
 
 export default Homepage;
