@@ -9,11 +9,12 @@ header {
 header .container {
   margin: auto;
   overflow: hidden;
-  width: 85%;
+  width: 90%;
 }
 
 nav {
   background-color: #f9efe7;
+  border: 1px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,17 +197,18 @@ nav ul .portfolio__list__item::after {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   border-bottom: 2px solid #262626;
-  padding-right: 50px;
+  padding-right: 55px;
   font-weight: normal;
   position: absolute;
   right: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  bottom: -150px;
+  bottom: -160px;
 }
 
 .portfolio__section {
   margin-top: 180px;
+  margin-bottom: 80px;
 }
 
 .portfolio__section .portfolio__head {
