@@ -470,6 +470,20 @@ nav ul .portfolio__list__item::after {
   margin: auto;
 }
 
+.services__section .services__grid .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[3];
+      grid-template-columns: repeat(3, 250px);
+  width: 75%;
+  margin: auto;
+  gap: 40px;
+}
+
+.service__card {
+  position: relative;
+}
+
 .primary__btn__container {
   position: relative;
   display: inline-block;

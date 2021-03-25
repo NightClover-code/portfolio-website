@@ -24,4 +24,13 @@
       margin: auto;
     }
   }
+  .services__grid {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      width: 75%;
+      margin: auto;
+      gap: 40px;
+    }
+  }
 }
