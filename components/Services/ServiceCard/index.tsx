@@ -16,13 +16,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div className="service__card">
-      <Image
-        src={`/images/${src}`}
-        alt={alt}
-        layout="fill"
-        // objectFit="cover"
-        quality={100}
-      />
+      <div className="service__logo">
+        <Image src={`/images/${src}`} alt={alt} layout="fill" quality={100} />
+      </div>
       <h2 className="title">{title}</h2>
       <p>{description}</p>
     </div>

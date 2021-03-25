@@ -1,3 +1,25 @@
 .service__card {
-  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .service__logo {
+    height: 90px;
+    position: relative;
+  }
+  .title {
+    padding: 20px 0;
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: $very-dark-gray;
+  }
+  p {
+    color: $very-dark-gray;
+    font-size: 18px;
+    opacity: 80%;
+    margin: 20px 0;
+    line-height: 1.5;
+    width: 75%;
+    margin: auto;
+  }
 }

@@ -473,15 +473,40 @@ nav ul .portfolio__list__item::after {
 .services__section .services__grid .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (250px)[3];
-      grid-template-columns: repeat(3, 250px);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   width: 75%;
-  margin: auto;
   gap: 40px;
+  margin: auto;
 }
 
 .service__card {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service__card .service__logo {
+  height: 90px;
   position: relative;
+}
+
+.service__card .title {
+  padding: 20px 0;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #262626;
+}
+
+.service__card p {
+  color: #262626;
+  font-size: 18px;
+  opacity: 80%;
+  margin: 20px 0;
+  line-height: 1.5;
+  width: 75%;
+  margin: auto;
 }
 
 .primary__btn__container {

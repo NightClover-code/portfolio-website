@@ -27,10 +27,10 @@
   .services__grid {
     .container {
       display: grid;
-      grid-template-columns: repeat(3, 250px);
+      grid-template-columns: repeat(3, 1fr);
       width: 75%;
-      margin: auto;
       gap: 40px;
+      margin: auto;
     }
   }
 }
