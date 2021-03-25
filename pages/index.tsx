@@ -3,6 +3,7 @@ import Head from 'next/head';
 //importing components
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
+import Skills from '../components/Skills';
 //homepage
 const Homepage = () => (
   <>
@@ -12,6 +13,7 @@ const Homepage = () => (
     <main className="app__container">
       <Hero />
       <Porfolio />
+      <Skills />
     </main>
   </>
 );

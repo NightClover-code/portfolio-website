@@ -209,6 +209,27 @@ nav ul .portfolio__list__item::after {
 .portfolio__section {
   margin-top: 180px;
   margin-bottom: 80px;
+  position: relative;
+}
+
+.portfolio__section .dots__light__container {
+  background: url("/images/dots-portfolio-light.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 187px;
+  height: 250px;
+  top: 0px;
+  right: -80px;
+}
+
+.portfolio__section .dots__dark__container {
+  background: url("/images/dots-dark.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 187px;
+  height: 247.47px;
+  left: 41px;
+  bottom: 0;
 }
 
 .portfolio__section .portfolio__head {

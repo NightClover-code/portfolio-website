@@ -8,6 +8,8 @@ import ProjectCard from './ProjectCard';
 const Porfolio = () => {
   return (
     <section className="portfolio__section">
+      <div className="dots__light__container"></div>
+      <div className="dots__dark__container"></div>
       <div className="portfolio__head">
         <h1>
           My latest <span>Work</span>
