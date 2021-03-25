@@ -3,19 +3,19 @@ import Image from 'next/image';
 //props interface
 interface SkillCardInterface {
   title: string;
-  logo: string;
+  logoLight: string;
   alt: string;
 }
 //skill card
-const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
+const SkillCard: React.FC<SkillCardInterface> = ({ title, logoLight, alt }) => {
   return (
     <div className="skill__card">
       <p>{title}</p>
-      {logo.length > 0 && (
+      {logoLight.length > 0 && (
         <Image
           className="skill__logo "
-          src={`/images/${logo}`}
-          alt={`${alt}-project-preview`}
+          src={logoLight}
+          alt={alt}
           width={15}
           height={15}
           quality={100}

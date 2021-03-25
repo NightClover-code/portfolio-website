@@ -22,7 +22,11 @@ const Skills = () => {
       <div className="skills__grid">
         <div className="container">
           {skillsInfo.map(skill => (
-            <Skill title={skill.title} logo={skill.logo} alt={skill.alt} />
+            <Skill
+              title={skill.title}
+              logoLight={`/images/skills-light/${skill.logo}`}
+              alt={skill.alt}
+            />
           ))}
         </div>
       </div>

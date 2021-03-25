@@ -343,6 +343,14 @@ nav ul .portfolio__list__item::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid #d67513;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.skill__card:hover {
+  background-color: #fff;
+  color: #d67513;
 }
 
 .skill__card p {
