@@ -14,7 +14,7 @@ export const skillsInfo = (() => [
   { title: 'Semantic HTML5', logo: 'logo-html.svg', alt: 'HTML5' },
   { title: 'Responsive CSS3', logo: 'logo-css.svg', alt: 'CSS3' },
   { title: 'Modern Javascript', logo: 'logo-js.svg', alt: 'Javascript' },
-  { title: 'Sass', logo: 'logo-sass.svg', alt: 'Scss/Sass' },
+  { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
   { title: 'Tailwind CSS', logo: 'logo-tailwind.svg', alt: 'Tailwind' },
   { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
   { title: 'React', logo: 'logo-react.svg', alt: 'React' },

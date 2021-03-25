@@ -14,7 +14,7 @@ const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="skill__card"
+      className={`skill__card ${alt.toLowerCase()}__card`}
       onMouseEnter={() => setTimeout(() => setIsHovered(true), 50)}
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 50)}
     >

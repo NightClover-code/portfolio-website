@@ -20,14 +20,12 @@
     padding-right: 20px;
   }
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.react__card,
+.redux__card,
+.tailwind__card,
+.css3__card,
+.ssr__card,
+.seo__card {
+  grid-column: span 2;
 }
