@@ -1,0 +1,26 @@
+.socials__card {
+  .socials__logo__container {
+    border: 2px solid $dark-caramel;
+    border-radius: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    svg path {
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      background-color: $dark-caramel;
+      svg path {
+        fill: $white;
+      }
+      .linkedin__card {
+        .path__2 {
+          fill: $dark-caramel;
+        }
+      }
+    }
+  }
+}

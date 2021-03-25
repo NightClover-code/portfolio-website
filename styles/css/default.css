@@ -366,6 +366,78 @@ nav ul .portfolio__list__item::after {
   grid-column: span 2;
 }
 
+.socials__section {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.socials__section .socials__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #262626;
+}
+
+.socials__section .socials__head h1 span {
+  color: #d67513;
+}
+
+.socials__section .socials__head p {
+  color: #262626;
+  font-size: 20px;
+  opacity: 80%;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.socials__section .socials__grid {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (80px)[6];
+      grid-template-columns: repeat(6, 80px);
+}
+
+.socials__card .socials__logo__container {
+  border: 2px solid #d67513;
+  border-radius: 50%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.socials__card .socials__logo__container svg path {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.socials__card .socials__logo__container:hover {
+  background-color: #d67513;
+}
+
+.socials__card .socials__logo__container:hover svg path {
+  fill: #fff;
+}
+
+.socials__card .socials__logo__container:hover .linkedin__card .path__2 {
+  fill: #d67513;
+}
+
 .primary__btn__container {
   position: relative;
   display: inline-block;
