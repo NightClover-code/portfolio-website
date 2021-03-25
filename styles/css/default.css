@@ -9,12 +9,12 @@ header {
 header .container {
   margin: auto;
   overflow: hidden;
-  width: 90%;
+  width: 85%;
 }
 
 nav {
-  background-color: #f9efe7;
-  border: 1px solid #000;
+  margin: auto;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +84,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section {
-  padding-top: 60px;
+  padding-top: 70px;
   background-color: #f9efe7;
   min-height: calc(95vh - 66px);
 }

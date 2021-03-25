@@ -4,8 +4,8 @@
   align-items: center;
 }
 nav {
-  background-color: $beige;
-  border: 1px solid #000;
+  margin: auto;
+  overflow: hidden;
   @include flexSpaceBetween();
   .logo__container {
     cursor: pointer;
