@@ -1,3 +1,5 @@
+//importing random id's
+import { v4 as uuidv4 } from 'uuid';
 //importing utils
 import { skillsInfo } from '../../utils';
 //importing components
@@ -23,8 +25,9 @@ const Skills = () => {
         <div className="container">
           {skillsInfo.map(skill => (
             <Skill
+              key={uuidv4()}
               title={skill.title}
-              logoLight={`/images/skills-light/${skill.logo}`}
+              logo={skill.logo}
               alt={skill.alt}
             />
           ))}
