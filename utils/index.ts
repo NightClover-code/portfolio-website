@@ -1,11 +1,11 @@
-const imageSources = () => [
-  'code-env.png',
-  'rest-home-dark.jpg',
-  'url-shortener.jpg',
-  'newsly.png',
-  'bookmark.jpg',
-  'todo-app-dark.jpg',
-  'room-slide-1.jpg',
-  'chat-app.jpg',
+const imagesInfo = () => [
+  { src: 'code-env.png', alt: 'coding-environement' },
+  { src: 'rest-home-dark.jpg', alt: 'rest-api' },
+  { src: 'url-shortener.jpg', alt: 'url-shortener' },
+  { src: 'newsly.png', alt: 'newsly' },
+  { src: 'bookmark.jpg', alt: 'bookmark' },
+  { src: 'todo-app-dark.jpg', alt: 'todo-app' },
+  { src: 'room-slide-1.jpg', alt: 'room' },
+  { src: 'chat-app.jpg', alt: 'chat-app' },
 ];
-export default imageSources();
+export default imagesInfo();

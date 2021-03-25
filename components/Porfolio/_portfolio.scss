@@ -1,0 +1,41 @@
+.portfolio__section {
+  margin-top: 100px;
+  .portfolio__head {
+    text-align: center;
+    h1 {
+      font-family: 'Abril Fatface', sans-serif;
+      font-weight: normal;
+      font-size: 40px;
+      color: $very-dark-gray;
+      span {
+        color: $dark-caramel;
+      }
+    }
+    p {
+      color: $very-dark-gray;
+      font-size: 20px;
+      opacity: 85%;
+      margin: 20px 0;
+      line-height: 1.5;
+    }
+  }
+  .projects__grid {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      width: 75%;
+      margin: auto;
+      overflow: hidden;
+      gap: 40px;
+    }
+    .project__card {
+      width: 250px;
+      height: auto;
+      .project__preview {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -205,6 +205,56 @@ nav ul .portfolio__list__item::after {
   bottom: -150px;
 }
 
+.portfolio__section {
+  margin-top: 100px;
+}
+
+.portfolio__section .portfolio__head {
+  text-align: center;
+}
+
+.portfolio__section .portfolio__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #262626;
+}
+
+.portfolio__section .portfolio__head h1 span {
+  color: #d67513;
+}
+
+.portfolio__section .portfolio__head p {
+  color: #262626;
+  font-size: 20px;
+  opacity: 85%;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.portfolio__section .projects__grid .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+  gap: 40px;
+}
+
+.portfolio__section .projects__grid .project__card {
+  width: 250px;
+  height: auto;
+}
+
+.portfolio__section .projects__grid .project__card .project__preview {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .primary__btn__container {
   position: relative;
   display: inline-block;
