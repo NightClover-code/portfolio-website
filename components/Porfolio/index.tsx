@@ -15,7 +15,10 @@ const Porfolio = () => {
       <div className="projects__grid">
         <div className="container">
           {imageSources.map(source => (
-            <ProjectCard imgSource={`/images/portfolio/${source}`} />
+            <ProjectCard
+              imgSource={`/images/portfolio/${source.src}`}
+              alt={source.alt}
+            />
           ))}
         </div>
       </div>
