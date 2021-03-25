@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
 import Skills from '../components/Skills';
+import Socials from '../components/Socials';
 //homepage
 const Homepage = () => (
   <>
@@ -14,6 +15,7 @@ const Homepage = () => (
       <Hero />
       <Porfolio />
       <Skills />
+      <Socials />
     </main>
   </>
 );
