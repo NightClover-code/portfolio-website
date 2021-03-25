@@ -1,5 +1,5 @@
 //importing hooks
-import { useState } from 'react';
+import React, { useState } from 'react';
 //importing next utils
 import Image from 'next/image';
 //props interface
@@ -15,8 +15,8 @@ const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
   return (
     <div
       className="skill__card"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => setTimeout(() => setIsHovered(true), 50)}
+      onMouseLeave={() => setTimeout(() => setIsHovered(false), 50)}
     >
       <p>{title}</p>
       {!isHovered && logo.length > 0 && (

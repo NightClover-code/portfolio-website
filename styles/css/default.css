@@ -331,7 +331,7 @@ nav ul .portfolio__list__item::after {
   text-align: center;
   font-size: 16px;
   color: #fff;
-  padding: 10px 0;
+  padding: 8px 0;
   font-weight: 600;
   position: relative;
   display: -webkit-box;
@@ -355,6 +355,30 @@ nav ul .portfolio__list__item::after {
 
 .skill__card p {
   padding-right: 20px;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .primary__btn__container {
