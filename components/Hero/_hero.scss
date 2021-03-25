@@ -46,32 +46,16 @@
           font-weight: normal;
           font-size: 55px;
           color: $very-dark-gray;
-          .front__end__container {
-            position: relative;
-            z-index: 100;
-            .line {
-              z-index: -1;
-              position: absolute;
-              left: 10px;
-              top: 45px;
-              height: 17px;
-              width: 250px;
-              background-color: $light-caramel;
-            }
+
+          .front__end__line {
+            left: 10px;
+            top: 45px;
+            width: 250px;
           }
-          .web__designer__container {
-            position: relative;
-            z-index: 100;
-            .line {
-              z-index: -1;
-              position: absolute;
-              left: 20px;
-              top: 45px;
-              height: 17px;
-              width: 325px;
-              background-color: $light-caramel;
-              transition: all 0.4s ease-in-out;
-            }
+          .web__designer__line {
+            left: 20px;
+            top: 45px;
+            width: 325px;
           }
         }
         p {

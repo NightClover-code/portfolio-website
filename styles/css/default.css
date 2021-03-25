@@ -148,36 +148,16 @@ nav ul .portfolio__list__item::after {
   color: #262626;
 }
 
-.hero__section .container .hero__content .text__content h1 .front__end__container {
-  position: relative;
-  z-index: 100;
-}
-
-.hero__section .container .hero__content .text__content h1 .front__end__container .line {
-  z-index: -1;
-  position: absolute;
+.hero__section .container .hero__content .text__content h1 .front__end__line {
   left: 10px;
   top: 45px;
-  height: 17px;
   width: 250px;
-  background-color: #f08315;
 }
 
-.hero__section .container .hero__content .text__content h1 .web__designer__container {
-  position: relative;
-  z-index: 100;
-}
-
-.hero__section .container .hero__content .text__content h1 .web__designer__container .line {
-  z-index: -1;
-  position: absolute;
+.hero__section .container .hero__content .text__content h1 .web__designer__line {
   left: 20px;
   top: 45px;
-  height: 17px;
   width: 325px;
-  background-color: #f08315;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 
 .hero__section .container .hero__content .text__content p {
@@ -296,6 +276,38 @@ nav ul .portfolio__list__item::after {
   transition: all 0.4s ease-in-out;
 }
 
+.skills__section {
+  background-color: #f9efe7;
+  padding-top: 150px;
+}
+
+.skills__section .skills__head {
+  text-align: center;
+}
+
+.skills__section .skills__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #262626;
+}
+
+.skills__section .skills__head h1 .line {
+  left: 10px;
+  top: 30px;
+  width: 100px;
+}
+
+.skills__section .skills__head p {
+  color: #262626;
+  font-size: 20px;
+  opacity: 80%;
+  padding-top: 20px;
+  line-height: 1.5;
+  width: 30%;
+  margin: auto;
+}
+
 .primary__btn__container {
   position: relative;
   display: inline-block;
@@ -348,5 +360,17 @@ nav ul .portfolio__list__item::after {
   min-width: 250px;
   max-width: 2000px;
   margin: auto;
+}
+
+.line__container {
+  position: relative;
+  z-index: 100;
+}
+
+.line__container .line {
+  z-index: -1;
+  position: absolute;
+  height: 17px;
+  background-color: #f08315;
 }
 /*# sourceMappingURL=default.css.map */

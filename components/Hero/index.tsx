@@ -7,14 +7,14 @@ const Hero = () => {
           <div className="text__content">
             <h1>
               Hi, I’m Achraf, {''}
-              <span className="front__end__container">
+              <span className="line__container">
                 <span>Front End</span>
-                <div className="line"></div>
+                <div className="front__end__line line"></div>
               </span>{' '}
               Web Developer and{' '}
-              <span className="web__designer__container">
+              <span className="line__container">
                 <span>Web Designer</span>
-                <div className="line"></div>
+                <div className="web__designer__line line"></div>
               </span>
             </h1>
             <p>

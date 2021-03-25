@@ -4,7 +4,7 @@ const Skills = () => {
       <div className="skills__head">
         <h1>
           Technological {''}
-          <span className="skills__container">
+          <span className="line__container">
             <span>Skills</span>
             <div className="line"></div>
           </span>
