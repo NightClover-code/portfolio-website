@@ -1,0 +1,27 @@
+.services__section {
+  background-color: $beige;
+  padding-top: 120px;
+  .services__head {
+    text-align: center;
+    h1 {
+      font-family: 'Abril Fatface', sans-serif;
+      font-weight: normal;
+      font-size: 40px;
+      color: $very-dark-gray;
+      .line {
+        left: 10px;
+        top: 30px;
+        width: 95px;
+      }
+    }
+    p {
+      color: $very-dark-gray;
+      font-size: 20px;
+      opacity: 80%;
+      padding-top: 20px;
+      line-height: 1.5;
+      width: 30%;
+      margin: auto;
+    }
+  }
+}

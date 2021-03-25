@@ -387,7 +387,7 @@ nav ul .portfolio__list__item::after {
   color: #262626;
   font-size: 20px;
   opacity: 80%;
-  margin: 20px 0;
+  padding: 20px 0 5px 0;
   line-height: 1.5;
 }
 
@@ -436,6 +436,38 @@ nav ul .portfolio__list__item::after {
 
 .socials__card .socials__logo__container:hover .linkedin__card .path__2 {
   fill: #d67513;
+}
+
+.services__section {
+  background-color: #f9efe7;
+  padding-top: 120px;
+}
+
+.services__section .services__head {
+  text-align: center;
+}
+
+.services__section .services__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #262626;
+}
+
+.services__section .services__head h1 .line {
+  left: 10px;
+  top: 30px;
+  width: 95px;
+}
+
+.services__section .services__head p {
+  color: #262626;
+  font-size: 20px;
+  opacity: 80%;
+  padding-top: 20px;
+  line-height: 1.5;
+  width: 30%;
+  margin: auto;
 }
 
 .primary__btn__container {

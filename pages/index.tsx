@@ -3,6 +3,7 @@ import Head from 'next/head';
 //importing components
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
+import Services from '../components/Services';
 import Skills from '../components/Skills';
 import Socials from '../components/Socials';
 //homepage
@@ -16,6 +17,7 @@ const Homepage = () => (
       <Porfolio />
       <Skills />
       <Socials />
+      <Services />
     </main>
   </>
 );

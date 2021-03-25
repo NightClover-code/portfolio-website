@@ -26,3 +26,27 @@ export const skillsInfo = (() => [
   { title: 'Server Side Rendering / SSR', logo: '', alt: 'SSR' },
   { title: 'SEO', logo: 'logo-seo.svg', alt: 'SEO' },
 ])();
+
+export const servicesInfo = (() => [
+  {
+    title: 'Passionate',
+    description:
+      'I’m fascinated by the web development world, and I always thrive to expand by knowledge in this field.',
+    alt: 'pc',
+    src: 'logo-pc.jpg',
+  },
+  {
+    title: 'Quick Learner',
+    description:
+      'I’m confident in my ability to learn concepts quickly and effectively, which makes me stand out in competitive environments.',
+    alt: 'pc',
+    src: 'logo-book.jpg',
+  },
+  {
+    title: 'Sociable',
+    description:
+      'I’m always excited to work with other people and making new connections. I hear my clients needs and bring them results.',
+    alt: 'people',
+    src: 'logo-sociable.jpg',
+  },
+])();
