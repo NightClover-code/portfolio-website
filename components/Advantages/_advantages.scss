@@ -1,7 +1,7 @@
-.services__section {
+.advantages__section {
   background-color: $beige;
   padding-top: 120px;
-  .services__head {
+  .advantages__head {
     text-align: center;
     h1 {
       font-family: 'Abril Fatface', sans-serif;
@@ -24,7 +24,7 @@
       margin: auto;
     }
   }
-  .services__grid {
+  .advantages__grid {
     .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

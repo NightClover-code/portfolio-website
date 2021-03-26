@@ -1,22 +1,22 @@
 import Image from 'next/image';
 
 //props interface
-interface ServiceCardProps {
+interface AdvantagesCardProps {
   alt: string;
   src: string;
   description: string;
   title: string;
 }
-//service card
-const ServiceCard: React.FC<ServiceCardProps> = ({
+//advantages card
+const AdvantagesCard: React.FC<AdvantagesCardProps> = ({
   title,
   description,
   alt,
   src,
 }) => {
   return (
-    <div className="service__card">
-      <div className="service__logo">
+    <div className="advantage__card">
+      <div className="advantage__logo">
         <Image src={`/images/${src}`} alt={alt} layout="fill" quality={100} />
       </div>
       <h2 className="title">{title}</h2>
@@ -25,4 +25,4 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   );
 };
 
-export default ServiceCard;
+export default AdvantagesCard;

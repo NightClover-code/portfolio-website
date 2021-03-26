@@ -27,7 +27,7 @@ export const skillsInfo = (() => [
   { title: 'SEO', logo: 'logo-seo.svg', alt: 'SEO' },
 ])();
 
-export const servicesInfo = (() => [
+export const advantagesInfo = (() => [
   {
     title: 'Passionate',
     description:

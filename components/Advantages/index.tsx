@@ -1,14 +1,14 @@
 //importing random id's
 import { v4 as uuidv4 } from 'uuid';
 //importing utils
-import { servicesInfo } from '../../utils';
+import { advantagesInfo } from '../../utils';
 //importing components
-import ServiceCard from './ServiceCard';
-//services
-const Services = () => {
+import AdvantagesCard from './AdvantagesCard';
+//advantages
+const Advantages = () => {
   return (
-    <section className="services__section">
-      <div className="services__head">
+    <section className="advantages__section">
+      <div className="advantages__head">
         <h1>
           Why{' '}
           <span className="line__container">
@@ -19,10 +19,10 @@ const Services = () => {
         </h1>
         <p>There are many advantages to working with me. Here are a few:</p>
       </div>
-      <div className="services__grid">
+      <div className="advantages__grid">
         <div className="container">
-          {servicesInfo.map(service => (
-            <ServiceCard
+          {advantagesInfo.map(service => (
+            <AdvantagesCard
               key={uuidv4()}
               title={service.title}
               src={service.src}
@@ -36,4 +36,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Advantages;

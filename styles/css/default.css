@@ -438,29 +438,29 @@ nav ul .portfolio__list__item::after {
   fill: #d67513;
 }
 
-.services__section {
+.advantages__section {
   background-color: #f9efe7;
   padding-top: 120px;
 }
 
-.services__section .services__head {
+.advantages__section .advantages__head {
   text-align: center;
 }
 
-.services__section .services__head h1 {
+.advantages__section .advantages__head h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
   color: #262626;
 }
 
-.services__section .services__head h1 .line {
+.advantages__section .advantages__head h1 .line {
   left: 10px;
   top: 30px;
   width: 95px;
 }
 
-.services__section .services__head p {
+.advantages__section .advantages__head p {
   color: #262626;
   font-size: 20px;
   opacity: 80%;
@@ -470,7 +470,7 @@ nav ul .portfolio__list__item::after {
   margin: auto;
 }
 
-.services__section .services__grid .container {
+.advantages__section .advantages__grid .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -480,18 +480,18 @@ nav ul .portfolio__list__item::after {
   margin: auto;
 }
 
-.service__card {
+.advantage__card {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.service__card .service__logo {
+.advantage__card .advantage__logo {
   height: 90px;
   position: relative;
 }
 
-.service__card .title {
+.advantage__card .title {
   padding: 20px 0;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
@@ -499,7 +499,7 @@ nav ul .portfolio__list__item::after {
   color: #262626;
 }
 
-.service__card p {
+.advantage__card p {
   color: #262626;
   font-size: 18px;
   opacity: 80%;
