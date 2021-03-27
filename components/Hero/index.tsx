@@ -1,3 +1,5 @@
+//importing components
+import Button from '../Button';
 //hero
 const Hero = () => {
   return (
@@ -23,10 +25,7 @@ const Hero = () => {
               email. If we are a good fit, I will give you a time and cost
               estimate.
             </p>
-            <div className="primary__btn__container">
-              <button className="primary__btn">see my work</button>
-              <div className="ghost__button"></div>
-            </div>
+            <Button>see my work</Button>
           </div>
           <div className="illustration__container">
             <div className="hero__avatar"></div>

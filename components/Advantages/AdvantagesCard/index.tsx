@@ -1,5 +1,5 @@
+//importing next utils
 import Image from 'next/image';
-
 //props interface
 interface AdvantagesCardProps {
   alt: string;

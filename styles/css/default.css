@@ -567,10 +567,46 @@ nav ul .portfolio__list__item::after {
 }
 
 .service__card {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+
+.service__card .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.service__card .container .service__illustration {
   position: relative;
+  width: 406px;
+  height: 300px;
+}
+
+.service__card .container h2 {
+  padding: 20px 0;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  color: #262626;
+}
+
+.service__card .container p {
+  color: #262626;
+  font-size: 18px;
+  opacity: 80%;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: auto;
 }
 
 .primary__btn__container {
