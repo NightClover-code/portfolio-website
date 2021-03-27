@@ -8,5 +8,8 @@ header {
     margin: auto;
     overflow: hidden;
     width: 75%;
+    @media screen and (min-width: 1500px) {
+      width: 85%;
+    }
   }
 }
