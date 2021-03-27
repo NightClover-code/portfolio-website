@@ -9,7 +9,10 @@ header {
     overflow: hidden;
     width: 75%;
     @media screen and (min-width: 1500px) {
-      width: 85%;
+      width: 87%;
+    }
+    @media screen and (max-width: 1300px) {
+      width: 90%;
     }
   }
 }
