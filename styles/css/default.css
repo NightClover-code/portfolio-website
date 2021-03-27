@@ -115,7 +115,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section .container .hero__content .illustration__container .hero__avatar {
-  background: url("../../public/images/hero.jpeg") no-repeat;
+  background: url("../../public/images/other/hero.jpeg") no-repeat;
   background-position: 0 45%;
   background-size: cover;
   position: absolute;
@@ -127,7 +127,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section .container .hero__content .illustration__container .hero__dots {
-  background: url("../../public/images/dots-hero.svg") no-repeat;
+  background: url("../../public/images/dots/dots-hero.svg") no-repeat;
   position: absolute;
   right: 40px;
   top: 40px;
@@ -193,7 +193,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .portfolio__section .dots__light__container {
-  background: url("/images/dots-portfolio-light.svg") no-repeat;
+  background: url("/images/dots/dots-portfolio-light.svg") no-repeat;
   background-size: contain;
   position: absolute;
   width: 187px;
@@ -203,7 +203,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .portfolio__section .dots__dark__container {
-  background: url("/images/dots-dark.svg") no-repeat;
+  background: url("/images/dots/dots-dark.svg") no-repeat;
   background-size: cover;
   position: absolute;
   width: 187px;

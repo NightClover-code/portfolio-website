@@ -19,7 +19,7 @@
         width: 438px;
         height: 418px;
         .hero__avatar {
-          background: url('../../public/images/hero.jpeg') no-repeat;
+          background: url('../../public/images/other/hero.jpeg') no-repeat;
           background-position: 0 45%;
           background-size: cover;
           position: absolute;
@@ -30,7 +30,7 @@
           z-index: 10;
         }
         .hero__dots {
-          background: url('../../public/images/dots-hero.svg') no-repeat;
+          background: url('../../public/images/dots/dots-hero.svg') no-repeat;
           position: absolute;
           right: 40px;
           top: 40px;

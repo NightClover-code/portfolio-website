@@ -56,6 +56,7 @@ export const servicesInfo = () => [
     title: 'Beautiful Design',
     description:
       'Whether you already have an idea of how your website might look like, or you’re just starting out from scratch, I’ll make you a suitable design for your website.',
+    src: '',
   },
   {
     title: 'Clean Code',

@@ -17,7 +17,12 @@ const AdvantagesCard: React.FC<AdvantagesCardProps> = ({
   return (
     <div className="advantage__card">
       <div className="advantage__logo">
-        <Image src={`/images/${src}`} alt={alt} layout="fill" quality={100} />
+        <Image
+          src={`/images/advantages/${src}`}
+          alt={alt}
+          layout="fill"
+          quality={100}
+        />
       </div>
       <h2 className="title">{title}</h2>
       <p>{description}</p>
