@@ -94,6 +94,7 @@ footer .container .copyright {
 }
 
 nav {
+  padding: 40px 0;
   margin: auto;
   overflow: hidden;
   display: -webkit-box;
@@ -121,15 +122,36 @@ nav .logo__container h1 span {
   color: #d67513;
 }
 
-nav ul {
-  padding: 40px 0;
+nav .menu__container {
+  display: none;
+  width: 25px;
+}
+
+nav .menu__container .hamburger__icon {
+  width: 100%;
+  color: #1d1d1d;
+}
+
+@media screen and (max-width: 800px) {
+  nav .menu__container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav .nav__list {
+    display: none;
+  }
+}
+
+nav .nav__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-nav ul li {
+nav .nav__list ul li {
   padding: 0 10px;
   position: relative;
   letter-spacing: 0.8px;
@@ -138,7 +160,7 @@ nav ul li {
   color: #1d1d1d;
 }
 
-nav ul li::after {
+nav .nav__list ul li::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -152,16 +174,16 @@ nav ul li::after {
   width: 75%;
 }
 
-nav ul li:hover::after {
+nav .nav__list ul li:hover::after {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
 }
 
-nav ul .portfolio__list__item {
+nav .nav__list ul .portfolio__list__item {
   color: #d67513;
 }
 
-nav ul .portfolio__list__item::after {
+nav .nav__list ul .portfolio__list__item::after {
   background-color: #d67513;
 }
 

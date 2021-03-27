@@ -4,6 +4,7 @@
   align-items: center;
 }
 nav {
+  padding: 40px 0;
   margin: auto;
   overflow: hidden;
   @include flexSpaceBetween();
@@ -18,38 +19,54 @@ nav {
       }
     }
   }
-  ul {
-    padding: 40px 0;
-    display: flex;
-    list-style: none;
-    li {
-      padding: 0 10px;
-      position: relative;
-      letter-spacing: 0.8px;
-      font-size: 25px;
-      cursor: pointer;
+  .menu__container {
+    display: none;
+    width: 25px;
+
+    .hamburger__icon {
+      width: 100%;
       color: $very-dark-gray;
-      &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%) scaleX(0);
-        height: 2.1px;
-        background-color: $very-dark-gray;
-        transition: all 0.25s;
-        width: 75%;
-      }
-      &:hover {
+    }
+    @media screen and(max-width: 800px) {
+      display: block;
+    }
+  }
+  .nav__list {
+    @media screen and(max-width: 800px) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        padding: 0 10px;
+        position: relative;
+        letter-spacing: 0.8px;
+        font-size: 25px;
+        cursor: pointer;
+        color: $very-dark-gray;
         &::after {
-          transform: translateX(-50%) scaleX(1);
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%) scaleX(0);
+          height: 2.1px;
+          background-color: $very-dark-gray;
+          transition: all 0.25s;
+          width: 75%;
+        }
+        &:hover {
+          &::after {
+            transform: translateX(-50%) scaleX(1);
+          }
         }
       }
-    }
-    .portfolio__list__item {
-      color: $dark-caramel;
-      &::after {
-        background-color: $dark-caramel;
+      .portfolio__list__item {
+        color: $dark-caramel;
+        &::after {
+          background-color: $dark-caramel;
+        }
       }
     }
   }
