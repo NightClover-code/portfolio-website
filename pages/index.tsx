@@ -6,11 +6,12 @@ import Porfolio from '../components/Porfolio';
 import Advantages from '../components/Advantages';
 import Skills from '../components/Skills';
 import Socials from '../components/Socials';
+import Services from '../components/Services';
 //homepage
 const Homepage = () => (
   <>
     <Head>
-      <title>AchrafDev | Front End Developer | Web Designer</title>
+      <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
     </Head>
     <main className="app__container">
       <Hero />
@@ -18,6 +19,7 @@ const Homepage = () => (
       <Skills />
       <Socials />
       <Advantages />
+      <Services />
     </main>
   </>
 );

@@ -50,3 +50,21 @@ export const advantagesInfo = (() => [
     src: 'logo-sociable.svg',
   },
 ])();
+
+export const servicesInfo = () => [
+  {
+    title: 'Beautiful Design',
+    description:
+      'Whether you already have an idea of how your website might look like, or you’re just starting out from scratch, I’ll make you a suitable design for your website.',
+  },
+  {
+    title: 'Clean Code',
+    description:
+      'If you already have a design, then it’s time to turn it into reality! I write custom, clean and efficent code from scratch to deliver a unique experience to every client or business.',
+  },
+  {
+    title: 'E-Commerce Solution',
+    description:
+      'Even if I specialize in front-end development, I also have experience with back-end! I can build you a scalable eCommerce website that has stripe payments, an admin panel, filtered products, and much more!',
+  },
+];
