@@ -5,19 +5,19 @@ const Footer = () => {
         <div className="footer__head">
           <h1>
             Want to
-            <span className="line__container">
+            <div className="line__container">
               <span> work?</span>
               <div className="line"></div>
-            </span>{' '}
+            </div>{' '}
           </h1>
-          <p>
+          <div className="footer__description">
             If you need a modern and powerful website for your business, startup
             or yourself, I am available for work. You can email me directly at
-            <span className="line__container">
+            <div className="line__container">
               <span> achrafdev23@gmail.com</span>
               <div className="line"></div>
-            </span>{' '}
-          </p>
+            </div>{' '}
+          </div>
         </div>
         <div className="copyright">&copy; All rights reserved - achrafdev</div>
       </div>

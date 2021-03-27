@@ -16,13 +16,16 @@ footer {
         font-weight: normal;
         font-size: 50px;
         color: $very-dark-gray;
-        .line {
-          left: 22px;
-          top: 40px;
-          width: 125px;
+        .line__container {
+          display: inline;
+          .line {
+            left: 22px;
+            top: 40px;
+            width: 125px;
+          }
         }
       }
-      p {
+      .footer__description {
         color: $very-dark-gray;
         font-size: 18px;
         padding-top: 20px;

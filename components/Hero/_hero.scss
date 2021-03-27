@@ -4,14 +4,14 @@
   align-items: center;
 }
 .hero__section {
-  padding-top: 70px;
+  padding-top: 80px;
   background-color: $beige;
   min-height: calc(95vh - 66px);
   .container {
     position: relative;
     margin: auto;
     height: 100%;
-    width: 85%;
+    width: 75%;
     .hero__content {
       @include flexSpaceBetween();
       .illustration__container {
@@ -44,9 +44,8 @@
         h1 {
           font-family: 'Abril Fatface', sans-serif;
           font-weight: normal;
-          font-size: 55px;
+          font-size: 60px;
           color: $very-dark-gray;
-
           .front__end__line {
             left: 10px;
             top: 45px;

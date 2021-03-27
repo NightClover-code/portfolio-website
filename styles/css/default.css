@@ -9,7 +9,7 @@ header {
 header .container {
   margin: auto;
   overflow: hidden;
-  width: 85%;
+  width: 75%;
 }
 
 footer {
@@ -44,13 +44,17 @@ footer .container .footer__head h1 {
   color: #262626;
 }
 
-footer .container .footer__head h1 .line {
+footer .container .footer__head h1 .line__container {
+  display: inline;
+}
+
+footer .container .footer__head h1 .line__container .line {
   left: 22px;
   top: 40px;
   width: 125px;
 }
 
-footer .container .footer__head p {
+footer .container .footer__head .footer__description {
   color: #262626;
   font-size: 18px;
   padding-top: 20px;
@@ -59,7 +63,7 @@ footer .container .footer__head p {
   width: 40%;
 }
 
-footer .container .footer__head p .line {
+footer .container .footer__head .footer__description .line {
   left: 10px;
   bottom: 2px;
   width: 200px;
@@ -115,7 +119,7 @@ nav ul {
 nav ul li {
   padding: 0 10px;
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
   cursor: pointer;
   color: #262626;
 }
@@ -148,7 +152,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section {
-  padding-top: 70px;
+  padding-top: 80px;
   background-color: #f9efe7;
   min-height: calc(95vh - 66px);
 }
@@ -157,7 +161,7 @@ nav ul .portfolio__list__item::after {
   position: relative;
   margin: auto;
   height: 100%;
-  width: 85%;
+  width: 75%;
 }
 
 .hero__section .container .hero__content {
@@ -208,7 +212,7 @@ nav ul .portfolio__list__item::after {
 .hero__section .container .hero__content .text__content h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
-  font-size: 55px;
+  font-size: 60px;
   color: #262626;
 }
 
@@ -329,7 +333,7 @@ nav ul .portfolio__list__item::after {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: url("/images/eye.png") no-repeat, rgba(0, 0, 0, 0.1);
+  background: url("/images/other/eye.png") no-repeat, rgba(0, 0, 0, 0.1);
   background-position: 55% 45%;
   background-size: auto;
   z-index: 10;
