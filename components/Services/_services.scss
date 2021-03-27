@@ -1,0 +1,48 @@
+@mixin flexBoxCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__section {
+  padding-top: 120px;
+  .services__head {
+    text-align: center;
+    h1 {
+      font-family: 'Abril Fatface', sans-serif;
+      font-weight: normal;
+      font-size: 40px;
+      color: $very-dark-gray;
+      span {
+        color: $dark-caramel;
+      }
+    }
+    p {
+      color: $very-dark-gray;
+      font-size: 20px;
+      opacity: 80%;
+      padding-top: 20px;
+      line-height: 1.5;
+      width: 30%;
+      margin: auto;
+    }
+  }
+  .services__list {
+    ul {
+      @include flexBoxCenter();
+      list-style: none;
+      margin-top: 40px;
+      li {
+        padding: 15px 50px;
+        font-size: 18px;
+        color: $very-dark-gray;
+        opacity: 70%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+      }
+      .active {
+        border-bottom: 3px solid $light-caramel;
+        opacity: 1;
+        font-weight: 600;
+      }
+    }
+  }
+}

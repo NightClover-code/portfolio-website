@@ -509,6 +509,70 @@ nav ul .portfolio__list__item::after {
   margin: auto;
 }
 
+.services__section {
+  padding-top: 120px;
+}
+
+.services__section .services__head {
+  text-align: center;
+}
+
+.services__section .services__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #262626;
+}
+
+.services__section .services__head h1 span {
+  color: #d67513;
+}
+
+.services__section .services__head p {
+  color: #262626;
+  font-size: 20px;
+  opacity: 80%;
+  padding-top: 20px;
+  line-height: 1.5;
+  width: 30%;
+  margin: auto;
+}
+
+.services__section .services__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.services__section .services__list ul li {
+  padding: 15px 50px;
+  font-size: 18px;
+  color: #262626;
+  opacity: 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.services__section .services__list ul .active {
+  border-bottom: 3px solid #f08315;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.service__card {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
 .primary__btn__container {
   position: relative;
   display: inline-block;

@@ -1,7 +1,7 @@
 //utils
 export const imagesInfo = (() => [
   { src: 'code-env.png', alt: 'coding-environement', objectPosition: '0 0' },
-  { src: 'rest-home-dark.jpg', alt: 'rest-api', objectPosition: '50% 0' },
+  { src: 'rest-home-dark.jpg', alt: '%rest-api', objectPosition: '50% 0' },
   { src: 'url-shortener.jpg', alt: 'url-shortener', objectPosition: '0 0' },
   { src: 'newsly.png', alt: 'newsly', objectPosition: '0 0' },
   { src: 'bookmark.jpg', alt: 'bookmark', objectPosition: '0 0' },
@@ -51,7 +51,7 @@ export const advantagesInfo = (() => [
   },
 ])();
 
-export const servicesInfo = () => [
+export const servicesInfo = (() => [
   {
     title: 'Beautiful Design',
     description:
@@ -73,4 +73,4 @@ export const servicesInfo = () => [
     src: 'slide-3.png',
     alt: 'eCommerce',
   },
-];
+])();

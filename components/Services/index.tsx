@@ -1,3 +1,5 @@
+//importing components
+import ServiceCard from './ServiceCard';
 //services
 const Services = () => {
   return (
@@ -18,6 +20,7 @@ const Services = () => {
           <li>eCommerce</li>
         </ul>
       </div>
+      <ServiceCard />
     </section>
   );
 };

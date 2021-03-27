@@ -16,7 +16,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="project__card ">
       <div className="overlay"></div>
       <Image
-        className="project__preview"
         src={imgSource}
         alt={`${alt}-project-preview`}
         layout="fill"
