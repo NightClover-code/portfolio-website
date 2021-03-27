@@ -5,7 +5,7 @@
 }
 .hero__section {
   padding-top: 100px;
-  @media screen and (min-width: 1500px) {
+  @media screen and (max-width: 1500px) {
     padding-top: 70px;
   }
   background-color: $beige;
@@ -15,7 +15,7 @@
     position: relative;
     margin: auto;
     width: 75%;
-    @media screen and (min-width: 1500px) {
+    @media screen and (max-width: 1500px) {
       width: 87%;
     }
     @media screen and (max-width: 1300px) {
@@ -62,14 +62,10 @@
         h1 {
           font-family: 'Abril Fatface', sans-serif;
           font-weight: normal;
-          font-size: 65px;
+          font-size: calc(45px + 2vh);
           color: $very-dark-gray;
-          @media screen and (max-width: 1500px) {
-            font-size: 50px;
-            margin-right: 20px;
-          }
-          @media screen and (min-width: 1500px) {
-            font-size: 50px;
+          @media screen and (max-width: 1600px) {
+            font-size: calc(40px + 1vh);
           }
         }
         p {

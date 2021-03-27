@@ -13,7 +13,7 @@ header .container {
   width: 75%;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
   header .container {
     width: 87%;
   }
@@ -172,7 +172,7 @@ nav ul .portfolio__list__item::after {
   margin: 0 20px;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .hero__section {
     padding-top: 70px;
   }
@@ -184,7 +184,7 @@ nav ul .portfolio__list__item::after {
   width: 75%;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .hero__section .container {
     width: 87%;
   }
@@ -259,20 +259,13 @@ nav ul .portfolio__list__item::after {
 .hero__section .container .hero__content .text__content h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
-  font-size: 65px;
+  font-size: calc(45px + 2vh);
   color: #1d1d1d;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .hero__section .container .hero__content .text__content h1 {
-    font-size: 50px;
-    margin-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .hero__section .container .hero__content .text__content h1 {
-    font-size: 50px;
+    font-size: calc(40px + 1vh);
   }
 }
 
