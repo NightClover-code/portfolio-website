@@ -4,13 +4,13 @@
   align-items: center;
 }
 .hero__section {
-  padding-top: 80px;
+  padding-top: 100px;
   background-color: $beige;
-  min-height: calc(95vh - 66px);
+  min-height: calc(100vh - 113px - 50px);
+  margin: 0 20px;
   .container {
     position: relative;
     margin: auto;
-    height: 100%;
     width: 75%;
     .hero__content {
       @include flexSpaceBetween();
@@ -40,46 +40,59 @@
         }
       }
       .text__content {
-        width: 75%;
+        width: 65%;
         h1 {
           font-family: 'Abril Fatface', sans-serif;
           font-weight: normal;
-          font-size: 60px;
+          font-size: 65px;
           color: $very-dark-gray;
-          .front__end__line {
-            left: 10px;
-            top: 45px;
-            width: 250px;
-          }
-          .web__designer__line {
-            left: 20px;
-            top: 45px;
-            width: 325px;
-          }
         }
         p {
           width: 60%;
           color: $very-dark-gray;
           font-size: 20px;
-          opacity: 85%;
           margin: 20px 0;
-          line-height: 1.5;
+          line-height: 1.8;
         }
         .primary__btn__container {
           margin-top: 20px;
         }
       }
     }
-    .scroll {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 20px;
-      border-bottom: 2px solid $very-dark-gray;
-      padding-right: 55px;
-      font-weight: normal;
+  }
+  .scroll__block {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 15%;
+    bottom: 1%;
+    display: inline-block;
+    width: 46px;
+    overflow: hidden;
+    height: 105px;
+    .scroll__arrow {
       position: absolute;
-      right: 0;
+      left: 0%;
+      top: 0%;
+      right: auto;
+      bottom: auto;
+      display: inline-block;
+      width: 2px;
+      height: 105px;
+      background-color: #000;
+      transform-origin: 50% 100%;
+    }
+    .scroll__text {
+      position: absolute;
+      left: 46px;
+      top: 0%;
       transform: rotate(90deg);
-      bottom: -160px;
+      right: auto;
+      bottom: auto;
+      display: inline-block;
+      transform-origin: 0% 0%;
+      font-weight: 700;
+      text-transform: uppercase;
     }
   }
 }

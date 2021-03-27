@@ -32,7 +32,10 @@ const Hero = () => {
             <div className="hero__dots"></div>
           </div>
         </div>
-        <div className="scroll">scroll</div>
+      </div>
+      <div className="scroll__block">
+        <div className="scroll__arrow"></div>
+        <div className="scroll__text">scroll</div>
       </div>
     </section>
   );

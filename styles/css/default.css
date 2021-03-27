@@ -4,6 +4,7 @@ header {
   font-family: 'Bebas Neue', serif;
   background-color: #f9efe7;
   position: relative;
+  margin: 20px 20px 0 20px;
 }
 
 header .container {
@@ -41,7 +42,7 @@ footer .container .footer__head h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 50px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 footer .container .footer__head h1 .line__container {
@@ -55,7 +56,7 @@ footer .container .footer__head h1 .line__container .line {
 }
 
 footer .container .footer__head .footer__description {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 18px;
   padding-top: 20px;
   line-height: 1.5;
@@ -71,7 +72,7 @@ footer .container .footer__head .footer__description .line {
 }
 
 footer .container .copyright {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 16px;
   opacity: 70%;
   padding-top: 80px;
@@ -101,7 +102,7 @@ nav .logo__container {
 nav .logo__container h1 {
   font-weight: normal;
   font-size: 30px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 nav .logo__container h1 span {
@@ -119,9 +120,10 @@ nav ul {
 nav ul li {
   padding: 0 10px;
   position: relative;
+  letter-spacing: 0.8px;
   font-size: 25px;
   cursor: pointer;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 nav ul li::after {
@@ -132,7 +134,7 @@ nav ul li::after {
   -webkit-transform: translateX(-50%) scaleX(0);
           transform: translateX(-50%) scaleX(0);
   height: 2.1px;
-  background-color: #262626;
+  background-color: #1d1d1d;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   width: 75%;
@@ -152,15 +154,15 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section {
-  padding-top: 80px;
+  padding-top: 100px;
   background-color: #f9efe7;
-  min-height: calc(95vh - 66px);
+  min-height: calc(100vh - 113px - 50px);
+  margin: 0 20px;
 }
 
 .hero__section .container {
   position: relative;
   margin: auto;
-  height: 100%;
   width: 75%;
 }
 
@@ -206,52 +208,67 @@ nav ul .portfolio__list__item::after {
 }
 
 .hero__section .container .hero__content .text__content {
-  width: 75%;
+  width: 65%;
 }
 
 .hero__section .container .hero__content .text__content h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
-  font-size: 60px;
-  color: #262626;
-}
-
-.hero__section .container .hero__content .text__content h1 .front__end__line {
-  left: 10px;
-  top: 45px;
-  width: 250px;
-}
-
-.hero__section .container .hero__content .text__content h1 .web__designer__line {
-  left: 20px;
-  top: 45px;
-  width: 325px;
+  font-size: 65px;
+  color: #1d1d1d;
 }
 
 .hero__section .container .hero__content .text__content p {
   width: 60%;
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
-  opacity: 85%;
   margin: 20px 0;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .hero__section .container .hero__content .text__content .primary__btn__container {
   margin-top: 20px;
 }
 
-.hero__section .container .scroll {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
-  border-bottom: 2px solid #262626;
-  padding-right: 55px;
-  font-weight: normal;
+.hero__section .scroll__block {
   position: absolute;
-  right: 0;
+  left: auto;
+  top: auto;
+  right: 15%;
+  bottom: 1%;
+  display: inline-block;
+  width: 46px;
+  overflow: hidden;
+  height: 105px;
+}
+
+.hero__section .scroll__block .scroll__arrow {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
+  width: 2px;
+  height: 105px;
+  background-color: #000;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+
+.hero__section .scroll__block .scroll__text {
+  position: absolute;
+  left: 46px;
+  top: 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  bottom: -160px;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .portfolio__section {
@@ -288,7 +305,7 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .portfolio__section .portfolio__head h1 span {
@@ -296,7 +313,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .portfolio__section .portfolio__head p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
   opacity: 80%;
   margin: 20px 0;
@@ -358,7 +375,7 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .skills__section .skills__head h1 .line {
@@ -368,7 +385,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .skills__section .skills__head p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
   opacity: 80%;
   padding-top: 20px;
@@ -444,7 +461,7 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .socials__section .socials__head h1 span {
@@ -452,7 +469,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .socials__section .socials__head p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
   opacity: 80%;
   padding: 20px 0 5px 0;
@@ -519,7 +536,7 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .advantages__section .advantages__head h1 .line {
@@ -529,7 +546,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .advantages__section .advantages__head p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
   opacity: 80%;
   padding-top: 20px;
@@ -564,11 +581,11 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 30px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .advantage__card p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 18px;
   opacity: 80%;
   margin: 20px 0;
@@ -589,7 +606,7 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .services__section .services__head h1 span {
@@ -597,7 +614,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .services__section .services__head p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 20px;
   opacity: 80%;
   padding-top: 20px;
@@ -623,7 +640,7 @@ nav ul .portfolio__list__item::after {
 .services__section .services__list ul li {
   padding: 15px 50px;
   font-size: 18px;
-  color: #262626;
+  color: #1d1d1d;
   opacity: 65%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -636,13 +653,13 @@ nav ul .portfolio__list__item::after {
 }
 
 .services__section .services__list ul .active {
-  border-bottom: 3px solid #f08315;
+  border-bottom: 3px solid #ff9b38;
   opacity: 1;
   font-weight: 600;
 }
 
 .services__section .services__list ul .active:hover {
-  color: #262626;
+  color: #1d1d1d;
   opacity: 1;
 }
 
@@ -677,11 +694,11 @@ nav ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 35px;
-  color: #262626;
+  color: #1d1d1d;
 }
 
 .service__card .container p {
-  color: #262626;
+  color: #1d1d1d;
   font-size: 18px;
   opacity: 80%;
   line-height: 1.5;
@@ -716,7 +733,8 @@ nav ul .portfolio__list__item::after {
 
 .primary__btn__container .primary__btn {
   padding: 18px 45px;
-  background-color: #262626;
+  background-color: #1d1d1d;
+  min-width: 200px;
   outline: 0;
   border: 0;
   color: #fff;
@@ -730,9 +748,9 @@ nav ul .portfolio__list__item::after {
 .primary__btn__container .ghost__button {
   content: '';
   position: absolute;
-  width: 190px;
+  min-width: 200px;
   height: 60px;
-  border: 2px solid #262626;
+  border: 2px solid #1d1d1d;
   left: 6px;
   top: 6px;
 }
@@ -759,13 +777,22 @@ nav ul .portfolio__list__item::after {
 
 .line__container {
   position: relative;
+  display: inline-block;
+  margin-right: 10px;
   z-index: 100;
 }
 
 .line__container .line {
   z-index: -1;
   position: absolute;
-  height: 17px;
-  background-color: #f08315;
+  left: 4%;
+  top: 50%;
+  right: 0%;
+  bottom: auto;
+  height: 36%;
+  margin-right: 4px;
+  background-color: #ff9b38;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 /*# sourceMappingURL=default.css.map */

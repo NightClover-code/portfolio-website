@@ -8,6 +8,7 @@
   .primary__btn {
     padding: 18px 45px;
     background-color: $very-dark-gray;
+    min-width: 200px;
     outline: 0;
     border: 0;
     color: $white;
@@ -19,7 +20,7 @@
   .ghost__button {
     content: '';
     position: absolute;
-    width: 190px;
+    min-width: 200px;
     height: 60px;
     border: 2px solid $very-dark-gray;
     left: 6px;
