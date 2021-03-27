@@ -18,7 +18,7 @@
     width: 187px;
     height: 247.47px;
     left: 41px;
-    bottom: 0;
+    bottom: -100px;
   }
   .portfolio__head {
     text-align: center;
@@ -44,7 +44,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      width: 75%;
+      width: 70%;
       margin: auto;
       gap: 40px;
     }

@@ -1,11 +1,11 @@
 .service__card {
-  padding-top: 80px;
+  padding-top: 60px;
   .container {
     display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 60%;
+    width: 70%;
     gap: 50px;
     margin: auto;
     .service__illustration {
@@ -17,17 +17,17 @@
       padding: 20px 0;
       font-family: 'Abril Fatface', sans-serif;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 40px;
       color: $very-dark-gray;
     }
     p {
       color: $very-dark-gray;
       font-size: 18px;
-      opacity: 80%;
       line-height: 1.5;
-      width: 95%;
+      width: 85%;
       text-align: left;
       letter-spacing: 0.8px;
+      padding: 10px 0;
     }
     .primary__btn__container {
       margin-top: 20px;

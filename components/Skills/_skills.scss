@@ -1,6 +1,6 @@
 .skills__section {
   background-color: $beige;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 100px;
   .skills__head {
     text-align: center;
@@ -30,7 +30,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      width: 75%;
+      width: 70%;
       margin: auto;
       column-gap: 8px;
       row-gap: 30px;

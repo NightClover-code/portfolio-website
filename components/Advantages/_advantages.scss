@@ -18,9 +18,9 @@
       color: $very-dark-gray;
       font-size: 20px;
       opacity: 80%;
-      padding-top: 20px;
+      padding-top: 25px;
       line-height: 1.5;
-      width: 30%;
+      width: 25%;
       margin: auto;
     }
   }
@@ -28,7 +28,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      width: 75%;
+      width: 70%;
       gap: 40px;
       margin: auto;
     }
