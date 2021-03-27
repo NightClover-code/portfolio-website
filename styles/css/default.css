@@ -12,6 +12,70 @@ header .container {
   width: 85%;
 }
 
+footer {
+  background-color: #f9efe7;
+}
+
+footer .container {
+  margin: auto;
+  overflow: hidden;
+  width: 85%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+footer .container .footer__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .container .footer__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  color: #262626;
+}
+
+footer .container .footer__head h1 .line {
+  left: 22px;
+  top: 40px;
+  width: 125px;
+}
+
+footer .container .footer__head p {
+  color: #262626;
+  font-size: 18px;
+  padding-top: 20px;
+  line-height: 1.5;
+  text-align: left;
+  width: 40%;
+}
+
+footer .container .footer__head p .line {
+  left: 10px;
+  bottom: 2px;
+  width: 200px;
+  height: 10px;
+}
+
+footer .container .copyright {
+  color: #262626;
+  font-size: 16px;
+  opacity: 70%;
+  padding-top: 80px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: left;
+}
+
 nav {
   margin: auto;
   overflow: hidden;
@@ -510,7 +574,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .services__section {
-  padding-top: 120px;
+  padding: 120px 0 140px 0;
 }
 
 .services__section .services__head {
@@ -579,7 +643,7 @@ nav ul .portfolio__list__item::after {
 }
 
 .service__card {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 .service__card .container {

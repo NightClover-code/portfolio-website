@@ -1,0 +1,50 @@
+footer {
+  background-color: $beige;
+  .container {
+    margin: auto;
+    overflow: hidden;
+    width: 85%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    .footer__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      h1 {
+        font-family: 'Abril Fatface', sans-serif;
+        font-weight: normal;
+        font-size: 50px;
+        color: $very-dark-gray;
+        .line {
+          left: 22px;
+          top: 40px;
+          width: 125px;
+        }
+      }
+      p {
+        color: $very-dark-gray;
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 1.5;
+        text-align: left;
+        width: 40%;
+        .line {
+          left: 10px;
+          bottom: 2px;
+          width: 200px;
+          height: 10px;
+        }
+      }
+    }
+    .copyright {
+      color: $very-dark-gray;
+      font-size: 16px;
+      opacity: 70%;
+      padding-top: 80px;
+      line-height: 1.5;
+      font-weight: 300;
+      text-align: left;
+    }
+  }
+}
