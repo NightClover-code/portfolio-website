@@ -1,24 +1,31 @@
-//importing utils
-import { servicesInfo } from '../../../utils';
 //importing next utils
 import Image from 'next/image';
+//importing types
+import { ServicesDataInterface } from '../../../interfaces';
+//importing components
+import Button from '../../Button';
+//props interface
+interface ServiceCardProps {
+  currentData: ServicesDataInterface;
+}
 //service card
-const ServiceCard = () => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
   return (
     <div className="service__card">
       <div className="container">
         <div className="service__illustration">
           <Image
-            src={`/images/services/${servicesInfo[0].src}`}
-            alt={servicesInfo[0].alt}
+            src={`/images/services/${currentData.src}`}
+            alt={currentData.alt}
             layout="fill"
-            // objectFit="cover"
             quality={100}
+            objectFit="contain"
           />
         </div>
         <div className="service__content">
-          <h2>{servicesInfo[0].title}</h2>
-          <p>{servicesInfo[0].description}</p>
+          <h2>{currentData.title}</h2>
+          <p>{currentData.description}</p>
+          <Button>More Info</Button>
         </div>
       </div>
     </div>

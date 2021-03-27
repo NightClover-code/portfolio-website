@@ -35,13 +35,22 @@
         padding: 15px 50px;
         font-size: 18px;
         color: $very-dark-gray;
-        opacity: 70%;
+        opacity: 65%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          opacity: 0.95;
+        }
       }
       .active {
         border-bottom: 3px solid $light-caramel;
         opacity: 1;
         font-weight: 600;
+        &:hover {
+          color: $very-dark-gray;
+          opacity: 1;
+        }
       }
     }
   }

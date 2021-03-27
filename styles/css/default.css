@@ -556,8 +556,15 @@ nav ul .portfolio__list__item::after {
   padding: 15px 50px;
   font-size: 18px;
   color: #262626;
-  opacity: 70%;
+  opacity: 65%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.services__section .services__list ul li:hover {
+  opacity: 0.95;
 }
 
 .services__section .services__list ul .active {
@@ -566,8 +573,13 @@ nav ul .portfolio__list__item::after {
   font-weight: 600;
 }
 
+.services__section .services__list ul .active:hover {
+  color: #262626;
+  opacity: 1;
+}
+
 .service__card {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .service__card .container {
@@ -581,9 +593,9 @@ nav ul .portfolio__list__item::after {
           align-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  width: 65%;
+  width: 60%;
+  gap: 50px;
   margin: auto;
-  overflow: hidden;
 }
 
 .service__card .container .service__illustration {
@@ -605,8 +617,22 @@ nav ul .portfolio__list__item::after {
   font-size: 18px;
   opacity: 80%;
   line-height: 1.5;
-  font-weight: 600;
-  margin: auto;
+  width: 95%;
+  text-align: left;
+  letter-spacing: 0.8px;
+}
+
+.service__card .container .primary__btn__container {
+  margin-top: 20px;
+}
+
+.service__card .container .primary__btn__container .primary__btn {
+  padding: 15px 35px;
+}
+
+.service__card .container .primary__btn__container .ghost__button {
+  width: 145px;
+  height: 55px;
 }
 
 .primary__btn__container {

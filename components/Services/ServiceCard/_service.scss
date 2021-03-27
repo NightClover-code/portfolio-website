@@ -1,13 +1,13 @@
 .service__card {
-  padding: 100px 0;
+  padding: 80px 0;
   .container {
     display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 65%;
+    width: 60%;
+    gap: 50px;
     margin: auto;
-    overflow: hidden;
     .service__illustration {
       position: relative;
       width: 406px;
@@ -25,8 +25,19 @@
       font-size: 18px;
       opacity: 80%;
       line-height: 1.5;
-      font-weight: 600;
-      margin: auto;
+      width: 95%;
+      text-align: left;
+      letter-spacing: 0.8px;
+    }
+    .primary__btn__container {
+      margin-top: 20px;
+      .primary__btn {
+        padding: 15px 35px;
+      }
+      .ghost__button {
+        width: 145px;
+        height: 55px;
+      }
     }
   }
 }
