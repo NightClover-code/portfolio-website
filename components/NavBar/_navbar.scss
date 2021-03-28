@@ -22,9 +22,8 @@ nav {
   .menu__container {
     display: none;
     width: 25px;
-
     .hamburger__icon {
-      width: 100%;
+      // width: 100%;
       color: $very-dark-gray;
     }
     @media screen and(max-width: 800px) {

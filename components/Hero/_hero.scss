@@ -5,12 +5,17 @@
 }
 .hero__section {
   padding-top: 100px;
+  position: relative;
   @media screen and (max-width: 1500px) {
     padding-top: 70px;
   }
   background-color: $beige;
   min-height: calc(100vh - 113px - 50px);
   margin: 0 20px;
+  @media screen and (max-width: 1100px) {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
   .container {
     position: relative;
     margin: auto;
@@ -23,6 +28,9 @@
     }
     .hero__content {
       @include flexSpaceBetween();
+      @media screen and (max-width: 800px) {
+        flex-flow: column nowrap;
+      }
       .illustration__container {
         position: relative;
         width: 438px;
@@ -30,6 +38,13 @@
         @media screen and (min-width: 1500px) {
           width: 418px;
           height: 390px;
+        }
+        @media screen and (max-width: 700px) {
+          height: 500px;
+          width: 100%;
+        }
+        @media screen and (max-width: 900px) {
+          margin-top: 80px;
         }
         .hero__avatar {
           background: url('../../public/images/other/hero.jpeg') no-repeat;
@@ -55,17 +70,35 @@
           @media screen and (min-width: 1500px) {
             top: 50px;
           }
+          @media screen and (max-width: 700px) {
+            display: none;
+          }
         }
       }
       .text__content {
         width: 65%;
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
         h1 {
           font-family: 'Abril Fatface', sans-serif;
           font-weight: normal;
           font-size: calc(45px + 2vh);
           color: $very-dark-gray;
-          @media screen and (max-width: 1600px) {
+          @media screen and (max-width: 1300px) {
             font-size: calc(40px + 1vh);
+          }
+          @media screen and (max-width: 900px) {
+            font-size: calc(35px + 1vh);
+          }
+          @media screen and (max-width: 800px) {
+            font-size: calc(40px + 1vh);
+          }
+          @media screen and (max-width: 550px) {
+            font-size: calc(35px + 1vh);
+          }
+          @media screen and (max-width: 400px) {
+            font-size: calc(25px + 1vh);
           }
         }
         p {
@@ -78,6 +111,10 @@
             width: 70%;
             font-size: 18px;
           }
+          @media screen and (max-width: 400px) {
+            font-size: 16px;
+            width: 85%;
+          }
         }
         .primary__btn__container {
           margin-top: 20px;
@@ -89,14 +126,15 @@
     position: absolute;
     left: auto;
     top: auto;
-    right: 10%;
-    bottom: 1%;
+    right: 12%;
+    bottom: -1%;
     display: inline-block;
     width: 46px;
     overflow: hidden;
     height: 105px;
-    @media screen and (min-width: 1500px) {
-      bottom: -3%;
+
+    @media screen and (max-width: 900px) {
+      bottom: -5%;
     }
     .scroll__arrow {
       position: absolute;
