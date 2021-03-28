@@ -13,7 +13,7 @@ header .container {
   width: 75%;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
   header .container {
     width: 87%;
   }
@@ -187,16 +187,16 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .hero__section {
-  padding-top: 100px;
+  padding-top: 70px;
   position: relative;
   background-color: #f9efe7;
   min-height: calc(100vh - 113px - 50px);
   margin: 0 20px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .hero__section {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 }
 
@@ -213,7 +213,7 @@ nav .nav__list ul .portfolio__list__item::after {
   width: 75%;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .hero__section .container {
     width: 87%;
   }
@@ -326,6 +326,12 @@ nav .nav__list ul .portfolio__list__item::after {
   color: #1d1d1d;
 }
 
+@media screen and (min-width: 1500px) {
+  .hero__section .container .hero__content .text__content h1 {
+    font-size: calc(45px + 1vh);
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .hero__section .container .hero__content .text__content h1 {
     font-size: calc(40px + 1vh);
@@ -387,7 +393,7 @@ nav .nav__list ul .portfolio__list__item::after {
   left: auto;
   top: auto;
   right: 12%;
-  bottom: -1%;
+  bottom: -3%;
   display: inline-block;
   width: 46px;
   overflow: hidden;
