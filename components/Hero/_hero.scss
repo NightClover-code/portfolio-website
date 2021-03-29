@@ -6,9 +6,6 @@
 .hero__section {
   padding-top: 70px;
   position: relative;
-  @media screen and (min-width: 1500px) {
-    padding-top: 40px;
-  }
   background-color: $beige;
   min-height: 100vh;
   margin: 0 20px;

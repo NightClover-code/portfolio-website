@@ -233,12 +233,6 @@ nav .nav__list ul .portfolio__list__item::after {
   margin: 0 20px;
 }
 
-@media screen and (min-width: 1500px) {
-  .hero__section {
-    padding-top: 40px;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .hero__section {
     min-height: auto;
