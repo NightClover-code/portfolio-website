@@ -54,7 +54,7 @@ footer .container .footer__head h1 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 50px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 footer .container .footer__head h1 .line__container {
@@ -68,7 +68,7 @@ footer .container .footer__head h1 .line__container .line {
 }
 
 footer .container .footer__head .footer__description {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 18px;
   padding-top: 20px;
   line-height: 1.5;
@@ -84,7 +84,7 @@ footer .container .footer__head .footer__description .line {
 }
 
 footer .container .copyright {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 16px;
   opacity: 70%;
   padding-top: 80px;
@@ -115,11 +115,11 @@ nav .logo__container {
 nav .logo__container h1 {
   font-weight: normal;
   font-size: 30px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 nav .logo__container h1 span {
-  color: #d67513;
+  color: #db7406;
 }
 
 nav .menu__container {
@@ -128,7 +128,7 @@ nav .menu__container {
 }
 
 nav .menu__container .hamburger__icon {
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 @media screen and (max-width: 800px) {
@@ -156,7 +156,7 @@ nav .nav__list ul li {
   letter-spacing: 0.8px;
   font-size: 25px;
   cursor: pointer;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 nav .nav__list ul li::after {
@@ -167,7 +167,7 @@ nav .nav__list ul li::after {
   -webkit-transform: translateX(-50%) scaleX(0);
           transform: translateX(-50%) scaleX(0);
   height: 2.1px;
-  background-color: #1d1d1d;
+  background-color: #0e0e0e;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   width: 75%;
@@ -179,11 +179,11 @@ nav .nav__list ul li:hover::after {
 }
 
 nav .nav__list ul .portfolio__list__item {
-  color: #d67513;
+  color: #db7406;
 }
 
 nav .nav__list ul .portfolio__list__item::after {
-  background-color: #d67513;
+  background-color: #db7406;
 }
 
 .hero__section {
@@ -195,6 +195,12 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 @media screen and (min-width: 1500px) {
+  .hero__section {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .hero__section {
     padding-top: 40px;
   }
@@ -266,7 +272,7 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .hero__section .container .hero__content .illustration__container {
     margin-top: 80px;
   }
@@ -323,7 +329,7 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: calc(45px + 2vh);
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 @media screen and (min-width: 1500px) {
@@ -364,10 +370,10 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .hero__section .container .hero__content .text__content p {
   width: 60%;
-  color: #1d1d1d;
+  color: #0e0e0e;
+  line-height: 1.8;
   font-size: 20px;
   margin: 20px 0;
-  line-height: 1.8;
 }
 
 @media screen and (max-width: 1300px) {
@@ -392,8 +398,8 @@ nav .nav__list ul .portfolio__list__item::after {
   position: absolute;
   left: auto;
   top: auto;
-  right: 12%;
-  bottom: -3%;
+  right: 8%;
+  bottom: -4%;
   display: inline-block;
   width: 46px;
   overflow: hidden;
@@ -437,7 +443,7 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .portfolio__section {
   margin-top: 180px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   position: relative;
 }
 
@@ -458,7 +464,7 @@ nav .nav__list ul .portfolio__list__item::after {
   width: 187px;
   height: 247.47px;
   left: 41px;
-  bottom: -100px;
+  bottom: 0;
 }
 
 .portfolio__section .portfolio__head {
@@ -469,19 +475,18 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .portfolio__section .portfolio__head h1 span {
-  color: #d67513;
+  color: #db7406;
 }
 
 .portfolio__section .portfolio__head p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 20px;
-  opacity: 80%;
   margin: 20px 0;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .portfolio__section .projects__grid {
@@ -493,7 +498,7 @@ nav .nav__list ul .portfolio__list__item::after {
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  width: 70%;
+  width: 75%;
   margin: auto;
   gap: 40px;
 }
@@ -539,7 +544,7 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .skills__section .skills__head h1 .line {
@@ -549,7 +554,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .skills__section .skills__head p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 20px;
   opacity: 80%;
   padding-top: 20px;
@@ -575,7 +580,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .skill__card {
-  background-color: #d67513;
+  background-color: #db7406;
   border-radius: 4px;
   text-align: center;
   font-size: 16px;
@@ -592,14 +597,14 @@ nav .nav__list ul .portfolio__list__item::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid #d67513;
+  border: 2px solid #db7406;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .skill__card:hover {
   background-color: #fff;
-  color: #d67513;
+  color: #db7406;
 }
 
 .skill__card p {
@@ -625,15 +630,15 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .socials__section .socials__head h1 span {
-  color: #d67513;
+  color: #db7406;
 }
 
 .socials__section .socials__head p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 20px;
   opacity: 80%;
   padding: 20px 0 5px 0;
@@ -653,7 +658,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .socials__card .socials__logo__container {
-  border: 2px solid #d67513;
+  border: 2px solid #db7406;
   border-radius: 50%;
   height: 80px;
   display: -webkit-box;
@@ -676,7 +681,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .socials__card .socials__logo__container:hover {
-  background-color: #d67513;
+  background-color: #db7406;
 }
 
 .socials__card .socials__logo__container:hover svg path {
@@ -684,7 +689,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .socials__card .socials__logo__container:hover .linkedin__card .path__2 {
-  fill: #d67513;
+  fill: #db7406;
 }
 
 .advantages__section {
@@ -700,7 +705,7 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .advantages__section .advantages__head h1 .line {
@@ -710,7 +715,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .advantages__section .advantages__head p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 20px;
   opacity: 80%;
   padding-top: 25px;
@@ -745,11 +750,11 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 30px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .advantage__card p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 18px;
   opacity: 80%;
   margin: 20px 0;
@@ -770,15 +775,15 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .services__section .services__head h1 span {
-  color: #d67513;
+  color: #db7406;
 }
 
 .services__section .services__head p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 20px;
   opacity: 80%;
   padding-top: 20px;
@@ -804,7 +809,7 @@ nav .nav__list ul .portfolio__list__item::after {
 .services__section .services__list ul li {
   padding: 15px 50px;
   font-size: 18px;
-  color: #1d1d1d;
+  color: #0e0e0e;
   opacity: 65%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -823,7 +828,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .services__section .services__list ul .active:hover {
-  color: #1d1d1d;
+  color: #0e0e0e;
   opacity: 1;
 }
 
@@ -858,11 +863,11 @@ nav .nav__list ul .portfolio__list__item::after {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: #1d1d1d;
+  color: #0e0e0e;
 }
 
 .service__card .container p {
-  color: #1d1d1d;
+  color: #0e0e0e;
   font-size: 18px;
   line-height: 1.5;
   width: 85%;
@@ -897,7 +902,7 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .primary__btn__container .primary__btn {
   padding: 18px 45px;
-  background-color: #1d1d1d;
+  background-color: #0e0e0e;
   min-width: 200px;
   outline: 0;
   border: 0;
@@ -914,7 +919,7 @@ nav .nav__list ul .portfolio__list__item::after {
   position: absolute;
   min-width: 200px;
   height: 60px;
-  border: 2px solid #1d1d1d;
+  border: 2px solid #0e0e0e;
   left: 6px;
   top: 6px;
 }

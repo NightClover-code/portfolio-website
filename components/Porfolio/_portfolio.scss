@@ -1,6 +1,6 @@
 .portfolio__section {
   margin-top: 180px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   position: relative;
   .dots__light__container {
     background: url('/images/dots/dots-portfolio-light.svg') no-repeat;
@@ -18,7 +18,7 @@
     width: 187px;
     height: 247.47px;
     left: 41px;
-    bottom: -100px;
+    bottom: 0;
   }
   .portfolio__head {
     text-align: center;
@@ -34,9 +34,8 @@
     p {
       color: $very-dark-gray;
       font-size: 20px;
-      opacity: 80%;
       margin: 20px 0;
-      line-height: 1.5;
+      line-height: 1.8;
     }
   }
   .projects__grid {
@@ -44,7 +43,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      width: 70%;
+      width: 75%;
       margin: auto;
       gap: 40px;
     }

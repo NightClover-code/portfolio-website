@@ -9,6 +9,9 @@
   @media screen and (min-width: 1500px) {
     padding-top: 40px;
   }
+  @media screen and (max-width: 1200px) {
+    padding-top: 40px;
+  }
   background-color: $beige;
   min-height: calc(100vh - 113px - 50px);
   margin: 0 20px;
@@ -43,7 +46,7 @@
           height: 500px;
           width: 100%;
         }
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 800px) {
           margin-top: 80px;
         }
         .hero__avatar {
@@ -107,9 +110,9 @@
         p {
           width: 60%;
           color: $very-dark-gray;
+          line-height: 1.8;
           font-size: 20px;
           margin: 20px 0;
-          line-height: 1.8;
           @media screen and (max-width: 1300px) {
             width: 70%;
             font-size: 18px;
@@ -129,8 +132,8 @@
     position: absolute;
     left: auto;
     top: auto;
-    right: 12%;
-    bottom: -3%;
+    right: 8%;
+    bottom: -4%;
     display: inline-block;
     width: 46px;
     overflow: hidden;
