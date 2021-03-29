@@ -6,7 +6,7 @@ const Footer = () => {
           <h1>
             Want to
             <div className="line__container">
-              <span> work?</span>
+              <span>work?</span>
               <div className="line"></div>
             </div>{' '}
           </h1>

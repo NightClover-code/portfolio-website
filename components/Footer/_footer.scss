@@ -13,18 +13,24 @@ footer {
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      @media screen and (max-width: 800px) {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+      }
       h1 {
         font-family: 'Abril Fatface', sans-serif;
         font-weight: normal;
         font-size: 50px;
         color: $very-dark-gray;
+        @media screen and (max-width: 400px) {
+          font-size: calc(30px + 1vh);
+          width: 90%;
+        }
+        @media screen and (max-width: 800px) {
+          text-align: left;
+        }
         .line__container {
-          display: inline;
-          .line {
-            left: 22px;
-            top: 40px;
-            width: 125px;
-          }
+          margin-left: 5px;
         }
       }
       .footer__description {
@@ -34,16 +40,22 @@ footer {
         line-height: 1.8;
         text-align: left;
         width: 40%;
-        .line {
-          left: 10px;
-          bottom: 2px;
-          width: 200px;
-          height: 10px;
+        @media screen and (max-width: 1100px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 800px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 600px) {
+          width: 95%;
         }
       }
     }
     .copyright {
       margin-top: 120px;
+      @media screen and (max-width: 800px) {
+        margin-top: 80px;
+      }
       color: $very-dark-gray;
       font-size: 16px;
       opacity: 70%;
