@@ -588,6 +588,36 @@ nav .nav__list ul .portfolio__list__item::after {
   margin: auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .skills__section .skills__head p {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skills__section .skills__head p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skills__section .skills__head p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills__section .skills__head p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills__section .skills__head p {
+    width: 80%;
+  }
+}
+
 .skills__section .skills__grid {
   margin-top: 50px;
 }
@@ -643,6 +673,17 @@ nav .nav__list ul .portfolio__list__item::after {
 .ssr__card,
 .seo__card {
   grid-column: span 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .react__card,
+  .redux__card,
+  .tailwind__card,
+  .css3__card,
+  .ssr__card,
+  .seo__card {
+    grid-column: auto;
+  }
 }
 
 .socials__section {

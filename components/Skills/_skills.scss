@@ -24,6 +24,21 @@
       line-height: 1.8;
       width: 30%;
       margin: auto;
+      @media screen and (max-width: 1300px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 1000px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 400px) {
+        width: 80%;
+      }
     }
   }
   .skills__grid {
