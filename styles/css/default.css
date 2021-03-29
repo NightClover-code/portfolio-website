@@ -367,6 +367,12 @@ nav .nav__list ul .portfolio__list__item::after {
 
 @media screen and (max-width: 400px) {
   .hero__section .container .hero__content .text__content h1 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero__section .container .hero__content .text__content h1 {
     font-size: calc(25px + 1vh);
   }
 }
@@ -487,11 +493,24 @@ nav .nav__list ul .portfolio__list__item::after {
   color: #db7406;
 }
 
+@media screen and (max-width: 400px) {
+  .portfolio__section .portfolio__head h1 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
 .portfolio__section .portfolio__head p {
   color: #0e0e0e;
   font-size: 20px;
   margin: 20px 0;
   line-height: 1.8;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio__section .portfolio__head p {
+    width: 75%;
+    margin: 20px auto;
+  }
 }
 
 .portfolio__section .projects__grid {
