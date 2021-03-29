@@ -703,11 +703,24 @@ nav .nav__list ul .portfolio__list__item::after {
   color: #db7406;
 }
 
+@media screen and (max-width: 400px) {
+  .socials__section .socials__head h1 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
 .socials__section .socials__head p {
   color: #0e0e0e;
   font-size: 20px;
   padding: 20px 0 5px 0;
   line-height: 1.8;
+}
+
+@media screen and (max-width: 600px) {
+  .socials__section .socials__head p {
+    width: 75%;
+    margin: auto;
+  }
 }
 
 .socials__section .socials__grid {
@@ -720,6 +733,13 @@ nav .nav__list ul .portfolio__list__item::after {
           justify-content: center;
   -ms-grid-columns: (80px)[6];
       grid-template-columns: repeat(6, 80px);
+}
+
+@media screen and (max-width: 700px) {
+  .socials__section .socials__grid {
+    -ms-grid-columns: (80px)[3];
+        grid-template-columns: repeat(3, 80px);
+  }
 }
 
 .socials__card .socials__logo__container {
@@ -787,6 +807,36 @@ nav .nav__list ul .portfolio__list__item::after {
   line-height: 1.8;
   width: 25%;
   margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .advantages__section .advantages__head p {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .advantages__section .advantages__head p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .advantages__section .advantages__head p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .advantages__section .advantages__head p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .advantages__section .advantages__head p {
+    width: 80%;
+  }
 }
 
 .advantages__section .advantages__grid .container {

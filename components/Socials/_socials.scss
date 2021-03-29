@@ -11,12 +11,19 @@
       span {
         color: $dark-caramel;
       }
+      @media screen and (max-width: 400px) {
+        font-size: calc(30px + 1vh);
+      }
     }
     p {
       color: $very-dark-gray;
       font-size: 20px;
       padding: 20px 0 5px 0;
       line-height: 1.8;
+      @media screen and (max-width: 600px) {
+        width: 75%;
+        margin: auto;
+      }
     }
   }
   .socials__grid {
@@ -25,5 +32,8 @@
     gap: 25px;
     justify-content: center;
     grid-template-columns: repeat(6, 80px);
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(3, 80px);
+    }
   }
 }
