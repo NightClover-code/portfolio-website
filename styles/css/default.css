@@ -229,17 +229,11 @@ nav .nav__list ul .portfolio__list__item::after {
   padding-top: 70px;
   position: relative;
   background-color: #f9efe7;
-  min-height: calc(100vh - 113px - 50px);
+  min-height: 100vh;
   margin: 0 20px;
 }
 
 @media screen and (min-width: 1500px) {
-  .hero__section {
-    padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
   .hero__section {
     padding-top: 40px;
   }

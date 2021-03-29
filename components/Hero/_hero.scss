@@ -9,11 +9,8 @@
   @media screen and (min-width: 1500px) {
     padding-top: 40px;
   }
-  @media screen and (max-width: 1200px) {
-    padding-top: 40px;
-  }
   background-color: $beige;
-  min-height: calc(100vh - 113px - 50px);
+  min-height: 100vh;
   margin: 0 20px;
   @media screen and (max-width: 1100px) {
     min-height: auto;
