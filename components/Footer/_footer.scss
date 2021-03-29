@@ -1,11 +1,13 @@
 footer {
   background-color: $beige;
+  margin: 0 20px;
+  margin-bottom: 20px;
   .container {
     margin: auto;
     overflow: hidden;
     width: 85%;
-    padding-bottom: 20px;
     padding-top: 30px;
+    padding-bottom: 20px;
     .footer__head {
       display: flex;
       justify-content: space-between;
@@ -29,7 +31,7 @@ footer {
         color: $very-dark-gray;
         font-size: 18px;
         padding-top: 20px;
-        line-height: 1.5;
+        line-height: 1.8;
         text-align: left;
         width: 40%;
         .line {
@@ -41,6 +43,7 @@ footer {
       }
     }
     .copyright {
+      margin-top: 120px;
       color: $very-dark-gray;
       font-size: 16px;
       opacity: 70%;

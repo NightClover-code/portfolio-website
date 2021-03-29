@@ -1,7 +1,9 @@
 .skills__section {
   background-color: $beige;
-  padding-top: 120px;
+  padding-top: 140px;
   padding-bottom: 100px;
+  min-height: 100vh;
+  margin: 0 20px;
   .skills__head {
     text-align: center;
     h1 {
@@ -18,9 +20,8 @@
     p {
       color: $very-dark-gray;
       font-size: 20px;
-      opacity: 80%;
       padding-top: 20px;
-      line-height: 1.5;
+      line-height: 1.8;
       width: 30%;
       margin: auto;
     }
@@ -30,7 +31,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      width: 70%;
+      width: 75%;
       margin: auto;
       column-gap: 8px;
       row-gap: 30px;

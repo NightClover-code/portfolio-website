@@ -27,14 +27,16 @@ header .container {
 
 footer {
   background-color: #f9efe7;
+  margin: 0 20px;
+  margin-bottom: 20px;
 }
 
 footer .container {
   margin: auto;
   overflow: hidden;
   width: 85%;
-  padding-bottom: 20px;
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 footer .container .footer__head {
@@ -71,7 +73,7 @@ footer .container .footer__head .footer__description {
   color: #0e0e0e;
   font-size: 18px;
   padding-top: 20px;
-  line-height: 1.5;
+  line-height: 1.8;
   text-align: left;
   width: 40%;
 }
@@ -84,6 +86,7 @@ footer .container .footer__head .footer__description .line {
 }
 
 footer .container .copyright {
+  margin-top: 120px;
   color: #0e0e0e;
   font-size: 16px;
   opacity: 70%;
@@ -442,7 +445,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .portfolio__section {
-  margin-top: 180px;
+  margin-top: 140px;
   padding-bottom: 120px;
   position: relative;
 }
@@ -534,8 +537,10 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .skills__section {
   background-color: #f9efe7;
-  padding-top: 120px;
+  padding-top: 140px;
   padding-bottom: 100px;
+  min-height: 100vh;
+  margin: 0 20px;
 }
 
 .skills__section .skills__head {
@@ -558,9 +563,8 @@ nav .nav__list ul .portfolio__list__item::after {
 .skills__section .skills__head p {
   color: #0e0e0e;
   font-size: 20px;
-  opacity: 80%;
   padding-top: 20px;
-  line-height: 1.5;
+  line-height: 1.8;
   width: 30%;
   margin: auto;
 }
@@ -574,7 +578,7 @@ nav .nav__list ul .portfolio__list__item::after {
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  width: 70%;
+  width: 75%;
   margin: auto;
   -webkit-column-gap: 8px;
           column-gap: 8px;
@@ -642,9 +646,8 @@ nav .nav__list ul .portfolio__list__item::after {
 .socials__section .socials__head p {
   color: #0e0e0e;
   font-size: 20px;
-  opacity: 80%;
   padding: 20px 0 5px 0;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .socials__section .socials__grid {
@@ -697,6 +700,7 @@ nav .nav__list ul .portfolio__list__item::after {
 .advantages__section {
   background-color: #f9efe7;
   padding-top: 120px;
+  margin: 0 20px;
 }
 
 .advantages__section .advantages__head {
@@ -719,9 +723,8 @@ nav .nav__list ul .portfolio__list__item::after {
 .advantages__section .advantages__head p {
   color: #0e0e0e;
   font-size: 20px;
-  opacity: 80%;
   padding-top: 25px;
-  line-height: 1.5;
+  line-height: 1.8;
   width: 25%;
   margin: auto;
 }
@@ -731,7 +734,7 @@ nav .nav__list ul .portfolio__list__item::after {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  width: 70%;
+  width: 75%;
   gap: 40px;
   margin: auto;
 }
@@ -751,16 +754,15 @@ nav .nav__list ul .portfolio__list__item::after {
   padding: 20px 0;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 32px;
   color: #0e0e0e;
 }
 
 .advantage__card p {
   color: #0e0e0e;
   font-size: 18px;
-  opacity: 80%;
   margin: 20px 0;
-  line-height: 1.5;
+  line-height: 1.8;
   width: 75%;
   margin: auto;
 }
@@ -787,9 +789,8 @@ nav .nav__list ul .portfolio__list__item::after {
 .services__section .services__head p {
   color: #0e0e0e;
   font-size: 20px;
-  opacity: 80%;
   padding-top: 20px;
-  line-height: 1.5;
+  line-height: 1.8;
   width: 30%;
   margin: auto;
 }

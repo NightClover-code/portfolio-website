@@ -1,6 +1,7 @@
 .advantages__section {
   background-color: $beige;
   padding-top: 120px;
+  margin: 0 20px;
   .advantages__head {
     text-align: center;
     h1 {
@@ -17,9 +18,8 @@
     p {
       color: $very-dark-gray;
       font-size: 20px;
-      opacity: 80%;
       padding-top: 25px;
-      line-height: 1.5;
+      line-height: 1.8;
       width: 25%;
       margin: auto;
     }
@@ -28,7 +28,7 @@
     .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      width: 70%;
+      width: 75%;
       gap: 40px;
       margin: auto;
     }

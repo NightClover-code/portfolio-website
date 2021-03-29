@@ -11,12 +11,12 @@ const Hero = () => {
               Hi, I’m Achraf, {''}
               <span className="line__container">
                 <span>Front End</span>
-                <div className="front__end__line line"></div>
+                <div className="line"></div>
               </span>{' '}
               Web Developer and{' '}
               <span className="line__container">
                 <span>Web Designer</span>
-                <div className="web__designer__line line"></div>
+                <div className="line"></div>
               </span>
             </h1>
             <p>

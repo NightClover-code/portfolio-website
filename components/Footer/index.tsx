@@ -12,9 +12,9 @@ const Footer = () => {
           </h1>
           <div className="footer__description">
             If you need a modern and powerful website for your business, startup
-            or yourself, I am available for work. You can email me directly at
+            or yourself, I am available for work. You can email me directly at{' '}
             <div className="line__container">
-              <span> achrafdev23@gmail.com</span>
+              <span>achrafdev23@gmail.com</span>
               <div className="line"></div>
             </div>{' '}
           </div>
