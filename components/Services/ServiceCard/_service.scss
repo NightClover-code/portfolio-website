@@ -8,35 +8,68 @@
     width: 70%;
     gap: 50px;
     margin: auto;
+    @media screen and (max-width: 1300px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 30px;
+    }
     .service__illustration {
       position: relative;
       width: 406px;
       height: 300px;
-    }
-    h2 {
-      padding: 20px 0;
-      font-family: 'Abril Fatface', sans-serif;
-      font-weight: normal;
-      font-size: 40px;
-      color: $very-dark-gray;
-    }
-    p {
-      color: $very-dark-gray;
-      font-size: 18px;
-      line-height: 1.5;
-      width: 85%;
-      text-align: left;
-      letter-spacing: 0.8px;
-      padding: 10px 0;
-    }
-    .primary__btn__container {
-      margin-top: 20px;
-      .primary__btn {
-        padding: 15px 35px;
+      @media screen and (max-width: 800px) {
+        width: 100%;
       }
-      .ghost__button {
-        width: 145px;
-        height: 55px;
+    }
+    .service__content {
+      @media screen and (max-width: 800px) {
+        text-align: center;
+      }
+      h2 {
+        padding: 10px 0;
+        font-family: 'Abril Fatface', sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+        color: $very-dark-gray;
+        @media screen and (max-width: 400px) {
+          font-size: calc(30px + 1vh);
+        }
+      }
+      p {
+        color: $very-dark-gray;
+        font-size: 18px;
+        line-height: 1.8;
+        width: 85%;
+        text-align: left;
+        letter-spacing: 0.8px;
+        padding: 10px 0;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+          margin: auto;
+          width: 75%;
+        }
+        @media screen and (max-width: 600px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 400px) {
+          width: 90%;
+        }
+      }
+      .primary__btn__container {
+        margin-top: 30px;
+        .primary__btn {
+          padding: 15px 35px;
+        }
+        .ghost__button {
+          width: 145px;
+          height: 55px;
+        }
       }
     }
   }

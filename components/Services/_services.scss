@@ -15,6 +15,9 @@
       span {
         color: $dark-caramel;
       }
+      @media screen and (max-width: 400px) {
+        font-size: calc(30px + 1vh);
+      }
     }
     p {
       color: $very-dark-gray;
@@ -23,6 +26,18 @@
       line-height: 1.8;
       width: 30%;
       margin: auto;
+      @media screen and (max-width: 1000px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 400px) {
+        width: 80%;
+      }
     }
   }
   .services__list {
@@ -30,6 +45,9 @@
       @include flexBoxCenter();
       list-style: none;
       margin-top: 40px;
+      @media screen and (max-width: 600px) {
+        flex-flow: column nowrap;
+      }
       li {
         padding: 15px 50px;
         font-size: 18px;
@@ -40,6 +58,10 @@
         transition: all 0.2s ease-in-out;
         &:hover {
           opacity: 0.95;
+        }
+        @media screen and (max-width: 600px) {
+          width: 80%;
+          text-align: center;
         }
       }
       .active {

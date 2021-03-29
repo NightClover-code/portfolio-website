@@ -958,6 +958,12 @@ nav .nav__list ul .portfolio__list__item::after {
   color: #db7406;
 }
 
+@media screen and (max-width: 400px) {
+  .services__section .services__head h1 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
 .services__section .services__head p {
   color: #0e0e0e;
   font-size: 20px;
@@ -965,6 +971,30 @@ nav .nav__list ul .portfolio__list__item::after {
   line-height: 1.8;
   width: 30%;
   margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .services__section .services__head p {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services__section .services__head p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services__section .services__head p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services__section .services__head p {
+    width: 80%;
+  }
 }
 
 .services__section .services__list ul {
@@ -981,6 +1011,15 @@ nav .nav__list ul .portfolio__list__item::after {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .services__section .services__list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
 .services__section .services__list ul li {
   padding: 15px 50px;
   font-size: 18px;
@@ -994,6 +1033,13 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .services__section .services__list ul li:hover {
   opacity: 0.95;
+}
+
+@media screen and (max-width: 600px) {
+  .services__section .services__list ul li {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .services__section .services__list ul .active {
@@ -1027,39 +1073,100 @@ nav .nav__list ul .portfolio__list__item::after {
   margin: auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .service__card .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .service__card .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service__card .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+
 .service__card .container .service__illustration {
   position: relative;
   width: 406px;
   height: 300px;
 }
 
-.service__card .container h2 {
-  padding: 20px 0;
+@media screen and (max-width: 800px) {
+  .service__card .container .service__illustration {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service__card .container .service__content {
+    text-align: center;
+  }
+}
+
+.service__card .container .service__content h2 {
+  padding: 10px 0;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: 40px;
   color: #0e0e0e;
 }
 
-.service__card .container p {
+@media screen and (max-width: 400px) {
+  .service__card .container .service__content h2 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
+.service__card .container .service__content p {
   color: #0e0e0e;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.8;
   width: 85%;
   text-align: left;
   letter-spacing: 0.8px;
   padding: 10px 0;
 }
 
-.service__card .container .primary__btn__container {
-  margin-top: 20px;
+@media screen and (max-width: 800px) {
+  .service__card .container .service__content p {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+  }
 }
 
-.service__card .container .primary__btn__container .primary__btn {
+@media screen and (max-width: 600px) {
+  .service__card .container .service__content p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service__card .container .service__content p {
+    width: 90%;
+  }
+}
+
+.service__card .container .service__content .primary__btn__container {
+  margin-top: 30px;
+}
+
+.service__card .container .service__content .primary__btn__container .primary__btn {
   padding: 15px 35px;
 }
 
-.service__card .container .primary__btn__container .ghost__button {
+.service__card .container .service__content .primary__btn__container .ghost__button {
   width: 145px;
   height: 55px;
 }
