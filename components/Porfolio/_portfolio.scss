@@ -1,6 +1,6 @@
 .portfolio__section {
   margin-top: 180px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   position: relative;
   .dots__light__container {
     background: url('/images/dots/dots-portfolio-light.svg') no-repeat;
@@ -10,6 +10,7 @@
     height: 250px;
     top: 0px;
     right: -80px;
+    z-index: -1;
   }
   .dots__dark__container {
     background: url('/images/dots/dots-dark.svg') no-repeat;
@@ -18,10 +19,11 @@
     width: 187px;
     height: 247.47px;
     left: 41px;
-    bottom: 0;
+    bottom: -200px;
   }
   .portfolio__head {
     text-align: center;
+    z-index: 100;
     h1 {
       font-family: 'Abril Fatface', sans-serif;
       font-weight: normal;

@@ -443,7 +443,7 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .portfolio__section {
   margin-top: 180px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   position: relative;
 }
 
@@ -455,6 +455,7 @@ nav .nav__list ul .portfolio__list__item::after {
   height: 250px;
   top: 0px;
   right: -80px;
+  z-index: -1;
 }
 
 .portfolio__section .dots__dark__container {
@@ -464,11 +465,12 @@ nav .nav__list ul .portfolio__list__item::after {
   width: 187px;
   height: 247.47px;
   left: 41px;
-  bottom: 0;
+  bottom: -200px;
 }
 
 .portfolio__section .portfolio__head {
   text-align: center;
+  z-index: 100;
 }
 
 .portfolio__section .portfolio__head h1 {
