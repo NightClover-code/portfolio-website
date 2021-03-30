@@ -36,7 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           <p data-aos="fade-up" data-aos-delay="1000">
             {currentData.description}
           </p>
-          <Button dataAos="fade-up" animationDelay="1200">
+          <Button dataAos="fade-up" animationDelay="1100">
             More Info
           </Button>
         </div>

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer__head">
-          <h1 data-aos="fade-up">
+          <h1 data-aos="fade-up" data-aos-delay="200">
             Want to
             <div className="line__container">
               <span>work?</span>
@@ -16,7 +16,7 @@ const Footer = () => {
           <div
             className="footer__description"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="400"
           >
             If you need a modern and powerful website for your business, startup
             or yourself, I am available for work. You can email me directly at{' '}
