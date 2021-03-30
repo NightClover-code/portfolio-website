@@ -103,6 +103,26 @@
           @media screen and (max-width: 300px) {
             font-size: calc(25px + 1vh);
           }
+          .line__container {
+            // .line {
+            // }
+            [data-aos='scale-animation-first'] {
+              width: 0;
+              transition: all 0.5s ease-in-out;
+              transition-delay: 1.4s;
+              &.aos-animate {
+                width: 100%;
+              }
+            }
+            [data-aos='scale-animation-second'] {
+              width: 0;
+              transition: all 0.5s ease-in-out;
+              transition-delay: 1.7s;
+              &.aos-animate {
+                width: 100%;
+              }
+            }
+          }
         }
         p {
           width: 60%;

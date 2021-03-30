@@ -401,6 +401,30 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
+.hero__section .container .hero__content .text__content h1 .line__container [data-aos='scale-animation-first'] {
+  width: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
+}
+
+.hero__section .container .hero__content .text__content h1 .line__container [data-aos='scale-animation-first'].aos-animate {
+  width: 100%;
+}
+
+.hero__section .container .hero__content .text__content h1 .line__container [data-aos='scale-animation-second'] {
+  width: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 1.7s;
+          transition-delay: 1.7s;
+}
+
+.hero__section .container .hero__content .text__content h1 .line__container [data-aos='scale-animation-second'].aos-animate {
+  width: 100%;
+}
+
 .hero__section .container .hero__content .text__content p {
   width: 60%;
   color: #0e0e0e;
@@ -1253,8 +1277,7 @@ nav .nav__list ul .portfolio__list__item::after {
 .line__container {
   position: relative;
   display: inline-block;
-  margin-right: 10px;
-  z-index: 100;
+  margin-right: 5px;
 }
 
 .line__container .line {
