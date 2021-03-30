@@ -74,6 +74,7 @@ export const advantagesInfo = (() => [
       'I’m fascinated by the web development world, and I always thrive to expand by knowledge in this field.',
     alt: 'pc',
     src: 'logo-pc.svg',
+    animationDelay: 400,
   },
   {
     title: 'Quick Learner',
@@ -81,6 +82,7 @@ export const advantagesInfo = (() => [
       'I’m confident in my ability to learn concepts quickly and effectively, which makes me stand out in competitive environments.',
     alt: 'pc',
     src: 'logo-book.svg',
+    animationDelay: 600,
   },
   {
     title: 'Sociable',
@@ -88,6 +90,7 @@ export const advantagesInfo = (() => [
       'I’m always excited to work with other people and making new connections. I hear my clients needs and bring them results.',
     alt: 'people',
     src: 'logo-sociable.svg',
+    animationDelay: 800,
   },
 ])();
 

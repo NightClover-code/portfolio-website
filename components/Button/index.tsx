@@ -1,11 +1,20 @@
 //impoting styles & animations
 import 'aos/dist/aos.css';
+//props interface
+interface ButtonInterface {
+  dataAos: string;
+  animationDelay: string;
+}
 //button
-const Button: React.FC = ({ children }) => {
+const Button: React.FC<ButtonInterface> = ({
+  children,
+  dataAos,
+  animationDelay,
+}) => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-delay="600"
+      data-aos={dataAos}
+      data-aos-delay={`${animationDelay}`}
       className="primary__btn__container"
     >
       <button className="primary__btn">{children}</button>

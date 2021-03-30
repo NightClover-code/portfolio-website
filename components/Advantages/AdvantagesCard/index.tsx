@@ -1,3 +1,5 @@
+//importing aos animations
+import 'aos/dist/aos.css';
 //importing next utils
 import Image from 'next/image';
 //props interface
@@ -6,6 +8,7 @@ interface AdvantagesCardProps {
   src: string;
   description: string;
   title: string;
+  animationDelay: number;
 }
 //advantages card
 const AdvantagesCard: React.FC<AdvantagesCardProps> = ({
@@ -13,9 +16,14 @@ const AdvantagesCard: React.FC<AdvantagesCardProps> = ({
   description,
   alt,
   src,
+  animationDelay,
 }) => {
   return (
-    <div className="advantage__card">
+    <div
+      className="advantage__card"
+      data-aos="fade-up"
+      data-aos-delay={animationDelay}
+    >
       <div className="advantage__logo">
         <Image
           src={`/images/advantages/${src}`}

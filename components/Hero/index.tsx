@@ -27,7 +27,9 @@ const Hero = () => {
               email. If we are a good fit, I will give you a time and cost
               estimate.
             </p>
-            <Button>see my work</Button>
+            <Button dataAos="fade-up" animationDelay="600">
+              see my work
+            </Button>
           </div>
           <div
             className="illustration__container"
