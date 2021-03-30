@@ -16,6 +16,7 @@ const Homepage = () => {
   useEffect(() => {
     AOS.init({
       duration: 750,
+      once: true,
     });
   }, []);
   return (
