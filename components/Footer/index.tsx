@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 //footer
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="container">
         <div className="footer__head">
           <h1 data-aos="fade-up" data-aos-delay="200">

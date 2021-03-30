@@ -3,6 +3,8 @@ import Link from 'next/link';
 //importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+//importing jump
+import jump from 'jump.js';
 //nav bar
 const NavBar = () => {
   return (
@@ -19,10 +21,45 @@ const NavBar = () => {
       </div>
       <div className="nav__list">
         <ul>
-          <li>About Me </li>
-          <li className="portfolio__list__item">Portfolio</li>
-          <li>Contact</li>
-          <li>Services</li>
+          <li
+            onClick={() =>
+              jump('.footer', {
+                duration: 1200,
+              })
+            }
+          >
+            Get In Touch{' '}
+          </li>
+          <li
+            className="portfolio__list__item"
+            onClick={() =>
+              jump('.portfolio__section', {
+                offset: -140,
+                duration: 1200,
+              })
+            }
+          >
+            Portfolio
+          </li>
+          <li
+            onClick={() =>
+              jump('.socials__section', {
+                offset: -80,
+                duration: 1200,
+              })
+            }
+          >
+            Contact
+          </li>
+          <li
+            onClick={() =>
+              jump('.services__section', {
+                duration: 1200,
+              })
+            }
+          >
+            Services
+          </li>
           <li>Resume</li>
         </ul>
       </div>
