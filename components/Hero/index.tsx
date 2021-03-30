@@ -34,7 +34,7 @@ const Hero = () => {
           <div
             className="illustration__container"
             data-aos="fade-left"
-            data-aos-delay="800"
+            data-aos-delay="1000"
           >
             <div className="hero__avatar"></div>
             <div className="hero__dots"></div>

@@ -1,16 +1,23 @@
+//importing aos animations
+import 'aos/dist/aos.css';
+//footer
 const Footer = () => {
   return (
     <footer>
       <div className="container">
         <div className="footer__head">
-          <h1>
+          <h1 data-aos="fade-up">
             Want to
             <div className="line__container">
               <span>work?</span>
               <div className="line"></div>
             </div>{' '}
           </h1>
-          <div className="footer__description">
+          <div
+            className="footer__description"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             If you need a modern and powerful website for your business, startup
             or yourself, I am available for work. You can email me directly at{' '}
             <div className="line__container">
