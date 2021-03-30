@@ -11,10 +11,14 @@
       font-weight: normal;
       font-size: 40px;
       color: $very-dark-gray;
-      .line {
+      [data-aos='scale-animation'] {
         left: 10px;
-        top: 30px;
-        width: 100px;
+        width: 0;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.8s;
+        &.aos-animate {
+          width: 100px;
+        }
       }
     }
     p {

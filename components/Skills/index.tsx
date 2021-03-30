@@ -14,7 +14,7 @@ const Skills = () => {
           Technological {''}
           <span className="line__container">
             <span>Skills</span>
-            <div className="line"></div>
+            <div className="line" data-aos="scale-animation"></div>
           </span>
         </h1>
         <p data-aos="fade-up" data-aos-delay="200">

@@ -14,7 +14,7 @@ const Advantages = () => {
           Why{' '}
           <span className="line__container">
             <span>Work</span>
-            <div className="front__end__line line"></div>
+            <div className="line" data-aos="scale-animation"></div>
           </span>{' '}
           with Me?
         </h1>
