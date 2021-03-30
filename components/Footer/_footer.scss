@@ -57,6 +57,9 @@ footer {
         @media screen and (max-width: 600px) {
           width: 95%;
         }
+        span {
+          font-weight: bold;
+        }
         [data-aos='scale-animation-second'] {
           width: 0;
           transition: all 0.5s ease-in-out;

@@ -127,6 +127,10 @@ footer .container .footer__head .footer__description {
   }
 }
 
+footer .container .footer__head .footer__description span {
+  font-weight: bold;
+}
+
 footer .container .footer__head .footer__description [data-aos='scale-animation-second'] {
   width: 0;
   -webkit-transition: all 0.5s ease-in-out;
