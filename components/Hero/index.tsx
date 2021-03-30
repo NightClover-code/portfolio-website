@@ -29,7 +29,11 @@ const Hero = () => {
             </p>
             <Button>see my work</Button>
           </div>
-          <div className="illustration__container">
+          <div
+            className="illustration__container"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
             <div className="hero__avatar"></div>
             <div className="hero__dots"></div>
           </div>

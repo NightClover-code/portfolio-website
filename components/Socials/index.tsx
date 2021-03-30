@@ -1,16 +1,21 @@
+//importing aos animations
+import 'aos/dist/aos.css';
+//importing components
 import SocialCard from './SocialCard';
-
+//socials
 const Socials = () => {
   return (
     <section className="socials__section">
       <div className="socials__head">
-        <h1>
+        <h1 data-aos="fade-up">
           <span>Connect</span> With Me
         </h1>
-        <p>I love sharing my passion with others. Let's get in touch.</p>
+        <p data-aos="fade-up" data-aos-delay="200">
+          I love sharing my passion with others. Let's get in touch.
+        </p>
       </div>
       <div className="socials__grid">
-        <SocialCard>
+        <SocialCard dataAos="fade-right">
           <svg
             width="43"
             height="42"
@@ -28,7 +33,7 @@ const Socials = () => {
             />
           </svg>
         </SocialCard>
-        <SocialCard>
+        <SocialCard dataAos="fade-right">
           <svg
             width="43"
             height="43"
@@ -49,7 +54,7 @@ const Socials = () => {
             </defs>
           </svg>
         </SocialCard>
-        <SocialCard>
+        <SocialCard dataAos="fade-right">
           <svg
             width="43"
             height="43"
@@ -63,7 +68,7 @@ const Socials = () => {
             />
           </svg>
         </SocialCard>
-        <SocialCard>
+        <SocialCard dataAos="fade-left">
           <svg
             width="22"
             height="43"
@@ -84,7 +89,7 @@ const Socials = () => {
             </defs>
           </svg>
         </SocialCard>
-        <SocialCard>
+        <SocialCard dataAos="fade-left">
           <svg
             width="43"
             height="43"
@@ -102,7 +107,7 @@ const Socials = () => {
             />
           </svg>
         </SocialCard>
-        <SocialCard>
+        <SocialCard dataAos="fade-left">
           <svg
             width="43"
             height="43"
