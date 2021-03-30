@@ -2,8 +2,8 @@
 import 'aos/dist/aos.css';
 //props interface
 interface ButtonInterface {
-  dataAos: string;
-  animationDelay: string;
+  dataAos?: string;
+  animationDelay?: string;
 }
 //button
 const Button: React.FC<ButtonInterface> = ({

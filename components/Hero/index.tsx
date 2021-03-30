@@ -1,4 +1,4 @@
-//impoting styles & animations
+//impoting aos animations
 import 'aos/dist/aos.css';
 //importing components
 import Button from '../Button';

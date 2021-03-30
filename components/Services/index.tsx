@@ -1,3 +1,5 @@
+//importing aos animations
+import 'aos/dist/aos.css';
 //importing hooks
 import { useRef, useState, useEffect } from 'react';
 //importing utils
@@ -36,15 +38,15 @@ const Services = () => {
   return (
     <section className="services__section">
       <div className="services__head">
-        <h1>
+        <h1 data-aos="fade-up">
           What <span>I do</span>
         </h1>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="200">
           My aim is to make it quick and easy for you to get your business to
           scale by providing the following services:
         </p>
       </div>
-      <div className="services__list">
+      <div className="services__list" data-aos="fade-up" data-aos-delay="400">
         <ul onClick={onClickHandler} ref={listRef}>
           <li className="active" id="0">
             Design
