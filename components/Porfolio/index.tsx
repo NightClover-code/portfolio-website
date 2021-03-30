@@ -1,5 +1,6 @@
-//importing random id's
+//importing random id's & animations
 import { v4 as uuidv4 } from 'uuid';
+import 'aos/dist/aos.css';
 //importing utils
 import { imagesInfo } from '../../utils';
 //importing components
@@ -11,10 +12,12 @@ const Porfolio = () => {
       {/* <div className="dots__light__container"></div> */}
       {/* <div className="dots__dark__container"></div> */}
       <div className="portfolio__head">
-        <h1>
+        <h1 data-aos="fade-up">
           My latest <span>Work</span>
         </h1>
-        <p>Some of my latest and greatest projects</p>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Some of my latest and greatest projects
+        </p>
       </div>
       <div className="projects__grid">
         <div className="container">
@@ -24,6 +27,7 @@ const Porfolio = () => {
               imgSource={`/images/portfolio/${source.src}`}
               alt={source.alt}
               objectPosition={source.objectPosition}
+              animationDelay={source.animationDelay}
             />
           ))}
         </div>
