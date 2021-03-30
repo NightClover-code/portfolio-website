@@ -31,6 +31,14 @@ footer {
         }
         .line__container {
           margin-left: 5px;
+          [data-aos='scale-animation-first'] {
+            width: 0;
+            transition: all 0.5s ease-in-out;
+            transition-delay: 0.6s;
+            &.aos-animate {
+              width: 95%;
+            }
+          }
         }
       }
       .footer__description {
@@ -48,6 +56,14 @@ footer {
         }
         @media screen and (max-width: 600px) {
           width: 95%;
+        }
+        [data-aos='scale-animation-second'] {
+          width: 0;
+          transition: all 0.5s ease-in-out;
+          transition-delay: 1.2s;
+          &.aos-animate {
+            width: 95%;
+          }
         }
       }
     }

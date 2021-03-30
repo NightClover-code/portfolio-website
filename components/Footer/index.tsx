@@ -10,7 +10,7 @@ const Footer = () => {
             Want to
             <div className="line__container">
               <span>work?</span>
-              <div className="line"></div>
+              <div className="line" data-aos="scale-animation-first"></div>
             </div>{' '}
           </h1>
           <div
@@ -22,7 +22,7 @@ const Footer = () => {
             or yourself, I am available for work. You can email me directly at{' '}
             <div className="line__container">
               <span>achrafdev23@gmail.com</span>
-              <div className="line"></div>
+              <div className="line" data-aos="scale-animation-second"></div>
             </div>{' '}
           </div>
         </div>
