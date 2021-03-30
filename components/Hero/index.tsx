@@ -1,3 +1,5 @@
+//impoting styles & animations
+import 'aos/dist/aos.css';
 //importing components
 import Button from '../Button';
 //hero
@@ -6,8 +8,8 @@ const Hero = () => {
     <section className="hero__section">
       <div className="container">
         <div className="hero__content">
-          <div className="text__content">
-            <h1>
+          <div className="text__content" data-aos="fade-up">
+            <h1 data-aos="fade-up">
               Hi, I’m Achraf, {''}
               <span className="line__container">
                 <span>Front End</span>
@@ -19,7 +21,7 @@ const Hero = () => {
                 <div className="line"></div>
               </span>
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               I design and build beautiful websites for businesses around the
               globe. If you need a modern and powerful website, send me an
               email. If we are a good fit, I will give you a time and cost
