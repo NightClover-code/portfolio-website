@@ -4,18 +4,21 @@ import 'aos/dist/aos.css';
 interface ButtonInterface {
   dataAos?: string;
   animationDelay?: string;
+  onClick?: () => void;
 }
 //button
 const Button: React.FC<ButtonInterface> = ({
   children,
   dataAos,
   animationDelay,
+  onClick,
 }) => {
   return (
     <div
       data-aos={dataAos}
       data-aos-delay={`${animationDelay}`}
       className="primary__btn__container"
+      onClick={onClick}
     >
       <button className="primary__btn">{children}</button>
       <div className="ghost__button"></div>

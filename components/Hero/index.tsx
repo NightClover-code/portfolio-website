@@ -1,5 +1,6 @@
-//impoting aos animations
+//impoting aos animations & jump
 import 'aos/dist/aos.css';
+import jump from 'jump.js';
 //importing components
 import Button from '../Button';
 //hero
@@ -27,7 +28,16 @@ const Hero = () => {
               email. If we are a good fit, I will give you a time and cost
               estimate.
             </p>
-            <Button dataAos="fade-up" animationDelay="600">
+            <Button
+              dataAos="fade-up"
+              animationDelay="600"
+              onClick={() =>
+                jump('.portfolio__section', {
+                  offset: -140,
+                  duration: 1000,
+                })
+              }
+            >
               see my work
             </Button>
           </div>

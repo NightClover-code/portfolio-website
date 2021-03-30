@@ -1,5 +1,6 @@
-//importing aos animations
+//importing aos animations & jump
 import 'aos/dist/aos.css';
+import jump from 'jump.js';
 //importing next utils
 import Image from 'next/image';
 //importing types
@@ -36,7 +37,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           <p data-aos="fade-up" data-aos-delay="1000">
             {currentData.description}
           </p>
-          <Button dataAos="fade-up" animationDelay="1100">
+          <Button
+            dataAos="fade-up"
+            animationDelay="1100"
+            onClick={() =>
+              jump('.footer', {
+                duration: 1200,
+              })
+            }
+          >
             More Info
           </Button>
         </div>
