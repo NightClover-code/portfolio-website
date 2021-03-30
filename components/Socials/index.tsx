@@ -15,7 +15,7 @@ const Socials = () => {
         </p>
       </div>
       <div className="socials__grid">
-        <a href="https://github.com/NightClover-code">
+        <a target="_blank" href="https://github.com/NightClover-code">
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -35,7 +35,7 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a href="https://twitter.com/AchrafElmouhib">
+        <a target="_blank" href="https://twitter.com/AchrafElmouhib">
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -58,7 +58,7 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a href="mailto:achrafdev23@gmail.com">
+        <a target="_blank" href="mailto:achrafdev23@gmail.com">
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -74,7 +74,7 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a href="https://web.facebook.com/achraf.elmouhib">
+        <a target="_blank" href="https://web.facebook.com/achraf.elmouhib">
           <SocialCard dataAos="fade-left">
             <svg
               width="22"
@@ -97,7 +97,7 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a href="https://www.instagram.com/achrafdev/">
+        <a target="_blank" href="https://www.instagram.com/achrafdev/">
           <SocialCard dataAos="fade-left">
             <svg
               width="43"
@@ -117,7 +117,10 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a href="https://www.linkedin.com/in/achraf-elmouhib-583563200/">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/achraf-elmouhib-583563200/"
+        >
           <SocialCard dataAos="fade-left">
             <svg
               width="43"
