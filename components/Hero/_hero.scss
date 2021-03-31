@@ -13,6 +13,10 @@
     min-height: auto;
     padding-bottom: 100px;
   }
+  @media screen and (max-width: 600px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .container {
     position: relative;
     margin: auto;
@@ -157,6 +161,9 @@
     height: 105px;
     @media screen and (max-width: 900px) {
       bottom: -5%;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
     }
     .scroll__arrow {
       position: absolute;

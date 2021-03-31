@@ -192,6 +192,7 @@ nav .logo__container h1 span {
 nav .menu__container {
   display: none;
   width: 25px;
+  cursor: pointer;
 }
 
 nav .menu__container .hamburger__icon {
@@ -201,12 +202,6 @@ nav .menu__container .hamburger__icon {
 @media screen and (max-width: 800px) {
   nav .menu__container {
     display: block;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  nav .nav__list {
-    display: none;
   }
 }
 
@@ -253,6 +248,46 @@ nav .nav__list ul .portfolio__list__item::after {
   background-color: #db7406;
 }
 
+@media screen and (max-width: 800px) {
+  nav .nav__list {
+    display: none;
+    position: absolute;
+    top: 100px;
+    z-index: 200;
+    width: 90%;
+    background-color: #0e0e0e;
+    padding: 20px;
+    left: 5%;
+    border-radius: 5px;
+  }
+  nav .nav__list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav__list ul .portfolio__list__item {
+    color: #ff9b38;
+  }
+  nav .nav__list ul .portfolio__list__item::after {
+    background-color: #ff9b38;
+  }
+  nav .nav__list ul li {
+    margin: 20px 0;
+    color: #fff;
+  }
+  nav .nav__list ul li::after {
+    background-color: #fff;
+  }
+}
+
+.active {
+  display: block !important;
+}
+
 .hero__section {
   padding-top: 70px;
   position: relative;
@@ -265,6 +300,13 @@ nav .nav__list ul .portfolio__list__item::after {
   .hero__section {
     min-height: auto;
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -494,6 +536,12 @@ nav .nav__list ul .portfolio__list__item::after {
 @media screen and (max-width: 900px) {
   .hero__section .scroll__block {
     bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__section .scroll__block {
+    display: none;
   }
 }
 

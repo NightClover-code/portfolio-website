@@ -1,3 +1,5 @@
+//importing hooks
+import { useState } from 'react';
 //importing next utils
 import Link from 'next/link';
 //importing font awesome icons
@@ -7,6 +9,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import jump from 'jump.js';
 //nav bar
 const NavBar = () => {
+  //local state
+  const [isNavHidden, setIsNavHidden] = useState(true);
+  //on toggle nav
+  const onToggleNav = () => {
+    setIsNavHidden(!isNavHidden);
+  };
   return (
     <nav>
       <div className="logo__container">
@@ -16,10 +24,10 @@ const NavBar = () => {
           </h1>
         </Link>
       </div>
-      <div className="menu__container">
+      <div className="menu__container" onClick={onToggleNav}>
         <FontAwesomeIcon icon={faBars} className="hamburger__icon" size="2x" />
       </div>
-      <div className="nav__list">
+      <div className={`nav__list ${isNavHidden ? '' : 'active'}`}>
         <ul>
           <li
             onClick={() =>
