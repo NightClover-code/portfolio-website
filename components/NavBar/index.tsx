@@ -43,6 +43,15 @@ const NavBar = () => {
           </li>
           <li
             onClick={() =>
+              jump('.skills__section', {
+                duration: 1200,
+              })
+            }
+          >
+            Skills
+          </li>
+          <li
+            onClick={() =>
               jump('.socials__section', {
                 offset: -80,
                 duration: 1200,
@@ -60,7 +69,6 @@ const NavBar = () => {
           >
             Services
           </li>
-          <li>Resume</li>
         </ul>
       </div>
     </nav>

@@ -16,7 +16,7 @@ const Button: React.FC<ButtonInterface> = ({
   return (
     <div
       data-aos={dataAos}
-      data-aos-delay={`${animationDelay}`}
+      data-aos-delay={animationDelay}
       className="primary__btn__container"
       onClick={onClick}
     >
