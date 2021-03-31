@@ -1,6 +1,9 @@
-.primary__btn__container {
+button {
   position: relative;
   display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
   &:hover .primary__btn {
     transform: translate(6px, 6px);
   }

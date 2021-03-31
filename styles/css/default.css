@@ -1261,18 +1261,21 @@ nav .nav__list ul .portfolio__list__item::after {
   height: 55px;
 }
 
-.primary__btn__container {
+button {
   position: relative;
   display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.primary__btn__container:hover .primary__btn {
+button:hover .primary__btn {
   -webkit-transform: translate(6px, 6px);
           transform: translate(6px, 6px);
 }
 
-.primary__btn__container .primary__btn {
+button .primary__btn {
   padding: 18px 45px;
   background-color: #0e0e0e;
   min-width: 200px;
@@ -1286,7 +1289,7 @@ nav .nav__list ul .portfolio__list__item::after {
   transition: all 0.2s ease-in-out;
 }
 
-.primary__btn__container .ghost__button {
+button .ghost__button {
   content: '';
   position: absolute;
   min-width: 200px;

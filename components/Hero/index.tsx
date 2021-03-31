@@ -1,10 +1,25 @@
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
 import jump from 'jump.js';
+//importing hooks
+import { useState } from 'react';
 //importing components
 import Button from '../Button';
 //hero
 const Hero = () => {
+  //local state
+  const [loading, setLoading] = useState(false);
+  //on click handler
+  const onClickHandler = () => {
+    //preventing spam
+    setTimeout(() => setLoading(true), 10);
+    setTimeout(() => setLoading(false), 1000);
+    //smooth scrolling
+    jump('.portfolio__section', {
+      offset: -140,
+      duration: 1000,
+    });
+  };
   return (
     <section className="hero__section">
       <div className="container">
@@ -31,12 +46,8 @@ const Hero = () => {
             <Button
               dataAos="fade-up"
               animationDelay="600"
-              onClick={() =>
-                jump('.portfolio__section', {
-                  offset: -140,
-                  duration: 1000,
-                })
-              }
+              onClick={onClickHandler}
+              loading={loading}
             >
               see my work
             </Button>

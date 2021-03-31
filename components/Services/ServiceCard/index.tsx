@@ -3,7 +3,8 @@ import 'aos/dist/aos.css';
 import jump from 'jump.js';
 //importing next utils
 import Image from 'next/image';
-//importing types
+//importing types & hooks
+import { useState } from 'react';
 import { ServicesDataInterface } from '../../../interfaces';
 //importing components
 import Button from '../../Button';
@@ -13,6 +14,18 @@ interface ServiceCardProps {
 }
 //service card
 const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
+  //local state
+  const [loading, setLoading] = useState(false);
+  //on click handler
+  const onClickHandler = () => {
+    //preventing spam
+    setTimeout(() => setLoading(true), 10);
+    setTimeout(() => setLoading(false), 1000);
+    //smooth scrolling
+    jump('.footer', {
+      duration: 1000,
+    });
+  };
   return (
     <div className="service__card">
       <div className="container">
@@ -40,11 +53,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           <Button
             dataAos="fade-up"
             animationDelay="1100"
-            onClick={() =>
-              jump('.footer', {
-                duration: 1200,
-              })
-            }
+            onClick={onClickHandler}
+            loading={loading}
           >
             More Info
           </Button>
