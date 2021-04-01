@@ -1,11 +1,15 @@
 //importing components
+import { isNavHiddenState } from '../../interfaces';
 import NavBar from '../NavBar';
 //header
-const Header = () => {
+const Header: React.FC<isNavHiddenState> = ({
+  setIsNavHidden,
+  isNavHidden,
+}) => {
   return (
     <header className="header">
       <div className="container">
-        <NavBar />
+        <NavBar isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
       </div>
     </header>
   );

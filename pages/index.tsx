@@ -1,6 +1,5 @@
-//importing hooks & context
+//importing hooks
 import { useEffect } from 'react';
-import { NavProvider } from '../context/GlobalContext';
 //importing aos
 import AOS from 'aos';
 //importing next utils
@@ -22,7 +21,7 @@ const Homepage = () => {
     });
   }, []);
   return (
-    <NavProvider>
+    <>
       <Head>
         <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
@@ -35,7 +34,7 @@ const Homepage = () => {
         <Advantages />
         <Services />
       </main>
-    </NavProvider>
+    </>
   );
 };
 

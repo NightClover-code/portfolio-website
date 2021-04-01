@@ -1,6 +1,5 @@
-//importing hooks & context
-import { useContext } from 'react';
-import { NavContext } from '../../context/GlobalContext';
+//importing types
+import { isNavHiddenState } from '../../interfaces';
 //importing next utils
 import Link from 'next/link';
 //importing font awesome icons
@@ -9,9 +8,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
 //nav bar
-const NavBar = () => {
-  //local state
-  const [isNavHidden, setIsNavHidden] = useContext(NavContext);
+const NavBar: React.FC<isNavHiddenState> = ({
+  isNavHidden,
+  setIsNavHidden,
+}) => {
   //on toggle nav
   const onToggleNav = () => {
     setIsNavHidden(!isNavHidden);

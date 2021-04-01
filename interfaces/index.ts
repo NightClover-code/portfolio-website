@@ -1,3 +1,4 @@
+//importing types
 import { Dispatch, SetStateAction } from 'react';
 export interface ServicesDataInterface {
   title: string;
@@ -5,4 +6,7 @@ export interface ServicesDataInterface {
   src: string;
   alt: string;
 }
-export type NavContextInterface = [boolean, Dispatch<SetStateAction<boolean>>];
+export interface isNavHiddenState {
+  isNavHidden: boolean;
+  setIsNavHidden: Dispatch<SetStateAction<boolean>>;
+}
