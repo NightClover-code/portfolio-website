@@ -1,12 +1,13 @@
-//importing hooks
-import { useState } from 'react';
 //importing components
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { isNavHiddenState } from '../interfaces';
 //main layout
-const MainLayout: React.FC = ({ children }) => {
-  //global state
-  const [isNavHidden, setIsNavHidden] = useState(false);
+const MainLayout: React.FC<isNavHiddenState> = ({
+  children,
+  isNavHidden,
+  setIsNavHidden,
+}) => {
   return (
     <div className="main__layout">
       <Header isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />

@@ -1,5 +1,5 @@
 //importing types
-import { Dispatch, SetStateAction } from 'react';
+import { SetStateAction } from 'react';
 export interface ServicesDataInterface {
   title: string;
   description: string;
@@ -8,5 +8,5 @@ export interface ServicesDataInterface {
 }
 export interface isNavHiddenState {
   isNavHidden: boolean;
-  setIsNavHidden: Dispatch<SetStateAction<boolean>>;
+  setIsNavHidden: (value: SetStateAction<boolean>) => void;
 }

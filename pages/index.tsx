@@ -1,5 +1,5 @@
 //importing hooks
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 //importing aos
 import AOS from 'aos';
 //importing next utils
@@ -11,8 +11,12 @@ import Advantages from '../components/Advantages';
 import Skills from '../components/Skills';
 import Socials from '../components/Socials';
 import Services from '../components/Services';
+import { isNavHiddenState } from '../interfaces';
 //homepage
-const Homepage = () => {
+const Homepage: React.FC<isNavHiddenState> = ({
+  isNavHidden,
+  setIsNavHidden,
+}) => {
   //initializing aos
   useEffect(() => {
     AOS.init({
@@ -20,13 +24,16 @@ const Homepage = () => {
       once: true,
     });
   }, []);
+  useEffect(() => {
+    console.log(isNavHidden);
+  }, [isNavHidden]);
   return (
     <>
       <Head>
         <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
-      <main className="app__container">
+      <main className={`app__container`}>
         <Hero />
         <Porfolio />
         <Skills />
