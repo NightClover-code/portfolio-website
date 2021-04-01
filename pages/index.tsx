@@ -11,12 +11,10 @@ import Advantages from '../components/Advantages';
 import Skills from '../components/Skills';
 import Socials from '../components/Socials';
 import Services from '../components/Services';
+//importing types
 import { isNavHiddenState } from '../interfaces';
 //homepage
-const Homepage: React.FC<isNavHiddenState> = ({
-  isNavHidden,
-  setIsNavHidden,
-}) => {
+const Homepage: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
   //initializing aos
   useEffect(() => {
     AOS.init({
@@ -24,16 +22,13 @@ const Homepage: React.FC<isNavHiddenState> = ({
       once: true,
     });
   }, []);
-  useEffect(() => {
-    console.log(isNavHidden);
-  }, [isNavHidden]);
   return (
     <>
       <Head>
         <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
-      <main className={`app__container`}>
+      <main className="app__container">
         <Hero />
         <Porfolio />
         <Skills />

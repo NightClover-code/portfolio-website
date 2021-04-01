@@ -9,7 +9,7 @@ const MainLayout: React.FC<isNavHiddenState> = ({
   setIsNavHidden,
 }) => {
   return (
-    <div className="main__layout">
+    <div className={`main__layout `}>
       <Header isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
       <div className="wrapper">{children}</div>
       <Footer />

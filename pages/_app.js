@@ -6,9 +6,9 @@ import MainLayout from '../layouts/MainLayout';
 //app
 function MyApp({ Component, pageProps }) {
   //global state
-  const [isNavHidden, setIsNavHidden] = useState(false);
+  const [isNavHidden, setIsNavHidden] = useState(true);
   return (
-    <MainLayout isNavHidden={isNavHidden} setIsNavHidden={isNavHidden}>
+    <MainLayout isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden}>
       <Component
         {...pageProps}
         isNavHidden={isNavHidden}
