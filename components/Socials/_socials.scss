@@ -14,6 +14,9 @@
       @media screen and (max-width: 400px) {
         font-size: calc(30px + 1vh);
       }
+      @media screen and (max-width: 280px) {
+        font-size: calc(25px + 1vh);
+      }
     }
     p {
       color: $very-dark-gray;
@@ -23,6 +26,9 @@
       @media screen and (max-width: 600px) {
         width: 75%;
         margin: auto;
+      }
+      @media screen and (max-width: 280px) {
+        font-size: 18px;
       }
     }
   }
@@ -34,6 +40,9 @@
     grid-template-columns: repeat(6, 80px);
     @media screen and (max-width: 700px) {
       grid-template-columns: repeat(3, 80px);
+    }
+    @media screen and (max-width: 280px) {
+      grid-template-columns: repeat(2, 80px);
     }
   }
 }

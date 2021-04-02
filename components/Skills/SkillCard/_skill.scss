@@ -18,6 +18,9 @@
   }
   p {
     padding-right: 20px;
+    @media screen and (max-width: 280px) {
+      font-size: 14px;
+    }
   }
 }
 

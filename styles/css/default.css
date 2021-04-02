@@ -623,6 +623,12 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .portfolio__section .portfolio__head h1 {
+    font-size: calc(25px + 1vh);
+  }
+}
+
 .portfolio__section .portfolio__head p {
   color: #0e0e0e;
   font-size: 20px;
@@ -634,6 +640,12 @@ nav .nav__list ul .portfolio__list__item::after {
   .portfolio__section .portfolio__head p {
     width: 75%;
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .portfolio__section .portfolio__head p {
+    font-size: 18px;
   }
 }
 
@@ -649,6 +661,13 @@ nav .nav__list ul .portfolio__list__item::after {
   width: 75%;
   margin: auto;
   gap: 40px;
+}
+
+@media screen and (max-width: 280px) {
+  .portfolio__section .projects__grid .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .project__card {
@@ -682,7 +701,6 @@ nav .nav__list ul .portfolio__list__item::after {
   background-color: #f9efe7;
   padding-top: 140px;
   padding-bottom: 100px;
-  min-height: 100vh;
   margin: 0 20px;
 }
 
@@ -708,6 +726,12 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .skills__section .skills__head h1 [data-aos='scale-animation'].aos-animate {
   width: 100px;
+}
+
+@media screen and (max-width: 280px) {
+  .skills__section .skills__head h1 {
+    font-size: calc(25px + 1vh);
+  }
 }
 
 .skills__section .skills__head p {
@@ -749,6 +773,12 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .skills__section .skills__head p {
+    font-size: 18px;
+  }
+}
+
 .skills__section .skills__grid {
   margin-top: 50px;
 }
@@ -763,6 +793,13 @@ nav .nav__list ul .portfolio__list__item::after {
   -webkit-column-gap: 8px;
           column-gap: 8px;
   row-gap: 30px;
+}
+
+@media screen and (max-width: 280px) {
+  .skills__section .skills__grid .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .skill__card {
@@ -795,6 +832,12 @@ nav .nav__list ul .portfolio__list__item::after {
 
 .skill__card p {
   padding-right: 20px;
+}
+
+@media screen and (max-width: 280px) {
+  .skill__card p {
+    font-size: 14px;
+  }
 }
 
 .react__card,
@@ -840,6 +883,12 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .socials__section .socials__head h1 {
+    font-size: calc(25px + 1vh);
+  }
+}
+
 .socials__section .socials__head p {
   color: #0e0e0e;
   font-size: 20px;
@@ -851,6 +900,12 @@ nav .nav__list ul .portfolio__list__item::after {
   .socials__section .socials__head p {
     width: 75%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .socials__section .socials__head p {
+    font-size: 18px;
   }
 }
 
@@ -870,6 +925,13 @@ nav .nav__list ul .portfolio__list__item::after {
   .socials__section .socials__grid {
     -ms-grid-columns: (80px)[3];
         grid-template-columns: repeat(3, 80px);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .socials__section .socials__grid {
+    -ms-grid-columns: (80px)[2];
+        grid-template-columns: repeat(2, 80px);
   }
 }
 
@@ -950,6 +1012,12 @@ nav .nav__list ul .portfolio__list__item::after {
   width: 95px;
 }
 
+@media screen and (max-width: 280px) {
+  .advantages__section .advantages__head h1 {
+    font-size: calc(25px + 1vh);
+  }
+}
+
 .advantages__section .advantages__head p {
   color: #0e0e0e;
   font-size: 20px;
@@ -986,6 +1054,12 @@ nav .nav__list ul .portfolio__list__item::after {
 @media screen and (max-width: 400px) {
   .advantages__section .advantages__head p {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .advantages__section .advantages__head p {
+    font-size: 18px;
   }
 }
 

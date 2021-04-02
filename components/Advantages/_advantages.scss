@@ -24,6 +24,9 @@
           width: 95px;
         }
       }
+      @media screen and (max-width: 280px) {
+        font-size: calc(25px + 1vh);
+      }
     }
     p {
       color: $very-dark-gray;
@@ -46,6 +49,9 @@
       }
       @media screen and (max-width: 400px) {
         width: 80%;
+      }
+      @media screen and (max-width: 280px) {
+        font-size: 18px;
       }
     }
   }
