@@ -14,7 +14,10 @@ import Services from '../components/Services';
 //importing types
 import { isNavHiddenState } from '../interfaces';
 //homepage
-const Homepage: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
+const Homepage: React.FC<isNavHiddenState> = ({
+  isNavHidden,
+  setIsNavHidden,
+}) => {
   //initializing aos
   useEffect(() => {
     AOS.init({
@@ -22,6 +25,22 @@ const Homepage: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
       once: true,
     });
   }, []);
+  //hiding nav for big screens
+  useEffect(() => {
+    window.addEventListener('resize', (e: any) => {
+      if (e.target.innerWidth > 800) {
+        setIsNavHidden(true);
+      }
+    });
+  }, []);
+  //disabling scroll when nav open
+  useEffect(() => {
+    if (!isNavHidden) {
+      document.body.classList.add('disable__scroll');
+    } else {
+      document.body.classList.remove('disable__scroll');
+    }
+  }, [isNavHidden]);
   return (
     <>
       <Head>
@@ -29,7 +48,7 @@ const Homepage: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <main className="app__container">
-        <Hero />
+        <Hero isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
         <Porfolio />
         <Skills />
         <Socials />

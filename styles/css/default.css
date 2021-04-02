@@ -1387,14 +1387,27 @@ button .ghost__button {
   transform-origin: 0% 50%;
 }
 
-.app__overlay {
-  width: 100%;
+.nav__overlay {
+  position: fixed;
   height: 100%;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: 99999;
+}
+
+@media screen and (max-width: 800px) {
+  .reset__hero {
+    padding-top: 160px;
+    margin-top: 20px;
+  }
+}
+
+.disable__scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=default.css.map */

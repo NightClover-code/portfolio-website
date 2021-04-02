@@ -2,11 +2,12 @@
 import 'aos/dist/aos.css';
 import jump from 'jump.js';
 //importing hooks
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { isNavHiddenState } from '../../interfaces';
 //importing components
 import Button from '../Button';
 //hero
-const Hero = () => {
+const Hero: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
   //local state
   const [loading, setLoading] = useState(false);
   //on click handler
@@ -21,7 +22,7 @@ const Hero = () => {
     });
   };
   return (
-    <section className="hero__section">
+    <section className={`hero__section ${!isNavHidden ? 'reset__hero' : ''}`}>
       <div className="container">
         <div className="hero__content">
           <div className="text__content" data-aos="fade-up">

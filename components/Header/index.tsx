@@ -7,7 +7,7 @@ const Header: React.FC<isNavHiddenState> = ({
   isNavHidden,
 }) => {
   return (
-    <header className="header">
+    <header className={`header ${!isNavHidden ? 'nav__overlay' : ''}`}>
       <div className="container">
         <NavBar isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
       </div>
