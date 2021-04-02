@@ -8,8 +8,18 @@ const MainLayout: React.FC<isNavHiddenState> = ({
   isNavHidden,
   setIsNavHidden,
 }) => {
+  //on click handler
+  const onClickHandler = (e: any) => {
+    if (
+      !isNavHidden &&
+      e.target.tagName !== 'LI' &&
+      e.target.tagName !== 'UL'
+    ) {
+      setIsNavHidden(true);
+    }
+  };
   return (
-    <div className={`main__layout `}>
+    <div className="main__layout" onClick={onClickHandler}>
       <Header isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
       <div className="wrapper">{children}</div>
       <Footer />
