@@ -8,7 +8,7 @@ export const imagesInfo = (() => [
   },
   {
     src: 'rest-home-dark.jpg',
-    alt: '%rest-api',
+    alt: 'rest-api',
     objectPosition: '50% 0',
     animationDelay: 250,
   },

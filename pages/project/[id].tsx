@@ -6,7 +6,7 @@ const ProjectDetails = () => {
   return (
     <>
       <Head>
-        <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
+        <title>Achraf Dev | Project | </title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <main className="app__container">
