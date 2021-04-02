@@ -10,9 +10,11 @@ const MainLayout: React.FC<isNavHiddenState> = ({
 }) => {
   //on click handler
   const onClickHandler = (e: any) => {
+    console.log(e.target.tagName);
     if (
       !isNavHidden &&
       e.target.tagName !== 'LI' &&
+      e.target.tagName !== 'DIV' &&
       e.target.tagName !== 'UL'
     ) {
       setIsNavHidden(true);

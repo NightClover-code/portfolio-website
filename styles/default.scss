@@ -72,3 +72,7 @@
   height: 100%;
   overflow: hidden;
 }
+.disable {
+  pointer-events: none !important;
+  cursor: default !important;
+}

@@ -7,14 +7,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
+import { useRef } from 'react';
 //nav bar
 const NavBar: React.FC<isNavHiddenState> = ({
   isNavHidden,
   setIsNavHidden,
 }) => {
+  //refs
+  const listItemsRef = useRef<HTMLUListElement>(null);
   //on toggle nav
   const onToggleNav = () => {
     setIsNavHidden(!isNavHidden);
+  };
+  //on list click handler
+  const onListClickHandler = () => {
+    setTimeout(() => {
+      if (listItemsRef.current) {
+        return listItemsRef.current.classList.add('disable');
+      }
+    }, 10);
+    setTimeout(() => {
+      if (listItemsRef.current) {
+        return listItemsRef.current.classList.remove('disable');
+      }
+    }, 1000);
   };
   return (
     <nav>
@@ -29,7 +45,7 @@ const NavBar: React.FC<isNavHiddenState> = ({
         <FontAwesomeIcon icon={faBars} className="hamburger__icon" size="2x" />
       </div>
       <div className={`nav__list ${isNavHidden ? '' : 'active'}`}>
-        <ul>
+        <ul onClick={onListClickHandler} ref={listItemsRef}>
           <li
             onClick={() =>
               jump('.footer', {
