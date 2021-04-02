@@ -7,14 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
+import { NavContext } from '../../context';
 //nav bar
-const NavBar: React.FC<isNavHiddenState> = ({
-  isNavHidden,
-  setIsNavHidden,
-}) => {
+const NavBar = () => {
   //refs
   const listItemsRef = useRef<HTMLUListElement>(null);
+  //context api state
+  const { isNavHidden, setIsNavHidden } = useContext(NavContext);
   //on toggle nav
   const onToggleNav = () => {
     setIsNavHidden(!isNavHidden);

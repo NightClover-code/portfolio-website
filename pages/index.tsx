@@ -1,5 +1,5 @@
 //importing hooks
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 //importing aos
 import AOS from 'aos';
 //importing next utils
@@ -11,13 +11,12 @@ import Advantages from '../components/Advantages';
 import Skills from '../components/Skills';
 import Socials from '../components/Socials';
 import Services from '../components/Services';
-//importing types
-import { isNavHiddenState } from '../interfaces';
+//importing context
+import { NavContext } from '../context';
 //homepage
-const Homepage: React.FC<isNavHiddenState> = ({
-  isNavHidden,
-  setIsNavHidden,
-}) => {
+const Homepage = () => {
+  //context api state
+  const { setIsNavHidden, isNavHidden } = useContext(NavContext);
   //initializing aos
   useEffect(() => {
     AOS.init({
