@@ -1,5 +1,6 @@
-//importing types
-import { isNavHiddenState } from '../../interfaces';
+//importing hooks & context
+import { useContext, useRef } from 'react';
+import { NavContext } from '../../context';
 //importing next utils
 import Link from 'next/link';
 //importing font awesome icons
@@ -7,8 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
-import { useContext, useRef } from 'react';
-import { NavContext } from '../../context';
 //nav bar
 const NavBar = () => {
   //refs

@@ -1,15 +1,17 @@
+//importing hooks & context
+import { useState, useContext } from 'react';
+import { NavContext } from '../../context';
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
 import jump from 'jump.js';
-//importing hooks
-import React, { useState } from 'react';
-import { isNavHiddenState } from '../../interfaces';
 //importing components
 import Button from '../Button';
 //hero
-const Hero: React.FC<isNavHiddenState> = ({ isNavHidden }) => {
+const Hero = () => {
   //local state
   const [loading, setLoading] = useState(false);
+  //context api state
+  const { isNavHidden } = useContext(NavContext);
   //on click handler
   const onClickHandler = () => {
     //preventing spam
