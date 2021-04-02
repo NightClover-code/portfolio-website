@@ -60,14 +60,10 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.05);
   z-index: 99999;
-  @media screen and (min-width: 800px) {
-    // visibility: hidden;
-  }
 }
 .reset__hero {
   @media screen and (max-width: 800px) {
     padding-top: 160px;
-    // padding-bottom: 40px;
     margin-top: 20px;
   }
 }
