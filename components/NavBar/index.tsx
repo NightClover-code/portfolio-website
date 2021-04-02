@@ -52,7 +52,7 @@ const NavBar = () => {
               })
             }
           >
-            <a href="">Get In Touch</a>
+            <a>Get In Touch</a>
           </li>
           <li
             className="portfolio__list__item"
