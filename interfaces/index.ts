@@ -1,5 +1,5 @@
 //importing types
-import { SetStateAction } from 'react';
+import { setNavHiddenType } from '../types';
 export interface ServicesDataInterface {
   title: string;
   description: string;
@@ -8,5 +8,5 @@ export interface ServicesDataInterface {
 }
 export interface isNavHiddenState {
   isNavHidden: boolean;
-  setIsNavHidden: (value: SetStateAction<boolean>) => void;
+  setIsNavHidden: setNavHiddenType;
 }

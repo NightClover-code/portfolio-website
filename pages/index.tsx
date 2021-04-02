@@ -1,9 +1,10 @@
 //importing hooks
-import React, { useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 //importing aos
 import AOS from 'aos';
-//importing next utils
+//importing utils
 import Head from 'next/head';
+import { disableScroll, hideNav } from '../utils';
 //importing components
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
@@ -26,19 +27,11 @@ const Homepage = () => {
   }, []);
   //hiding nav for big screens
   useEffect(() => {
-    window.addEventListener('resize', (e: any) => {
-      if (e.target.innerWidth > 800) {
-        setIsNavHidden(true);
-      }
-    });
+    hideNav(setIsNavHidden);
   }, []);
   //disabling scroll when nav open
   useEffect(() => {
-    if (!isNavHidden) {
-      document.body.classList.add('disable__scroll');
-    } else {
-      document.body.classList.remove('disable__scroll');
-    }
+    disableScroll(isNavHidden);
   }, [isNavHidden]);
   return (
     <>
