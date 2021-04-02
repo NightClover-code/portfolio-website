@@ -1,7 +1,7 @@
-//importing aos animations
-import 'aos/dist/aos.css';
 //importing hooks
 import { useRef, useState, useEffect } from 'react';
+//importing aos animations
+import 'aos/dist/aos.css';
 //importing utils
 import { servicesInfo } from '../../utils';
 //importing components
@@ -10,7 +10,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
   //refs
   const listRef = useRef<HTMLUListElement | null>(null);
-  //component level state
+  //local state
   const [counter, setCounter] = useState(0);
   const [currentData, setCurrentData] = useState(servicesInfo[0]);
   //on Click Handler

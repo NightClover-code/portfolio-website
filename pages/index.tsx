@@ -47,7 +47,7 @@ const Homepage = () => {
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <main className="app__container">
-        <Hero isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden} />
+        <Hero />
         <Porfolio />
         <Skills />
         <Socials />
