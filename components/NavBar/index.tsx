@@ -52,7 +52,7 @@ const NavBar = () => {
               })
             }
           >
-            <a>Get In Touch</a>
+            Get In Touch
           </li>
           <li
             className="portfolio__list__item"

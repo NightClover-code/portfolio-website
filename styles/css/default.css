@@ -250,7 +250,8 @@ nav .nav__list ul .portfolio__list__item::after {
 
 @media screen and (max-width: 800px) {
   nav .nav__list {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 100px;
     z-index: 200;
@@ -258,7 +259,11 @@ nav .nav__list ul .portfolio__list__item::after {
     background-color: #0e0e0e;
     padding: 20px;
     left: 5%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   nav .nav__list ul {
     -webkit-box-orient: vertical;
@@ -285,7 +290,10 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .active {
-  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transform: translateY(0%) !important;
+          transform: translateY(0%) !important;
 }
 
 .hero__section {
