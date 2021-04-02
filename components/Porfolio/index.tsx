@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
 //importing utils
 import { imagesInfo } from '../../utils';
+import Link from 'next/link';
 //importing components
 import ProjectCard from './ProjectCard';
 //portfolio

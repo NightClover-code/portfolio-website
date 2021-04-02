@@ -2,6 +2,7 @@
 import 'aos/dist/aos.css';
 //importing next utils
 import Image from 'next/image';
+import Link from 'next/link';
 //props interface
 interface ProjectCardProps {
   imgSource: string;
@@ -17,21 +18,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   animationDelay,
 }) => {
   return (
-    <div
-      className="project__card "
-      data-aos="fade-up"
-      data-aos-delay={`${animationDelay > 0 ? animationDelay : ''}`}
-    >
-      <div className="overlay"></div>
-      <Image
-        src={imgSource}
-        alt={`${alt}-project-preview`}
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        objectPosition={objectPosition}
-      />
-    </div>
+    <Link href={`/project/${alt}`}>
+      <div
+        className="project__card "
+        data-aos="fade-up"
+        data-aos-delay={`${animationDelay > 0 ? animationDelay : ''}`}
+      >
+        <div className="overlay"></div>
+        <Image
+          src={imgSource}
+          alt={`${alt}-project-preview`}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          objectPosition={objectPosition}
+        />
+      </div>
+    </Link>
   );
 };
 
