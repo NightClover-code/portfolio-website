@@ -4,6 +4,8 @@ import { NavContext } from '../../context';
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
 import jump from 'jump.js';
+//importing utils
+import Image from 'next/image';
 //importing components
 import Button from '../Button';
 //hero
@@ -60,7 +62,16 @@ const Hero = () => {
             data-aos="fade-left"
             data-aos-delay="1000"
           >
-            <div className="hero__avatar"></div>
+            <div className="hero__avatar">
+              <Image
+                src="/images/other/hero.jpeg"
+                layout="fill"
+                alt="hero-preview"
+                objectFit="cover"
+                objectPosition="0% 45%"
+              />
+            </div>
+            {/* <div className="hero__avatar"></div> */}
             <div className="hero__dots"></div>
           </div>
         </div>

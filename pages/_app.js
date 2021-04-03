@@ -1,7 +1,7 @@
 //importing aos
 import AOS from 'aos';
 //importing hooks
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 //importing context provider
 import { NavProvider } from '../context';
 //importing layout & styles

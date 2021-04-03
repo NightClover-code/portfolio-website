@@ -44,7 +44,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   return (
     <>
       <Head>
-        <title>Achraf Dev | Project | </title>
+        <title>Achraf Dev | Project | {project.name}</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <main className="app__container">
