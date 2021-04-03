@@ -18,8 +18,8 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
           <span>Technologies</span> Used
         </h1>
         <p data-aos="fade-up" data-aos-delay="200">
-          I always enjoy learning new things. Especially the technologies that
-          make your website fast, modern and secure.
+          This project uses some of the latest and modern web technologies. Here
+          are the most prominent ones:
         </p>
       </div>
       <div className="project__skills__grid">

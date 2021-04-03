@@ -66,7 +66,11 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
                 src={`/images/portfolio/${project.image.src}`}
                 alt={project.image.alt}
                 objectFit="cover"
-                objectPosition="0% 0%"
+                objectPosition={
+                  project.image.objectPosition
+                    ? project.image.objectPosition
+                    : '0% 0%'
+                }
               />
             </div>
             <div className="hero__dots"></div>

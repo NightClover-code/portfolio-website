@@ -47,7 +47,8 @@ export const projectsInfo: Project[] = (() => [
     },
     name: 'Rest API',
     title: 'Rest API Web App',
-    description: 'This is a rest countries app',
+    description:
+      'This is a project that uses the Rest Countries API to pull country data and display it like in the design. Users can search for specific countries, filter them by region, toggle between light and dark mode and much more!',
     github: 'rest-countries-api',
     website: 'https://rest-countries-api-nightclover-code.vercel.app/',
     skills: [
@@ -77,7 +78,8 @@ export const projectsInfo: Project[] = (() => [
       alt: 'url-shortener',
     },
     title: 'Shortly - Url Shortener Website',
-    description: 'This is an url shortener website',
+    description:
+      'This is an url shortener landing page, it uses the shrtcode API to shorten any valid links provided by users. Users can also create an account or login with popular authentification providers (such as google) to save the links they shortened to their account.',
     github: 'url-shortener',
     website: 'https://url-shortener-git-main-nightclover-code.vercel.app/',
     skills: [
@@ -113,8 +115,9 @@ export const projectsInfo: Project[] = (() => [
       alt: 'newsly',
       objectPosition: '0 0',
     },
-    title: 'Newsly - News Web App (In Progress)',
-    description: 'This is a news related website',
+    title: 'Newsly - News Website (In Progress)',
+    description:
+      'This is a project that uses the News API to display the latest news around the globe. Users can choose specific categories such as sports or science, and they can also read trending and detailed articles. This project is not finished, more functionality is yet to come.',
     github: 'newsly',
     website: 'https://newsly-nightclover-code.vercel.app/',
     skills: [
@@ -144,7 +147,8 @@ export const projectsInfo: Project[] = (() => [
       alt: 'bookmark',
     },
     title: 'Bookmark - Extensions Manager Website',
-    description: 'This is a bookmarking related website',
+    description:
+      'This is a simple bookmarking manager landing page, it has an FAQ section with a functional accordion component and some newsletter email validation. As a bonus, beautiful animations were implemented as well.',
     github: 'bookmark',
     website: 'https://bookmark-git-master-nightclover-code.vercel.app/',
     skills: [
@@ -171,9 +175,11 @@ export const projectsInfo: Project[] = (() => [
     image: {
       src: 'todo-app-dark.jpg',
       alt: 'todo-app',
+      objectPosition: '45% 0%',
     },
     title: 'TODO - Todo Web App',
-    description: 'This is a todos related website',
+    description:
+      'This is my first React project, it is a responsive todo app with drag & drop functionality. Users can add new todos, mark them as completed, filter them by all/completed/active and toggle between light and dark mode. As a bonus, you can also classify them by importance using drag & drop.',
     github: 'todo-app',
     website: 'https://stoic-wiles-03feb7.netlify.app/',
     skills: [
@@ -196,13 +202,14 @@ export const projectsInfo: Project[] = (() => [
   },
   {
     id: 'room',
-    name: 'Room Hompage',
+    name: 'Room Homepage',
     image: {
       src: 'room-slide-1.jpg',
       alt: 'room',
     },
-    title: 'Room - eCommerce Homepage Website',
-    description: 'This is a room related website',
+    title: 'Room - eCommerce Homepage',
+    description:
+      'This is an eCommerce homepage, built with ReactJS and Scss for styling. The challenge was to add the slider that switches between products, and also implementing smooth animations.',
     github: 'room-homepage-ecommerce',
     website:
       'https://room-homepage-ecommerce-git-master-nightclover-code.vercel.app/',
@@ -230,9 +237,11 @@ export const projectsInfo: Project[] = (() => [
     image: {
       src: 'chat-app.jpg',
       alt: 'chat-app',
+      objectPosition: '35% 0%',
     },
     title: 'Simple Booking - Chat App Illustration',
-    description: 'This is a chat app illustration',
+    description:
+      'This is a chat app illustration built with HTML and Scss. The challenge was to build out a phone component including text messages, all using just plain CSS!',
     github: 'css-illustration',
     website: 'http://css-illustration-git-master.nightclover-code.vercel.app/',
     skills: [
