@@ -71,7 +71,6 @@ const Hero = () => {
                 objectPosition="0% 45%"
               />
             </div>
-            {/* <div className="hero__avatar"></div> */}
             <div className="hero__dots"></div>
           </div>
         </div>

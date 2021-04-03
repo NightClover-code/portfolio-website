@@ -3,6 +3,8 @@ import { useContext } from 'react';
 import { NavContext } from '../../context';
 //importing types
 import { Project } from '../../interfaces';
+//importing utils
+import Image from 'next/image';
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
 //importing components
@@ -56,10 +58,15 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
             data-aos="fade-left"
             data-aos-delay="1000"
           >
-            <img
-              src={`/images/portfolio/${project.image.src}`}
-              alt={project.image.alt}
-            />
+            <div className="hero__project">
+              <Image
+                layout="fill"
+                src={`/images/portfolio/${project.image.src}`}
+                alt={project.image.alt}
+                objectFit="cover"
+                objectPosition="0% 0%"
+              />
+            </div>
             <div className="hero__dots"></div>
           </div>
         </div>

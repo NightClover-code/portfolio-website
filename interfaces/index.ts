@@ -15,7 +15,6 @@ export interface Project {
   image: {
     src: string;
     alt: string;
-    objectPosition: string;
   };
   title: string;
   name: string;

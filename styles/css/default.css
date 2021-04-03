@@ -384,9 +384,6 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .hero__section .container .hero__content .illustration__container .hero__avatar {
-  background: url("../../public/images/other/hero.jpeg") no-repeat;
-  background-position: 0 45%;
-  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -1516,11 +1513,7 @@ button .ghost__btn {
   }
 }
 
-.project__section .container .project__content .illustration__container img {
-  -o-object-position: 75% 0%;
-     object-position: 75% 0%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.project__section .container .project__content .illustration__container .hero__project {
   position: absolute;
   top: 0;
   left: 0;

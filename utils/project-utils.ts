@@ -27,7 +27,7 @@ export const projectsInfo = (() => [
       src: 'rest-home-dark.jpg',
       alt: 'rest-countries-api',
     },
-    name: 'Coding Environment',
+    name: 'Rest API',
     title: 'Rest API Web App',
     description: 'This is a rest countries app',
     github: 'rest-countries-api',
