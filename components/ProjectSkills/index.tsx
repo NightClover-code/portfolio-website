@@ -22,7 +22,11 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
           are the most prominent ones:
         </p>
       </div>
-      <div className="project__skills__grid">
+      <div
+        className="project__skills__grid"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="container">
           {project.skills.map(skill => (
             <Skill
