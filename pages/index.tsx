@@ -1,7 +1,5 @@
 //importing hooks
 import { useEffect, useContext } from 'react';
-//importing aos
-import AOS from 'aos';
 //importing utils
 import Head from 'next/head';
 import { disableScroll, hideNav } from '../utils';
@@ -18,13 +16,6 @@ import { NavContext } from '../context';
 const Homepage = () => {
   //context api state
   const { setIsNavHidden, isNavHidden } = useContext(NavContext);
-  //initializing aos
-  useEffect(() => {
-    AOS.init({
-      duration: 750,
-      once: true,
-    });
-  }, []);
   //hiding nav for big screens
   useEffect(() => {
     hideNav(setIsNavHidden);

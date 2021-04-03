@@ -1,5 +1,7 @@
+//importing aos
+import AOS from 'aos';
 //importing hooks
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 //importing context provider
 import { NavProvider } from '../context';
 //importing layout & styles
@@ -9,6 +11,13 @@ import MainLayout from '../layouts/MainLayout';
 function MyApp({ Component, pageProps }) {
   //global state
   const [isNavHidden, setIsNavHidden] = useState(true);
+  //initializing aos
+  useEffect(() => {
+    AOS.init({
+      duration: 750,
+      once: true,
+    });
+  }, []);
   return (
     <NavProvider>
       <MainLayout isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden}>

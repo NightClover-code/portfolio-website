@@ -1,6 +1,8 @@
 //importing utils
 import Head from 'next/head';
 import { projectsInfo } from '../utils';
+//impoting aos animations
+import 'aos/dist/aos.css';
 //importing components
 import ProjectHero from '../components/ProjectHero';
 import ProjectSkills from '../components/ProjectSkills';
@@ -39,8 +41,6 @@ interface ProjectDetailsProps {
 }
 //project details
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
-  console.log(project);
-
   return (
     <>
       <Head>
