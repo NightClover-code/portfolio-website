@@ -20,10 +20,12 @@ const Footer = () => {
           >
             If you need a modern and powerful website for your business, startup
             or yourself, I am available for work. You can email me directly at{' '}
-            <div className="line__container">
-              <span>achrafdev23@gmail.com</span>
-              <div className="line" data-aos="scale-animation-second"></div>
-            </div>{' '}
+            <a href="mailto:achrafdev23@gmail.com">
+              <div className="line__container">
+                <span>achrafdev23@gmail.com</span>
+                <div className="line" data-aos="scale-animation-second"></div>
+              </div>{' '}
+            </a>
           </div>
         </div>
         <div className="copyright">&copy; All rights reserved - achrafdev</div>

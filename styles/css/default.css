@@ -69,6 +69,7 @@ footer .container .footer__head h1 {
   font-weight: normal;
   font-size: 50px;
   color: #0e0e0e;
+  color: #0e0e0e;
 }
 
 @media screen and (max-width: 400px) {
@@ -107,6 +108,20 @@ footer .container .footer__head .footer__description {
   line-height: 1.8;
   text-align: left;
   width: 40%;
+}
+
+footer .container .footer__head .footer__description a {
+  color: #0e0e0e;
+}
+
+footer .container .footer__head .footer__description .line__container .line {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .container .footer__head .footer__description .line__container:hover .line {
+  height: 55%;
+  top: 25%;
 }
 
 @media screen and (max-width: 1100px) {
