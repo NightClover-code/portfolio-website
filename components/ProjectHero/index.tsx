@@ -16,6 +16,7 @@ const ProjectHero = () => {
       <div className="container">
         <div className="project__content">
           <div className="text__content" data-aos="fade-up">
+            <h2>Project Showcase</h2>
             <h1 data-aos="fade-up">Chat App Website</h1>
             <p data-aos="fade-up" data-aos-delay="400">
               I design and build beautiful websites for businesses around the
@@ -39,6 +40,14 @@ const ProjectHero = () => {
                 visit live site
               </Button>
             </div>
+          </div>
+          <div
+            className="illustration__container"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+          >
+            <img src="/images/portfolio/newsly.png" alt="bookmark" />
+            <div className="hero__dots"></div>
           </div>
         </div>
       </div>

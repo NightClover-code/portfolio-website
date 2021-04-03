@@ -1516,10 +1516,11 @@ button .ghost__btn {
   }
 }
 
-.project__section .container .project__content .illustration__container .project__avatar {
-  background: url("../../public/images/other/hero.jpeg") no-repeat;
-  background-position: 0 45%;
-  background-size: cover;
+.project__section .container .project__content .illustration__container img {
+  -o-object-position: 75% 0%;
+     object-position: 75% 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -1527,7 +1528,32 @@ button .ghost__btn {
   height: 100%;
   z-index: 10;
   overflow: hidden;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+
+.project__section .container .project__content .illustration__container .hero__dots {
+  background: url("../../public/images/dots/dots-hero-dark.svg") no-repeat;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 1500px) {
+  .project__section .container .project__content .illustration__container .hero__dots {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project__section .container .project__content .illustration__container .hero__dots {
+    display: none;
+  }
 }
 
 .project__section .container .project__content .text__content {
@@ -1540,7 +1566,17 @@ button .ghost__btn {
   }
 }
 
+.project__section .container .project__content .text__content h2 {
+  font-size: 14px;
+  padding-left: 2px;
+  text-transform: uppercase;
+  color: #b7b4b9;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
 .project__section .container .project__content .text__content h1 {
+  margin-top: 5px;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: normal;
   font-size: calc(45px + 2vh);
@@ -1622,8 +1658,20 @@ button .ghost__btn {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 500px) {
+  .project__section .container .project__content .text__content .flex__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .project__section .container .project__content .text__content .flex__buttons .secondary__btn__container .primary__btn {
-  background-color: #ff9b38;
+  background-color: transparent;
   border: 2px solid #0e0e0e;
   color: #0e0e0e;
   padding: 16px 45px;
