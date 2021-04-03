@@ -807,6 +807,26 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
+.skills__section .skills__grid .container .react__card,
+.skills__section .skills__grid .container .redux__card,
+.skills__section .skills__grid .container .tailwind__card,
+.skills__section .skills__grid .container .css3__card,
+.skills__section .skills__grid .container .ssr__card,
+.skills__section .skills__grid .container .seo__card {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .skills__section .skills__grid .container .react__card,
+  .skills__section .skills__grid .container .redux__card,
+  .skills__section .skills__grid .container .tailwind__card,
+  .skills__section .skills__grid .container .css3__card,
+  .skills__section .skills__grid .container .ssr__card,
+  .skills__section .skills__grid .container .seo__card {
+    grid-column: auto;
+  }
+}
+
 .skill__card {
   background-color: #db7406;
   border-radius: 4px;
@@ -842,26 +862,6 @@ nav .nav__list ul .portfolio__list__item::after {
 @media screen and (max-width: 280px) {
   .skill__card p {
     font-size: 14px;
-  }
-}
-
-.react__card,
-.redux__card,
-.tailwind__card,
-.css3__card,
-.ssr__card,
-.seo__card {
-  grid-column: span 2;
-}
-
-@media screen and (max-width: 1300px) {
-  .react__card,
-  .redux__card,
-  .tailwind__card,
-  .css3__card,
-  .ssr__card,
-  .seo__card {
-    grid-column: auto;
   }
 }
 
@@ -1780,6 +1780,16 @@ button .ghost__btn {
   .project__skills__section .project__skills__grid .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+.project__skills__section .project__skills__grid .container .span__card {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .project__skills__section .project__skills__grid .container .span__card {
+    grid-column: auto;
   }
 }
 

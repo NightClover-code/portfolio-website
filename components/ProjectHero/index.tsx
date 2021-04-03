@@ -42,15 +42,17 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
                   visit code
                 </Button>
               </a>
-              <a href={project.website} target="_blank">
-                <Button
-                  dataAos="fade-up"
-                  animationDelay="600"
-                  className="secondary__btn__container"
-                >
-                  visit live site
-                </Button>
-              </a>
+              {project.website.length > 0 && (
+                <a href={project.website} target="_blank">
+                  <Button
+                    dataAos="fade-up"
+                    animationDelay="600"
+                    className="secondary__btn__container"
+                  >
+                    visit live site
+                  </Button>
+                </a>
+              )}
             </div>
           </div>
           <div

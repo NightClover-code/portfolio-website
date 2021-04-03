@@ -24,5 +24,6 @@ export interface Project {
   skills: {
     title: string;
     logo: string;
+    span: boolean;
   }[];
 }

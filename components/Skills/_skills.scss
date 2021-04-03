@@ -62,6 +62,17 @@
       @media screen and (max-width: 280px) {
         grid-template-columns: 1fr;
       }
+      .react__card,
+      .redux__card,
+      .tailwind__card,
+      .css3__card,
+      .ssr__card,
+      .seo__card {
+        grid-column: span 2;
+        @media screen and (max-width: 1300px) {
+          grid-column: auto;
+        }
+      }
     }
   }
 }

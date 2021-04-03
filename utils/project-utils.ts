@@ -1,4 +1,6 @@
-export const projectsInfo = (() => [
+import { Project } from '../interfaces';
+//projects info
+export const projectsInfo: Project[] = (() => [
   {
     id: 'coding-environment',
     image: {
@@ -7,18 +9,34 @@ export const projectsInfo = (() => [
     },
     name: 'Coding Environment',
     title: 'Web Coding Environment',
-    description: 'This is an interactive coding environment',
+    description:
+      'This is an interactive coding environment. You can write Javascript, see it compiled, and write comprehensive documentation / notes using a Markdown Editor. This project uses a CLI to start a local express API that serves the react app. Visit this link to try it!',
     github: 'web-coding-env',
     website: '',
     skills: [
-      { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS' },
-      { title: 'Responsive CSS3', logo: 'logo-css.svg', alt: 'CSS3' },
-      { title: 'Node', logo: 'logo-node.svg', alt: 'NodeJS' },
-      { title: 'Express', logo: 'logo-express.svg', alt: 'ExpressJS' },
-      { title: 'CLI', logo: 'logo-cli.svg', alt: 'CLI' },
-      { title: 'Lerna', logo: 'logo-lerna.svg', alt: 'Lerna' },
+      {
+        title: 'Typescript',
+        logo: 'logo-ts.svg',
+        alt: 'Typescript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS', span: false },
+      {
+        title: 'Responsive CSS3',
+        logo: 'logo-css.svg',
+        alt: 'CSS3',
+        span: true,
+      },
+      { title: 'Node', logo: 'logo-node.svg', alt: 'NodeJS', span: true },
+      {
+        title: 'Express',
+        logo: 'logo-express.svg',
+        alt: 'ExpressJS',
+        span: false,
+      },
+      { title: 'CLI', logo: 'logo-cli.svg', alt: 'CLI', span: true },
+      { title: 'Lerna', logo: 'logo-lerna.svg', alt: 'Lerna', span: false },
     ],
   },
   {
@@ -33,12 +51,22 @@ export const projectsInfo = (() => [
     github: 'rest-countries-api',
     website: 'https://rest-countries-api-nightclover-code.vercel.app/',
     skills: [
-      { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
+      {
+        title: 'Typescript',
+        logo: 'logo-ts.svg',
+        alt: 'Typescript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS', span: false },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: true },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: false,
+      },
     ],
   },
   {
@@ -53,13 +81,28 @@ export const projectsInfo = (() => [
     github: 'url-shortener',
     website: 'https://url-shortener-git-main-nightclover-code.vercel.app/',
     skills: [
-      { title: 'Modern Javascript', logo: 'logo-js.svg', alt: 'Javascript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
-      { title: 'Firebase', logo: 'logo-firebase.svg', alt: 'Firebase' },
+      {
+        title: 'Modern Javascript',
+        logo: 'logo-js.svg',
+        alt: 'Javascript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Redux', logo: 'logo-redux.svg', alt: 'ReduxJS', span: false },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: false },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: false,
+      },
+      {
+        title: 'Firebase',
+        logo: 'logo-firebase.svg',
+        alt: 'Firebase',
+        span: false,
+      },
     ],
   },
   {
@@ -75,12 +118,22 @@ export const projectsInfo = (() => [
     github: 'newsly',
     website: 'https://newsly-nightclover-code.vercel.app/',
     skills: [
-      { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
-      { title: 'Figma', logo: 'logo-figma.svg', alt: 'Figma' },
+      {
+        title: 'Typescript',
+        logo: 'logo-ts.svg',
+        alt: 'Typescript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: false },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: true,
+      },
+      { title: 'Figma', logo: 'logo-figma.svg', alt: 'Figma', span: false },
     ],
   },
   {
@@ -95,11 +148,21 @@ export const projectsInfo = (() => [
     github: 'bookmark',
     website: 'https://bookmark-git-master-nightclover-code.vercel.app/',
     skills: [
-      { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
+      {
+        title: 'Typescript',
+        logo: 'logo-ts.svg',
+        alt: 'Typescript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: true },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: true,
+      },
     ],
   },
   {
@@ -114,11 +177,21 @@ export const projectsInfo = (() => [
     github: 'todo-app',
     website: 'https://stoic-wiles-03feb7.netlify.app/',
     skills: [
-      { title: 'Modern Javascript', logo: 'logo-js.svg', alt: 'Javascript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
+      {
+        title: 'Modern Javascript',
+        logo: 'logo-js.svg',
+        alt: 'Javascript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: true },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: true,
+      },
     ],
   },
   {
@@ -134,11 +207,21 @@ export const projectsInfo = (() => [
     website:
       'https://room-homepage-ecommerce-git-master-nightclover-code.vercel.app/',
     skills: [
-      { title: 'Modern Javascript', logo: 'logo-js.svg', alt: 'Javascript' },
-      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS' },
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
+      {
+        title: 'Modern Javascript',
+        logo: 'logo-js.svg',
+        alt: 'Javascript',
+        span: false,
+      },
+      { title: 'React', logo: 'logo-react.svg', alt: 'ReactJS', span: true },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: true },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: true,
+      },
     ],
   },
   {
@@ -153,10 +236,20 @@ export const projectsInfo = (() => [
     github: 'css-illustration',
     website: 'http://css-illustration-git-master.nightclover-code.vercel.app/',
     skills: [
-      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-      { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-      { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
-      { title: 'Semantic HTML5', logo: 'logo-html.svg', alt: 'HTML5' },
+      {
+        title: 'Semantic HTML5',
+        logo: 'logo-html.svg',
+        alt: 'HTML5',
+        span: true,
+      },
+      { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: true },
+      { title: 'git', logo: 'logo-git.svg', alt: 'git', span: true },
+      {
+        title: 'github',
+        logo: 'logo-github-skills.svg',
+        alt: 'github',
+        span: true,
+      },
     ],
   },
 ])();
