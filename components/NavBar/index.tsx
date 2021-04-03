@@ -1,5 +1,6 @@
 //importing hooks & context
 import { useContext, useRef } from 'react';
+import { useRouter } from 'next/router';
 import { NavContext } from '../../context';
 //importing next utils
 import Link from 'next/link';
@@ -12,8 +13,9 @@ import jump from 'jump.js';
 const NavBar = () => {
   //refs
   const listItemsRef = useRef<HTMLUListElement>(null);
-  //context api state
+  //context api state & router
   const { isNavHidden, setIsNavHidden } = useContext(NavContext);
+  const router = useRouter();
   //on toggle nav
   const onToggleNav = () => {
     setIsNavHidden(!isNavHidden);
@@ -31,6 +33,27 @@ const NavBar = () => {
       }
     }, 1000);
   };
+  //on nav link click handler
+  const onNavLinkClickHandler = (
+    className: string,
+    duration: number,
+    offset?: number
+  ) => {
+    if (router.query.id) {
+      router.push('/');
+      setTimeout(() => {
+        jump(className, {
+          duration,
+          offset,
+        });
+      }, 100);
+    } else {
+      jump(className, {
+        duration,
+        offset,
+      });
+    }
+  };
   return (
     <nav>
       <div className="logo__container">
@@ -45,52 +68,28 @@ const NavBar = () => {
       </div>
       <div className={`nav__list ${isNavHidden ? '' : 'active'}`}>
         <ul onClick={onListClickHandler} ref={listItemsRef}>
-          <li
-            onClick={() =>
-              jump('.footer', {
-                duration: 1200,
-              })
-            }
-          >
+          <li onClick={() => onNavLinkClickHandler('.footer', 1200)}>
             Get In Touch
           </li>
           <li
             className="portfolio__list__item"
             onClick={() =>
-              jump('.portfolio__section', {
-                offset: -140,
-                duration: 1200,
-              })
+              onNavLinkClickHandler('.portfolio__section', 1200, -140)
             }
           >
             Portfolio
           </li>
-          <li
-            onClick={() =>
-              jump('.skills__section', {
-                duration: 1200,
-              })
-            }
-          >
+          <li onClick={() => onNavLinkClickHandler('.skills__section', 1200)}>
             Skills
           </li>
           <li
             onClick={() =>
-              jump('.socials__section', {
-                offset: -80,
-                duration: 1200,
-              })
+              onNavLinkClickHandler('.socials__section', 1200, -80)
             }
           >
             Contact
           </li>
-          <li
-            onClick={() =>
-              jump('.services__section', {
-                duration: 1200,
-              })
-            }
-          >
+          <li onClick={() => onNavLinkClickHandler('.services__section', 1200)}>
             Services
           </li>
         </ul>
