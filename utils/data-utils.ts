@@ -1,48 +1,56 @@
 //data utils
 export const imagesInfo = (() => [
   {
+    id: 'coding-environment',
     src: 'code-env.png',
-    alt: 'coding-environement',
+    alt: 'coding-environment',
     objectPosition: '0 0',
     animationDelay: 250,
   },
   {
+    id: 'rest-api',
     src: 'rest-home-dark.jpg',
     alt: 'rest-api',
     objectPosition: '50% 0',
     animationDelay: 250,
   },
   {
+    id: 'url-shortener',
     src: 'url-shortener.jpg',
     alt: 'url-shortener',
     objectPosition: '0 0',
     animationDelay: 250,
   },
   {
+    id: 'newsly',
     src: 'newsly.png',
     alt: 'newsly',
     objectPosition: '0 0',
     animationDelay: 250,
   },
   {
+    id: 'bookmark',
     src: 'bookmark.jpg',
     alt: 'bookmark',
     objectPosition: '0 0',
     animationDelay: 500,
   },
   {
+    id: 'todo-app',
     src: 'todo-app-dark.jpg',
     alt: 'todo-app',
     objectPosition: '50% 0',
     animationDelay: 500,
   },
   {
+    id: 'room',
     src: 'room-slide-1.jpg',
     alt: 'room',
     objectPosition: '30% 0',
     animationDelay: 500,
   },
   {
+    id: 'chat-app',
     src: 'chat-app.jpg',
     alt: 'chat-app',
     objectPosition: '50% 0',
@@ -120,6 +128,7 @@ export const servicesInfo = (() => [
 
 export const projectsInfo = (() => [
   {
+    id: 'coding-environment',
     image: {
       src: 'code-env.png',
       alt: 'coding-environement',
@@ -140,9 +149,10 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'rest-api',
     image: {
-      src: 'reset-home-dark.jpg',
-      alt: 'reset-countries-api',
+      src: 'rest-home-dark.jpg',
+      alt: 'rest-countries-api',
     },
     title: 'Rest API Web App',
     description: 'This is a rest countries app',
@@ -158,6 +168,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'url-shortener',
     image: {
       src: 'url-shortener.jpg',
       alt: 'url-shortener',
@@ -177,6 +188,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'newsly',
     image: {
       src: 'newsly.png',
       alt: 'newsly',
@@ -195,6 +207,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'bookmark',
     image: {
       src: 'bookmark.jpg',
       alt: 'bookmark',
@@ -212,6 +225,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'todo-app',
     image: {
       src: 'todo-app-dark.jpg',
       alt: 'todo-app',
@@ -229,6 +243,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'room',
     image: {
       src: 'room-slide-1.jpg',
       alt: 'room',
@@ -247,6 +262,7 @@ export const projectsInfo = (() => [
     ],
   },
   {
+    id: 'chat-app',
     image: {
       src: 'chat-app.jpg',
       alt: 'chat-app',

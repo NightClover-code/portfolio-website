@@ -9,6 +9,7 @@ interface ProjectCardProps {
   alt: string;
   objectPosition: string;
   animationDelay: number;
+  id: string;
 }
 //project card
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -16,9 +17,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   alt,
   objectPosition,
   animationDelay,
+  id,
 }) => {
   return (
-    <Link href={`/${alt}`}>
+    <Link href={`/${id}`}>
       <div
         className="project__card "
         data-aos="fade-up"

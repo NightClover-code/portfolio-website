@@ -1,12 +1,18 @@
 //importing hooks & context
 import { useContext } from 'react';
 import { NavContext } from '../../context';
+//importing types
+import { Project } from '../../interfaces';
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
 //importing components
 import Button from '../Button';
+//props interface
+interface ProjectHeroProps {
+  project: Project;
+}
 //hero
-const ProjectHero = () => {
+const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
   //context api state
   const { isNavHidden } = useContext(NavContext);
   return (
@@ -17,28 +23,32 @@ const ProjectHero = () => {
         <div className="project__content">
           <div className="text__content" data-aos="fade-up">
             <h2>Project Showcase</h2>
-            <h1 data-aos="fade-up">Chat App Website</h1>
+            <h1 data-aos="fade-up">{project.title}</h1>
             <p data-aos="fade-up" data-aos-delay="400">
-              I design and build beautiful websites for businesses around the
-              globe. If you need a modern and powerful website, send me an
-              email. If we are a good fit, I will give you a time and cost
-              estimate.
+              {project.description}
             </p>
             <div className="flex__buttons">
-              <Button
-                dataAos="fade-up"
-                animationDelay="600"
-                className="primary__btn__container"
+              <a
+                href={`https://github.com/NightClover-code/${project.github}`}
+                target="_blank"
               >
-                visit code
-              </Button>
-              <Button
-                dataAos="fade-up"
-                animationDelay="600"
-                className="secondary__btn__container"
-              >
-                visit live site
-              </Button>
+                <Button
+                  dataAos="fade-up"
+                  animationDelay="600"
+                  className="primary__btn__container"
+                >
+                  visit code
+                </Button>
+              </a>
+              <a href={project.website} target="_blank">
+                <Button
+                  dataAos="fade-up"
+                  animationDelay="600"
+                  className="secondary__btn__container"
+                >
+                  visit live site
+                </Button>
+              </a>
             </div>
           </div>
           <div
@@ -46,7 +56,10 @@ const ProjectHero = () => {
             data-aos="fade-left"
             data-aos-delay="1000"
           >
-            <img src="/images/portfolio/newsly.png" alt="bookmark" />
+            <img
+              src={`/images/portfolio/${project.image.src}`}
+              alt={project.image.alt}
+            />
             <div className="hero__dots"></div>
           </div>
         </div>
