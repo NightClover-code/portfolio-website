@@ -6,6 +6,7 @@ interface ButtonInterface {
   animationDelay?: string;
   onClick?: () => void;
   loading?: boolean;
+  className?: string;
 }
 //button
 const Button: React.FC<ButtonInterface> = ({
@@ -14,17 +15,18 @@ const Button: React.FC<ButtonInterface> = ({
   animationDelay,
   onClick,
   loading,
+  className,
 }) => {
   return (
     <button
       data-aos={dataAos}
       data-aos-delay={animationDelay}
-      className="primary__btn__container"
+      className={className && className}
       onClick={onClick}
       disabled={loading}
     >
       <div className="primary__btn">{children}</div>
-      <div className="ghost__button"></div>
+      <div className="ghost__btn"></div>
     </button>
   );
 };

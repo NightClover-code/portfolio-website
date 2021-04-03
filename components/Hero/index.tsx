@@ -51,6 +51,7 @@ const Hero = () => {
               animationDelay="600"
               onClick={onClickHandler}
               loading={loading}
+              className="primary__btn__container"
             >
               see my work
             </Button>

@@ -1419,7 +1419,7 @@ button .primary__btn {
   transition: all 0.2s ease-in-out;
 }
 
-button .ghost__button {
+button .ghost__btn {
   content: '';
   position: absolute;
   min-width: 200px;
@@ -1427,6 +1427,211 @@ button .ghost__button {
   border: 2px solid #0e0e0e;
   left: 6px;
   top: 6px;
+}
+
+.project__section {
+  padding-top: 70px;
+  position: relative;
+  background-color: #f9efe7;
+  min-height: 100vh;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .project__section {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project__section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.project__section .container {
+  position: relative;
+  margin: auto;
+  width: 75%;
+}
+
+@media screen and (min-width: 1500px) {
+  .project__section .container {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project__section .container {
+    width: 90%;
+  }
+}
+
+.project__section .container .project__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .project__section .container .project__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+.project__section .container .project__content .illustration__container {
+  position: relative;
+  width: 438px;
+  height: 418px;
+}
+
+@media screen and (min-width: 1500px) {
+  .project__section .container .project__content .illustration__container {
+    width: 418px;
+    height: 390px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project__section .container .project__content .illustration__container {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project__section .container .project__content .illustration__container {
+    margin-top: 80px;
+  }
+}
+
+.project__section .container .project__content .illustration__container .project__avatar {
+  background: url("../../public/images/other/hero.jpeg") no-repeat;
+  background-position: 0 45%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.project__section .container .project__content .text__content {
+  width: 65%;
+}
+
+@media screen and (max-width: 900px) {
+  .project__section .container .project__content .text__content {
+    width: 100%;
+  }
+}
+
+.project__section .container .project__content .text__content h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: calc(45px + 2vh);
+  color: #0e0e0e;
+}
+
+@media screen and (min-width: 1500px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(45px + 1vh);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(40px + 1vh);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(35px + 1vh);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(40px + 1vh);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(35px + 1vh);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(30px + 1vh);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .project__section .container .project__content .text__content h1 {
+    font-size: calc(25px + 1vh);
+  }
+}
+
+.project__section .container .project__content .text__content p {
+  width: 60%;
+  color: #0e0e0e;
+  line-height: 1.8;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .project__section .container .project__content .text__content p {
+    width: 70%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project__section .container .project__content .text__content p {
+    font-size: 16px;
+    width: 85%;
+  }
+}
+
+.project__section .container .project__content .text__content .flex__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.project__section .container .project__content .text__content .flex__buttons .secondary__btn__container .primary__btn {
+  background-color: #ff9b38;
+  border: 2px solid #0e0e0e;
+  color: #0e0e0e;
+  padding: 16px 45px;
+  font-weight: 600;
+}
+
+.project__section .container .project__content .text__content .flex__buttons .secondary__btn__container .ghost__btn {
+  z-index: -1;
 }
 
 * {
