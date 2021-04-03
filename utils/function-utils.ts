@@ -17,3 +17,16 @@ export const disableScroll = (isNavHidden: boolean) => {
     document.body.classList.remove('disable__scroll');
   }
 };
+
+export const disableLinks = (currentItemRef: HTMLUListElement | null) => {
+  setTimeout(() => {
+    if (currentItemRef) {
+      return currentItemRef.classList.add('disable');
+    }
+  }, 10);
+  setTimeout(() => {
+    if (currentItemRef) {
+      return currentItemRef.classList.remove('disable');
+    }
+  }, 1000);
+};

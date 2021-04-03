@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { NavContext } from '../../context';
 //importing next utils
 import Link from 'next/link';
+import { disableLinks } from '../../utils';
 //importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -22,16 +23,7 @@ const NavBar = () => {
   };
   //on list click handler
   const onListClickHandler = () => {
-    setTimeout(() => {
-      if (listItemsRef.current) {
-        return listItemsRef.current.classList.add('disable');
-      }
-    }, 10);
-    setTimeout(() => {
-      if (listItemsRef.current) {
-        return listItemsRef.current.classList.remove('disable');
-      }
-    }, 1000);
+    disableLinks(listItemsRef.current);
   };
   //on nav link click handler
   const onNavLinkClickHandler = (
