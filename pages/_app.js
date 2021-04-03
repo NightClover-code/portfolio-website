@@ -9,8 +9,6 @@ import '../styles/css/default.css';
 import MainLayout from '../layouts/MainLayout';
 //app
 function MyApp({ Component, pageProps }) {
-  //global state
-  const [isNavHidden, setIsNavHidden] = useState(true);
   //initializing aos
   useEffect(() => {
     AOS.init({
@@ -20,12 +18,8 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <NavProvider>
-      <MainLayout isNavHidden={isNavHidden} setIsNavHidden={setIsNavHidden}>
-        <Component
-          {...pageProps}
-          isNavHidden={isNavHidden}
-          setIsNavHidden={setIsNavHidden}
-        />
+      <MainLayout>
+        <Component {...pageProps} />
       </MainLayout>
     </NavProvider>
   );

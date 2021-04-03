@@ -27,11 +27,11 @@ export const getStaticProps: GetStaticProps = async context => {
   const project = projectsInfo.filter(project => {
     if (project.id === id) return project;
     return null;
-  });
+  })[0];
 
   return {
     props: {
-      project: project[0],
+      project,
     },
   };
 };
