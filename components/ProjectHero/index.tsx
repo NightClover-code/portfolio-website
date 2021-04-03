@@ -1,28 +1,14 @@
 //importing hooks & context
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { NavContext } from '../../context';
 //impoting aos animations & jump
 import 'aos/dist/aos.css';
-import jump from 'jump.js';
 //importing components
 import Button from '../Button';
 //hero
 const ProjectHero = () => {
-  //local state
-  const [loading, setLoading] = useState(false);
   //context api state
   const { isNavHidden } = useContext(NavContext);
-  //on click handler
-  const onClickHandler = () => {
-    //preventing spam
-    setTimeout(() => setLoading(true), 10);
-    setTimeout(() => setLoading(false), 1000);
-    //smooth scrolling
-    jump('.portfolio__section', {
-      offset: -140,
-      duration: 1000,
-    });
-  };
   return (
     <section
       className={`project__section ${!isNavHidden ? 'reset__hero' : ''}`}
@@ -41,8 +27,6 @@ const ProjectHero = () => {
               <Button
                 dataAos="fade-up"
                 animationDelay="600"
-                onClick={onClickHandler}
-                loading={loading}
                 className="primary__btn__container"
               >
                 visit code
@@ -50,8 +34,6 @@ const ProjectHero = () => {
               <Button
                 dataAos="fade-up"
                 animationDelay="600"
-                onClick={onClickHandler}
-                loading={loading}
                 className="secondary__btn__container"
               >
                 visit live site
