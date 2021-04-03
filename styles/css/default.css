@@ -1682,6 +1682,114 @@ button .ghost__btn {
   z-index: -1;
 }
 
+.project__skills__section {
+  padding-top: 140px;
+  padding-bottom: 100px;
+  margin: 0 20px;
+}
+
+.project__skills__section .project__skills__head {
+  text-align: center;
+}
+
+.project__skills__section .project__skills__head h1 {
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #0e0e0e;
+}
+
+.project__skills__section .project__skills__head h1 [data-aos='scale-animation'] {
+  left: 10px;
+  width: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.project__skills__section .project__skills__head h1 [data-aos='scale-animation'].aos-animate {
+  width: 100px;
+}
+
+@media screen and (max-width: 280px) {
+  .project__skills__section .project__skills__head h1 {
+    font-size: calc(25px + 1vh);
+  }
+}
+
+.project__skills__section .project__skills__head h1 span {
+  color: #db7406;
+}
+
+.project__skills__section .project__skills__head p {
+  color: #0e0e0e;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 1.8;
+  width: 30%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .project__skills__section .project__skills__head p {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project__skills__section .project__skills__head p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project__skills__section .project__skills__head p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project__skills__section .project__skills__head p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project__skills__section .project__skills__head p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .project__skills__section .project__skills__head p {
+    font-size: 18px;
+  }
+}
+
+.project__skills__section .project__skills__grid {
+  margin-top: 50px;
+}
+
+.project__skills__section .project__skills__grid .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 75%;
+  margin: auto;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 30px;
+}
+
+@media screen and (max-width: 280px) {
+  .project__skills__section .project__skills__grid .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1729,7 +1837,7 @@ button .ghost__btn {
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 99999;
 }
 

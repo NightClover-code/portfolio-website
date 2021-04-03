@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   animationDelay,
 }) => {
   return (
-    <Link href={`/project/${alt}`}>
+    <Link href={`/${alt}`}>
       <div
         className="project__card "
         data-aos="fade-up"

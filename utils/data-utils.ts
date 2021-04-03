@@ -117,3 +117,19 @@ export const servicesInfo = (() => [
     alt: 'eCommerce',
   },
 ])();
+
+export const projectsInfo = (() => [
+  {
+    src: 'code-env.png',
+    title: 'Web Coding Environment',
+    description: 'This is an interactive coding environment',
+    github: 'web-coding-env',
+    website: '',
+    skills: [
+      { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
+      { title: 'React', logo: 'logo-react.svg', alt: 'React' },
+      { title: 'Redux', logo: 'logo-redux.svg', alt: 'Redux' },
+      { title: 'Responsive CSS3', logo: 'logo-css.svg', alt: 'CSS3' },
+    ],
+  },
+])();

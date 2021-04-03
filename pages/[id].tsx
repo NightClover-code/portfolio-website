@@ -1,6 +1,7 @@
 //importing utils
 import Head from 'next/head';
-import ProjectHero from '../../components/ProjectHero';
+import ProjectHero from '../components/ProjectHero';
+import ProjectSkills from '../components/ProjectSkills';
 //project details
 const ProjectDetails = () => {
   return (
@@ -11,6 +12,7 @@ const ProjectDetails = () => {
       </Head>
       <main className="app__container">
         <ProjectHero />
+        <ProjectSkills />
       </main>
     </>
   );
