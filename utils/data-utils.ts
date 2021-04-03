@@ -59,20 +59,40 @@ export const imagesInfo = (() => [
 ])();
 
 export const skillsInfo = (() => [
-  { title: 'Semantic HTML5', logo: 'logo-html.svg', alt: 'HTML5' },
-  { title: 'Responsive CSS3', logo: 'logo-css.svg', alt: 'CSS3' },
-  { title: 'Modern Javascript', logo: 'logo-js.svg', alt: 'Javascript' },
-  { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass' },
-  { title: 'Tailwind CSS', logo: 'logo-tailwind.svg', alt: 'Tailwind' },
-  { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript' },
-  { title: 'React', logo: 'logo-react.svg', alt: 'React' },
-  { title: 'Redux', logo: 'logo-redux.svg', alt: 'Redux' },
-  { title: 'Firebase', logo: 'logo-firebase.svg', alt: 'Firebase' },
-  { title: 'git', logo: 'logo-git.svg', alt: 'git' },
-  { title: 'github', logo: 'logo-github-skills.svg', alt: 'github' },
-  { title: 'Figma', logo: 'logo-figma.svg', alt: 'Figma' },
-  { title: 'Server Side Rendering / SSR', logo: '', alt: 'SSR' },
-  { title: 'SEO', logo: 'logo-seo.svg', alt: 'SEO' },
+  { title: 'Semantic HTML5', logo: 'logo-html.svg', alt: 'HTML5', span: false },
+  { title: 'Responsive CSS3', logo: 'logo-css.svg', alt: 'CSS3', span: true },
+  {
+    title: 'Modern Javascript',
+    logo: 'logo-js.svg',
+    alt: 'Javascript',
+    span: false,
+  },
+  { title: 'Sass', logo: 'logo-sass.svg', alt: 'Sass', span: false },
+  {
+    title: 'Tailwind CSS',
+    logo: 'logo-tailwind.svg',
+    alt: 'Tailwind',
+    span: true,
+  },
+  { title: 'Typescript', logo: 'logo-ts.svg', alt: 'Typescript', span: false },
+  { title: 'React', logo: 'logo-react.svg', alt: 'React', span: true },
+  { title: 'Redux', logo: 'logo-redux.svg', alt: 'Redux', span: true },
+  {
+    title: 'Firebase',
+    logo: 'logo-firebase.svg',
+    alt: 'Firebase',
+    span: false,
+  },
+  { title: 'git', logo: 'logo-git.svg', alt: 'git', span: false },
+  {
+    title: 'github',
+    logo: 'logo-github-skills.svg',
+    alt: 'github',
+    span: false,
+  },
+  { title: 'Figma', logo: 'logo-figma.svg', alt: 'Figma', span: false },
+  { title: 'Server Side Rendering / SSR', logo: '', alt: 'SSR', span: true },
+  { title: 'SEO', logo: 'logo-seo.svg', alt: 'SEO', span: true },
 ])();
 
 export const advantagesInfo = (() => [

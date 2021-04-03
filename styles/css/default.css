@@ -807,26 +807,6 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
-.skills__section .skills__grid .container .react__card,
-.skills__section .skills__grid .container .redux__card,
-.skills__section .skills__grid .container .tailwind__card,
-.skills__section .skills__grid .container .css3__card,
-.skills__section .skills__grid .container .ssr__card,
-.skills__section .skills__grid .container .seo__card {
-  grid-column: span 2;
-}
-
-@media screen and (max-width: 1300px) {
-  .skills__section .skills__grid .container .react__card,
-  .skills__section .skills__grid .container .redux__card,
-  .skills__section .skills__grid .container .tailwind__card,
-  .skills__section .skills__grid .container .css3__card,
-  .skills__section .skills__grid .container .ssr__card,
-  .skills__section .skills__grid .container .seo__card {
-    grid-column: auto;
-  }
-}
-
 .skill__card {
   background-color: #db7406;
   border-radius: 4px;
@@ -1783,16 +1763,6 @@ button .ghost__btn {
   }
 }
 
-.project__skills__section .project__skills__grid .container .span__card {
-  grid-column: span 2;
-}
-
-@media screen and (max-width: 1300px) {
-  .project__skills__section .project__skills__grid .container .span__card {
-    grid-column: auto;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -1860,5 +1830,15 @@ button .ghost__btn {
 .disable {
   pointer-events: none !important;
   cursor: default !important;
+}
+
+.span__card {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .span__card {
+    grid-column: auto;
+  }
 }
 /*# sourceMappingURL=default.css.map */

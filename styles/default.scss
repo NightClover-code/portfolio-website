@@ -78,3 +78,10 @@
   pointer-events: none !important;
   cursor: default !important;
 }
+
+.span__card {
+  grid-column: span 2;
+  @media screen and (max-width: 1300px) {
+    grid-column: auto;
+  }
+}

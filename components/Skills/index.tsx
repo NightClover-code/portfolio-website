@@ -30,6 +30,7 @@ const Skills = () => {
               title={skill.title}
               logo={skill.logo}
               alt={skill.alt}
+              span={skill.span}
             />
           ))}
         </div>

@@ -3,8 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
 //importing types
 import { Project } from '../../interfaces';
-//importing utils
-import { skillsInfo } from '../../utils';
 //importing components
 import Skill from '../Skills/SkillCard';
 //props interface
@@ -32,6 +30,7 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
               title={skill.title}
               logo={skill.logo}
               alt={skill.title}
+              span={skill.span}
             />
           ))}
         </div>

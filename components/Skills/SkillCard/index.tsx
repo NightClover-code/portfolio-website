@@ -7,14 +7,20 @@ interface SkillCardInterface {
   title: string;
   logo: string;
   alt: string;
+  span: boolean;
 }
 //skill card
-const SkillCard: React.FC<SkillCardInterface> = ({ title, logo, alt }) => {
+const SkillCard: React.FC<SkillCardInterface> = ({
+  title,
+  logo,
+  alt,
+  span,
+}) => {
   //local state
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className={`skill__card ${alt.toLowerCase()}__card`}
+      className={`skill__card ${span ? 'span__card' : ''}`}
       onMouseEnter={() => setTimeout(() => setIsHovered(true), 50)}
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 50)}
     >
