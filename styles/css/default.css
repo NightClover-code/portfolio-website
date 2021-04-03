@@ -1410,7 +1410,7 @@ button .ghost__btn {
   padding-top: 70px;
   position: relative;
   background-color: #f9efe7;
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0 20px;
 }
 
@@ -1656,7 +1656,7 @@ button .ghost__btn {
 }
 
 .project__skills__section {
-  padding-top: 140px;
+  padding-top: 100px;
   padding-bottom: 100px;
   margin: 0 20px;
 }
