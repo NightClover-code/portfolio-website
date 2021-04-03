@@ -31,12 +31,12 @@ export const projectsInfo: Project[] = (() => [
       { title: 'Node', logo: 'logo-node.svg', alt: 'NodeJS', span: true },
       {
         title: 'Express',
-        logo: 'logo-express.svg',
+        logo: '',
         alt: 'ExpressJS',
         span: false,
       },
       { title: 'CLI', logo: 'logo-cli.svg', alt: 'CLI', span: true },
-      { title: 'Lerna', logo: 'logo-lerna.svg', alt: 'Lerna', span: false },
+      { title: 'Lerna', logo: '', alt: 'Lerna', span: false },
     ],
   },
   {

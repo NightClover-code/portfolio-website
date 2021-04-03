@@ -1,5 +1,5 @@
 //importing hooks
-import React, { useState } from 'react';
+import { useState } from 'react';
 //importing next utils
 import Image from 'next/image';
 //props interface
@@ -29,8 +29,8 @@ const SkillCard: React.FC<SkillCardInterface> = ({
         <Image
           src={`/images/skills-light/${logo}`}
           alt={alt}
-          width={15}
-          height={15}
+          width={title === 'Node' ? 25 : 15}
+          height={title === 'Node' ? 20 : 15}
           quality={100}
         />
       )}
@@ -38,8 +38,8 @@ const SkillCard: React.FC<SkillCardInterface> = ({
         <Image
           src={`/images/skills-dark/${logo}`}
           alt={alt}
-          width={15}
-          height={15}
+          width={title === 'Node' ? 25 : 15}
+          height={title === 'Node' ? 20 : 15}
           quality={100}
         />
       )}
