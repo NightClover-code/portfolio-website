@@ -1370,17 +1370,8 @@ nav .nav__list ul .portfolio__list__item::after {
   }
 }
 
-.service__card .container .service__content .primary__btn__container {
-  margin-top: 30px;
-}
-
-.service__card .container .service__content .primary__btn__container .primary__btn {
-  padding: 15px 35px;
-}
-
-.service__card .container .service__content .primary__btn__container .ghost__button {
-  width: 145px;
-  height: 55px;
+.service__card .container .service__content button {
+  margin-top: 15px;
 }
 
 button {
