@@ -28,7 +28,22 @@ const Homepage = () => {
     <>
       <Head>
         <title>Achraf Dev | Web Developer | Web Designer | Freelancer</title>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link
+          rel="shortcut icon"
+          type="images/ico"
+          href="/images/favicon.ico"
+        />
+        {/* better seo */}
+        <meta
+          name="description"
+          content="Hi there, I'm Achraf, a Front End Web Developer and Web Designer. I build powerful and awesome websites using the latest web technologies for businesses around the globe. If you need a modern and powerful website, send me an email."
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+          name="keywords"
+          content="Web Designer, Web Developer, React, Redux, Javascript, Typescript, Freelancer, Design, Development, SEO, SSR, Portfolio Website, Achraf Dev, Websites, HTML, CSS"
+        />
+        <meta name="author" content="Achraf Dev" />
       </Head>
       <main className="app__container">
         <Hero />
