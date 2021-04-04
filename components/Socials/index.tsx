@@ -15,7 +15,11 @@ const Socials = () => {
         </p>
       </div>
       <div className="socials__grid">
-        <a target="_blank" href="https://github.com/NightClover-code">
+        <a
+          target="_blank"
+          href="https://github.com/NightClover-code"
+          title="Github"
+        >
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -35,7 +39,11 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a target="_blank" href="https://twitter.com/AchrafElmouhib">
+        <a
+          target="_blank"
+          href="https://twitter.com/AchrafElmouhib"
+          title="Twitter"
+        >
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -58,7 +66,7 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a target="_blank" href="mailto:achrafdev23@gmail.com">
+        <a target="_blank" href="mailto:achrafdev23@gmail.com" title="Gmail">
           <SocialCard dataAos="fade-right">
             <svg
               width="43"
@@ -74,7 +82,11 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a target="_blank" href="https://web.facebook.com/achraf.elmouhib">
+        <a
+          target="_blank"
+          href="https://web.facebook.com/achraf.elmouhib"
+          title="Facebook"
+        >
           <SocialCard dataAos="fade-left">
             <svg
               width="22"
@@ -97,7 +109,11 @@ const Socials = () => {
             </svg>
           </SocialCard>
         </a>
-        <a target="_blank" href="https://www.instagram.com/achrafdev/">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/achrafdev/"
+          title="Instagram"
+        >
           <SocialCard dataAos="fade-left">
             <svg
               width="43"
@@ -120,6 +136,7 @@ const Socials = () => {
         <a
           target="_blank"
           href="https://www.linkedin.com/in/achraf-elmouhib-583563200/"
+          title="LinkedIn"
         >
           <SocialCard dataAos="fade-left">
             <svg

@@ -66,7 +66,7 @@ const Hero = () => {
               <Image
                 src="/images/other/hero.jpeg"
                 layout="fill"
-                alt="hero-preview"
+                alt="achraf-dev-avatar-preview"
                 objectFit="cover"
                 objectPosition="0% 45%"
               />
