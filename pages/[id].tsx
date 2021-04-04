@@ -46,6 +46,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
       <Head>
         <title>Achraf Dev | Project | {project.name}</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
+        <meta name="description" content={project.description} />
+        <meta name="author" content="Achraf Dev" />
+        <meta
+          name="keywords"
+          content={`Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, SSR`}
+        />
       </Head>
       <main className="app__container">
         <ProjectHero project={project} />
