@@ -63,6 +63,9 @@ const NavBar = () => {
           <li onClick={() => onNavLinkClickHandler('.footer', 1200)}>
             Get In Touch
           </li>
+          <Link href="/about">
+            <li>About Me</li>
+          </Link>
           <li
             className="portfolio__list__item"
             onClick={() =>
