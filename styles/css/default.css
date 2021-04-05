@@ -1619,10 +1619,17 @@ button .ghost__btn {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .project__section .container .project__content .text__content p {
+    font-size: 18px;
+    width: 85%;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .project__section .container .project__content .text__content p {
     font-size: 16px;
-    width: 85%;
+    width: 90%;
   }
 }
 

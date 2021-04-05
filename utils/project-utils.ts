@@ -117,7 +117,7 @@ export const projectsInfo: Project[] = (() => [
     },
     title: 'Newsly - News Website (In Progress)',
     description:
-      "This is a project that uses the News API to display the latest news around the globe.I've designed it with figma and built it with ReactJS. Users can choose specific categories such as sports or science, and they can also read trending and detailed articles. This project is not finished, more functionality is yet to come.",
+      "This is a project that uses the News API to display the latest news around the globe. I've designed it with figma and built it with ReactJS. Users can choose specific categories such as sports or science, and they can also read trending and detailed articles. This project is not finished, more functionality is yet to come.",
     github: 'newsly',
     website: 'https://newsly-nightclover-code.vercel.app/',
     skills: [

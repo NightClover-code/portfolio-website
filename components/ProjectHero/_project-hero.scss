@@ -126,9 +126,13 @@
             width: 70%;
             font-size: 18px;
           }
+          @media screen and (max-width: 500px) {
+            font-size: 18px;
+            width: 85%;
+          }
           @media screen and (max-width: 400px) {
             font-size: 16px;
-            width: 85%;
+            width: 90%;
           }
         }
         .flex__buttons {
