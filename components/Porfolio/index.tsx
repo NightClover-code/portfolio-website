@@ -22,7 +22,7 @@ const Porfolio = () => {
           {imagesInfo.map(source => (
             <ProjectCard
               key={uuidv4()}
-              imgSource={`/images/portfolio/${source.src}`}
+              imgSource={`/images/portfolio/${source.src}.jpg`}
               alt={source.alt}
               objectPosition={source.objectPosition}
               animationDelay={source.animationDelay}

@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           data-aos-delay="600"
         >
           <Image
-            src={`/images/services/${currentData.src}`}
+            src={`/images/services/${currentData.src}.jpg`}
             alt={currentData.alt}
             layout="fill"
             quality={100}
