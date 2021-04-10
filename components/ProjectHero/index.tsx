@@ -33,6 +33,7 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
               <a
                 href={`https://github.com/NightClover-code/${project.github}`}
                 target="_blank"
+                rel="noreferrer"
               >
                 <Button
                   dataAos="fade-up"
@@ -43,7 +44,7 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
                 </Button>
               </a>
               {project.website.length > 0 && (
-                <a href={project.website} target="_blank">
+                <a href={project.website} target="_blank" rel="noreferrer">
                   <Button
                     dataAos="fade-up"
                     animationDelay="600"
