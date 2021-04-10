@@ -1,14 +1,14 @@
 //importing utils
 import Head from 'next/head';
-import { projectsInfo } from '../../utils';
+import { projectsInfo } from '../utils';
 //impoting aos animations
 import 'aos/dist/aos.css';
 //importing components
-import ProjectHero from '../../components/ProjectHero';
-import ProjectSkills from '../../components/ProjectSkills';
+import ProjectHero from '../components/ProjectHero';
+import ProjectSkills from '../components/ProjectSkills';
 //importing types
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Project } from '../../interfaces';
+import { Project } from '../interfaces';
 //getting paths
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projectsInfo.map(project => ({

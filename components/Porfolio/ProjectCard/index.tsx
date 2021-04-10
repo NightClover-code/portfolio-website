@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   id,
 }) => {
   return (
-    <Link href={`/project/${id}`}>
+    <Link href={`/${id}`}>
       <div
         className="project__card "
         data-aos="fade-up"

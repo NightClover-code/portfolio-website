@@ -31,14 +31,14 @@ const NavBar = () => {
     duration: number,
     offset?: number
   ) => {
-    if (router.asPath !== '/') {
+    if (router.query.id) {
       router.push('/');
       setTimeout(() => {
         jump(className, {
           duration,
           offset,
         });
-      }, 200);
+      }, 100);
     } else {
       jump(className, {
         duration,
