@@ -12,11 +12,8 @@ import Socials from '../components/Socials';
 import Services from '../components/Services';
 //importing context
 import { NavContext } from '../context';
-import { useRouter } from 'next/router';
 //homepage
 const Homepage = () => {
-  //router
-  const router = useRouter();
   //context api state
   const { setIsNavHidden, isNavHidden } = useContext(NavContext);
   //hiding nav for big screens
