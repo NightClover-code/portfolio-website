@@ -1,0 +1,79 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.not__found {
+  margin: 40px 20px;
+  .container {
+    margin: auto;
+    overflow: hidden;
+    width: 85%;
+    .content {
+      @include flexSpaceBetween();
+      @media screen and (max-width: 800px) {
+        flex-flow: column nowrap;
+      }
+      .illustration__container {
+        position: relative;
+        width: 704px;
+        height: 383px;
+        @media screen and (min-width: 1500px) {
+          width: 504px;
+          height: 283px;
+        }
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
+      }
+      .text__content {
+        width: 65%;
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+        h1 {
+          font-family: 'Abril Fatface', sans-serif;
+          font-weight: normal;
+          font-size: calc(45px + 2vh);
+          color: $very-dark-gray;
+          @media screen and (min-width: 1500px) {
+            font-size: calc(45px + 1vh);
+          }
+          @media screen and (max-width: 1300px) {
+            font-size: calc(40px + 1vh);
+          }
+          @media screen and (max-width: 900px) {
+            font-size: calc(35px + 1vh);
+          }
+          @media screen and (max-width: 800px) {
+            font-size: calc(40px + 1vh);
+          }
+          @media screen and (max-width: 550px) {
+            font-size: calc(35px + 1vh);
+          }
+          @media screen and (max-width: 400px) {
+            font-size: calc(30px + 1vh);
+          }
+          @media screen and (max-width: 300px) {
+            font-size: calc(25px + 1vh);
+          }
+        }
+        p {
+          width: 60%;
+          color: $very-dark-gray;
+          line-height: 1.8;
+          font-size: 20px;
+          margin: 20px 0;
+          @media screen and (max-width: 1300px) {
+            width: 70%;
+            font-size: 18px;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 16px;
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
