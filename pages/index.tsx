@@ -44,6 +44,10 @@ const Homepage = () => {
           content="Web Designer, Web Developer, React, Redux, Javascript, Typescript, Freelancer, Design, Development, SEO, SSR, Portfolio Website, Achraf Dev, Websites, HTML, CSS"
         />
         <meta name="author" content="Achraf Dev" />
+        <meta
+          name="google-site-verification"
+          content="7AMm0qMOoYISNP_Pg3TIOE8o8E_DVYgk829hyLoBA_I"
+        />
       </Head>
       <main className="app__container">
         <Hero />

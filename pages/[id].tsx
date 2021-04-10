@@ -52,6 +52,10 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
           name="keywords"
           content={`Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, SSR`}
         />
+        <meta
+          name="google-site-verification"
+          content="7AMm0qMOoYISNP_Pg3TIOE8o8E_DVYgk829hyLoBA_I"
+        />
       </Head>
       <main className="app__container">
         <ProjectHero project={project} />
