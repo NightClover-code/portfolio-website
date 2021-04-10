@@ -1,11 +1,11 @@
 //importing utils
-import Head from 'next/head';
 import { projectsInfo } from '../utils';
 //impoting aos animations
 import 'aos/dist/aos.css';
 //importing components
 import ProjectHero from '../components/ProjectHero';
 import ProjectSkills from '../components/ProjectSkills';
+import SEO from '../components/SEO';
 //importing types
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Project } from '../interfaces';
@@ -45,22 +45,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   const projectConfig = {
     project,
   };
+  const seoConfig = {
+    title: `Achraf Dev | Project | ${project.name}`,
+    description: project.description,
+    keywords: `Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, Typescript`,
+  };
   return (
     <>
-      <Head>
-        <title>Achraf Dev | Project | {project.name}</title>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
-        <meta name="description" content={project.description} />
-        <meta name="author" content="Achraf Dev" />
-        <meta
-          name="keywords"
-          content={`Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, SSR`}
-        />
-        <meta
-          name="google-site-verification"
-          content="7AMm0qMOoYISNP_Pg3TIOE8o8E_DVYgk829hyLoBA_I"
-        />
-      </Head>
+      <SEO {...seoConfig} />
       <main className="app__container">
         <ProjectHero {...projectConfig} />
         <ProjectSkills {...projectConfig} />

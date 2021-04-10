@@ -4,7 +4,7 @@ export const projectsInfo: Project[] = (() => [
   {
     id: 'coding-environment',
     image: {
-      src: 'code-env.png',
+      src: 'code-env.jpg',
       alt: 'coding-environement',
     },
     name: 'Coding Environment',
@@ -111,11 +111,11 @@ export const projectsInfo: Project[] = (() => [
     id: 'newsly',
     name: 'Newsly',
     image: {
-      src: 'newsly.png',
+      src: 'newsly.jpg',
       alt: 'newsly',
       objectPosition: '0 0',
     },
-    title: 'Newsly - News Website (In Progress)',
+    title: 'Newsly - News Website',
     description:
       "This is a project that uses the News API to display the latest news around the globe. I've designed it with figma and built it with ReactJS. Users can choose specific categories such as sports or science, and they can also read trending and detailed articles. This project is not finished, more functionality is yet to come.",
     github: 'newsly',
