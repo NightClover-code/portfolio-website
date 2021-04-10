@@ -1970,6 +1970,12 @@ button .ghost__btn {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .not__found .container .content .illustration__container {
+    height: 200px;
+  }
+}
+
 .not__found .container .content .text__content {
   width: 65%;
 }

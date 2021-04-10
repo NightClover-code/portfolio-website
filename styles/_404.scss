@@ -25,6 +25,9 @@
         @media screen and (max-width: 800px) {
           width: 100%;
         }
+        @media screen and (max-width: 600px) {
+          height: 200px;
+        }
       }
       .text__content {
         width: 65%;
