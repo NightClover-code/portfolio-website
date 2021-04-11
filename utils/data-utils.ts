@@ -11,7 +11,7 @@ export const imagesInfo = (() => [
     id: 'rest-api',
     src: 'rest-home-dark',
     alt: 'rest-api-project',
-    objectPosition: '50% 0',
+    objectPosition: '50 0',
     animationDelay: 250,
   },
   {
@@ -39,21 +39,21 @@ export const imagesInfo = (() => [
     id: 'todo-app',
     src: 'todo-app-dark',
     alt: 'todo-app',
-    objectPosition: '50% 0',
+    objectPosition: '50 0',
     animationDelay: 500,
   },
   {
     id: 'room',
     src: 'room-slide-1',
     alt: 'room',
-    objectPosition: '30% 0',
+    objectPosition: '30 0',
     animationDelay: 500,
   },
   {
     id: 'chat-app',
     src: 'chat-app',
     alt: 'chat-app',
-    objectPosition: '50% 0',
+    objectPosition: '50 0',
     animationDelay: 500,
   },
 ])();
