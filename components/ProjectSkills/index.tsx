@@ -32,7 +32,7 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
             <Skill
               key={uuidv4()}
               title={skill.title}
-              logo={skill.logo}
+              logo={`${skill.logo}.svg`}
               alt={skill.title}
               span={skill.span}
             />

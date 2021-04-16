@@ -1,5 +1,5 @@
 //importing utils
-import { portfolioAPI, projectsInfo } from '../utils';
+import { portfolioAPI } from '../utils';
 //impoting aos animations
 import 'aos/dist/aos.css';
 //importing components
@@ -13,6 +13,33 @@ import { Project } from '../interfaces';
 interface ProjectDetailsProps {
   project: Project;
 }
+//getting paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  //fetching projects
+  const projects = await portfolioAPI.get('/projects');
+
+  const paths = projects.data.map((project: Project) => ({
+    params: { id: project.projectID },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+//getting props
+export const getStaticProps: GetStaticProps = async context => {
+  //fetching projects & id
+  const id = context.params?.id;
+
+  const project = await portfolioAPI.get(`/projects/${id}`);
+  return {
+    props: {
+      project,
+    },
+  };
+};
+
 //project details
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   //config
@@ -33,39 +60,6 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
       </main>
     </>
   );
-};
-
-//getting props
-export const getStaticProps: GetStaticProps = async context => {
-  //fetching projects & id
-  const projects = await portfolioAPI.get('/projects');
-  const id = context.params?.id;
-
-  const project = projects.data.filter((project: Project) => {
-    if (project.projectID === id) return project;
-    return null;
-  })[0];
-
-  return {
-    props: {
-      project,
-    },
-  };
-};
-
-//getting paths
-export const getStaticPaths: GetStaticPaths = async () => {
-  //fetching projects
-  const projects = await portfolioAPI.get('/projects');
-
-  const paths = projects.data.map((project: Project) => ({
-    params: { id: project.projectID },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
 };
 
 export default ProjectDetails;
