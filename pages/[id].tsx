@@ -9,32 +9,6 @@ import SEO from '../components/SEO';
 //importing types
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Project } from '../interfaces';
-//getting paths
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = projectsInfo.map(project => ({
-    params: { id: project.id },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
-//getting props
-export const getStaticProps: GetStaticProps = async context => {
-  const id = context.params?.id;
-
-  const project = projectsInfo.filter(project => {
-    if (project.id === id) return project;
-    return null;
-  })[0];
-
-  return {
-    props: {
-      project,
-    },
-  };
-};
 //props interface
 interface ProjectDetailsProps {
   project: Project;
@@ -59,6 +33,34 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
       </main>
     </>
   );
+};
+
+//getting props
+export const getStaticProps: GetStaticProps = async context => {
+  const id = context.params?.id;
+
+  const project = projectsInfo.filter(project => {
+    if (project.id === id) return project;
+    return null;
+  })[0];
+
+  return {
+    props: {
+      project,
+    },
+  };
+};
+
+//getting paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = projectsInfo.map(project => ({
+    params: { id: project.id },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
 };
 
 export default ProjectDetails;

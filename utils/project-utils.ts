@@ -1,6 +1,6 @@
-import { Project } from '../interfaces';
+import { OtherProject } from '../interfaces';
 //projects info
-export const projectsInfo: Project[] = (() => [
+export const projectsInfo: OtherProject[] = (() => [
   {
     id: 'coding-environment',
     image: {

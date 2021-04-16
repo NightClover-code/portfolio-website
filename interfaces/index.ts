@@ -27,6 +27,23 @@ export interface Project {
     alt: string;
   }[];
 }
+export interface OtherProject {
+  id: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  title: string;
+  name: string;
+  description: string;
+  github: string;
+  website: string;
+  skills: {
+    // id: string;
+    title: string;
+    logo: string;
+  }[];
+}
 
 export interface Image {
   id: string;

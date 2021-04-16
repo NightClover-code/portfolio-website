@@ -1,7 +1,7 @@
 //importing hooks
 import { useEffect, useContext } from 'react';
 //importing utils
-import { disableScroll, hideNav } from '../utils';
+import { disableScroll, hideNav, portfolioAPI } from '../utils';
 //importing components
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
@@ -10,10 +10,17 @@ import Skills from '../components/Skills';
 import Socials from '../components/Socials';
 import Services from '../components/Services';
 import SEO from '../components/SEO';
+//importing types
+import { GetStaticProps } from 'next';
+import { Image, Project } from '../interfaces';
 //importing context
 import { NavContext } from '../context';
+//props interface
+interface HomepageProps {
+  images: Image[];
+}
 //homepage
-const Homepage = () => {
+const Homepage: React.FC<HomepageProps> = ({ images }) => {
   //context api state
   const { setIsNavHidden, isNavHidden } = useContext(NavContext);
   //hiding nav for big screens
@@ -32,12 +39,15 @@ const Homepage = () => {
     keywords:
       'Web Designer, Web Developer, React, Redux, Javascript, Typescript, Freelancer, Design, Development, SEO, SSR, Portfolio Website, Achraf Dev, Websites, HTML, CSS',
   };
+  const portfolioConfig = {
+    images,
+  };
   return (
     <>
       <SEO {...seoConfig} />
       <main className="app__container">
         <Hero />
-        <Porfolio />
+        <Porfolio {...portfolioConfig} />
         <Skills />
         <Socials />
         <Advantages />
@@ -45,6 +55,17 @@ const Homepage = () => {
       </main>
     </>
   );
+};
+
+//getting props
+export const getStaticProps: GetStaticProps = async context => {
+  //getting images
+  const images = await portfolioAPI.get('/images');
+  return {
+    props: {
+      images: images.data,
+    },
+  };
 };
 
 export default Homepage;
