@@ -30,7 +30,7 @@ const Porfolio: React.FC<PortfolioProps> = ({ images }) => {
               alt={image.alt}
               objectPosition={image.objectPosition}
               animationDelay={image.animationDelay}
-              id={image.id}
+              id={image.imageID}
             />
           ))}
         </div>

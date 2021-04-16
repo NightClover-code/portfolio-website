@@ -64,7 +64,7 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
             <div className="hero__project">
               <Image
                 layout="fill"
-                src={`/images/portfolio/${project.image.src}`}
+                src={project.image.imgSource.url}
                 alt={project.image.alt}
                 objectFit="cover"
                 objectPosition={

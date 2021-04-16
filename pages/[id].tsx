@@ -1,5 +1,5 @@
 //importing utils
-import { projectsInfo } from '../utils';
+import { portfolioAPI, projectsInfo } from '../utils';
 //impoting aos animations
 import 'aos/dist/aos.css';
 //importing components
@@ -37,10 +37,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 
 //getting props
 export const getStaticProps: GetStaticProps = async context => {
+  //fetching projects & id
+  const projects = await portfolioAPI.get('/projects');
   const id = context.params?.id;
 
-  const project = projectsInfo.filter(project => {
-    if (project.id === id) return project;
+  const project = projects.data.filter((project: Project) => {
+    if (project.projectID === id) return project;
     return null;
   })[0];
 
@@ -53,8 +55,11 @@ export const getStaticProps: GetStaticProps = async context => {
 
 //getting paths
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = projectsInfo.map(project => ({
-    params: { id: project.id },
+  //fetching projects
+  const projects = await portfolioAPI.get('/projects');
+
+  const paths = projects.data.map((project: Project) => ({
+    params: { id: project.projectID },
   }));
 
   return {

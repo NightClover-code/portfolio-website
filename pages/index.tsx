@@ -12,7 +12,7 @@ import Services from '../components/Services';
 import SEO from '../components/SEO';
 //importing types
 import { GetStaticProps } from 'next';
-import { Image, Project } from '../interfaces';
+import { Image } from '../interfaces';
 //importing context
 import { NavContext } from '../context';
 //props interface
