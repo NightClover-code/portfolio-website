@@ -20,7 +20,7 @@ interface HomepageProps {
   images: Image[];
 }
 //getting props
-export const getStaticProps: GetStaticProps = async context => {
+export const getStaticProps: GetStaticProps = async () => {
   //getting images
   const images = await portfolioAPI.get('/images');
   return {

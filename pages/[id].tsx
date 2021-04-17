@@ -28,14 +28,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 //getting props
-export const getStaticProps: GetStaticProps = async context => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   //fetching projects & id
-  const id = context.params?.id;
+  const id = params?.id;
 
   const project = await portfolioAPI.get(`/projects/${id}`);
   return {
     props: {
-      project,
+      project: project.data,
     },
   };
 };

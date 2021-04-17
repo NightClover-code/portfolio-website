@@ -25,7 +25,7 @@ const SkillCard: React.FC<SkillCardInterface> = ({
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 50)}
     >
       <p>{title}</p>
-      {!isHovered && logo.length > 0 && (
+      {!isHovered && logo && (
         <Image
           src={`/images/skills-light/${logo}`}
           alt={alt}
@@ -34,7 +34,7 @@ const SkillCard: React.FC<SkillCardInterface> = ({
           quality={100}
         />
       )}
-      {isHovered && logo.length > 0 && (
+      {isHovered && logo && (
         <Image
           src={`/images/skills-dark/${logo}`}
           alt={alt}

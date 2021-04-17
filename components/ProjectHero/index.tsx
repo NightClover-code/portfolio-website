@@ -43,7 +43,7 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
                   visit code
                 </Button>
               </a>
-              {project.website.length > 0 && (
+              {project.website && (
                 <a href={project.website} target="_blank" rel="noreferrer">
                   <Button
                     dataAos="fade-up"
