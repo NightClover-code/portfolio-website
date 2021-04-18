@@ -28,11 +28,11 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
         data-aos-delay="300"
       >
         <div className="container">
-          {project.skills.map(skill => (
+          {project.skill.map(skill => (
             <Skill
               key={uuidv4()}
               title={skill.title}
-              logo={skill.logo && `${skill.logo}.svg`}
+              logo={skill.normalLogo.url}
               alt={skill.title}
               span={skill.span}
             />

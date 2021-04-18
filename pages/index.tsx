@@ -19,16 +19,6 @@ import { NavContext } from '../context';
 interface HomepageProps {
   images: Image[];
 }
-//getting props
-export const getStaticProps: GetStaticProps = async () => {
-  //getting images
-  const images = await portfolioAPI.get('/images');
-  return {
-    props: {
-      images: images.data,
-    },
-  };
-};
 //homepage
 const Homepage: React.FC<HomepageProps> = ({ images }) => {
   //context api state
@@ -65,6 +55,17 @@ const Homepage: React.FC<HomepageProps> = ({ images }) => {
       </main>
     </>
   );
+};
+
+//getting props
+export const getStaticProps: GetStaticProps = async () => {
+  //getting images
+  const images = await portfolioAPI.get('/images');
+  return {
+    props: {
+      images: images.data,
+    },
+  };
 };
 
 export default Homepage;

@@ -64,14 +64,14 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
             <div className="hero__project">
               <Image
                 layout="fill"
-                src={project.image.imgSource.url}
-                alt={project.image.alt}
+                src={project.image.url}
+                // alt={project.image.alt}
                 objectFit="cover"
-                objectPosition={
-                  project.image.objectPosition
-                    ? project.image.objectPosition
-                    : '0% 0%'
-                }
+                // objectPosition={
+                //   project.image.objectPosition
+                //     ? project.image.objectPosition
+                //     : '0% 0%'
+                // }
               />
             </div>
             <div className="hero__dots"></div>

@@ -13,6 +13,29 @@ import { Project } from '../interfaces';
 interface ProjectDetailsProps {
   project: Project;
 }
+
+//project details
+const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
+  //config
+  const projectConfig = {
+    project,
+  };
+  const seoConfig = {
+    title: `Achraf Dev | Project | ${project.name}`,
+    description: project.description,
+    keywords: `Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, Typescript`,
+  };
+  return (
+    <>
+      <SEO {...seoConfig} />
+      <main className="app__container">
+        <ProjectHero {...projectConfig} />
+        <ProjectSkills {...projectConfig} />
+      </main>
+    </>
+  );
+};
+
 //getting paths
 export const getStaticPaths: GetStaticPaths = async () => {
   //fetching projects
@@ -38,28 +61,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       project: project.data,
     },
   };
-};
-
-//project details
-const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
-  //config
-  const projectConfig = {
-    project,
-  };
-  const seoConfig = {
-    title: `Achraf Dev | Project | ${project.name}`,
-    description: project.description,
-    keywords: `Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, Typescript`,
-  };
-  return (
-    <>
-      <SEO {...seoConfig} />
-      <main className="app__container">
-        <ProjectHero {...projectConfig} />
-        <ProjectSkills {...projectConfig} />
-      </main>
-    </>
-  );
 };
 
 export default ProjectDetails;

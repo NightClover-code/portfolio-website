@@ -7,13 +7,13 @@ export interface isNavHiddenState {
 export interface Project {
   id: string;
   projectID: string;
-  image: Image;
+  image: ImageType;
   title: string;
   name: string;
   description: string;
   github: string;
   website: string;
-  skills: Skill[];
+  skill: Skill[];
 }
 export interface OtherProject {
   id: string;

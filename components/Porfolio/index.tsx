@@ -23,14 +23,14 @@ const Porfolio: React.FC<PortfolioProps> = ({ images }) => {
       </div>
       <div className="projects__grid">
         <div className="container">
-          {images.map(image => (
+          {images.map(imageCard => (
             <ProjectCard
               key={uuidv4()}
-              imgSource={image.imgSource.url}
-              alt={image.alt}
-              objectPosition={image.objectPosition}
-              animationDelay={image.animationDelay}
-              id={image.imageID}
+              imgSource={imageCard.image.url}
+              alt={imageCard.alt}
+              objectPosition={imageCard.objectPosition}
+              animationDelay={imageCard.animationDelay}
+              id={imageCard.imageID}
             />
           ))}
         </div>

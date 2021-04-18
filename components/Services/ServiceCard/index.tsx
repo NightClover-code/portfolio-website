@@ -5,12 +5,11 @@ import jump from 'jump.js';
 import Image from 'next/image';
 //importing types & hooks
 import { useState } from 'react';
-import { ServicesDataInterface } from '../../../interfaces';
 //importing components
 import Button from '../../Button';
 //props interface
 interface ServiceCardProps {
-  currentData: ServicesDataInterface;
+  currentData: any;
 }
 //service card
 const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
