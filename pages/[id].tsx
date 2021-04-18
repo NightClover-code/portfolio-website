@@ -6,9 +6,10 @@ import 'aos/dist/aos.css';
 import ProjectHero from '../components/ProjectHero';
 import ProjectSkills from '../components/ProjectSkills';
 import SEO from '../components/SEO';
-//importing types
+//importing types & utils
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ProjectType } from '../interfaces';
+import { projectsInfo } from '../utils';
 //props interface
 interface ProjectDetailsProps {
   project: ProjectType;
@@ -38,11 +39,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 
 //getting paths
 export const getStaticPaths: GetStaticPaths = async () => {
-  //fetching projects
-  const projects = await portfolioAPI.get('/projects');
-
-  const paths = projects.data.map((project: ProjectType) => ({
-    params: { id: project.projectID },
+  const paths = projectsInfo.map(id => ({
+    params: { id },
   }));
 
   return {
