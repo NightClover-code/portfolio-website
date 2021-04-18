@@ -13,8 +13,9 @@ import SEO from '../components/SEO';
 //importing types
 import { GetStaticProps } from 'next';
 import { Image } from '../interfaces';
-//importing context
+//importing context & config
 import { NavContext } from '../context';
+import { seoConfig } from '../utils';
 //props interface
 interface HomepageProps {
   images: Image[];
@@ -32,13 +33,6 @@ const Homepage: React.FC<HomepageProps> = ({ images }) => {
     disableScroll(isNavHidden);
   }, [isNavHidden]);
   //config
-  const seoConfig = {
-    title: 'Achraf Dev | Web Developer | Web Designer | Freelancer',
-    description:
-      "Hi there, I'm Achraf, a Front End Web Developer and Web Designer. I build powerful and awesome websites using the latest web technologies for businesses around the globe. If you need a modern and powerful website, send me an email.",
-    keywords:
-      'Web Designer, Web Developer, React, Redux, Javascript, Typescript, Freelancer, Design, Development, SEO, SSR, Portfolio Website, Achraf Dev, Websites, HTML, CSS',
-  };
   const portfolioConfig = {
     images,
   };
@@ -61,9 +55,16 @@ const Homepage: React.FC<HomepageProps> = ({ images }) => {
 export const getStaticProps: GetStaticProps = async () => {
   //getting images
   const images = await portfolioAPI.get('/images');
+  const skills = await portfolioAPI.get('/skills');
+  const advantages = await portfolioAPI.get('/advantages');
+  const services = await portfolioAPI.get('/services');
+
   return {
     props: {
       images: images.data,
+      skills: skills.data,
+      advantages: advantages.data,
+      services: services.data,
     },
   };
 };
