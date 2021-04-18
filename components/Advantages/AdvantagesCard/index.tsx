@@ -25,12 +25,7 @@ const AdvantagesCard: React.FC<AdvantagesCardProps> = ({
       data-aos-delay={animationDelay}
     >
       <div className="advantage__logo">
-        <Image
-          src={`/images/advantages/${src}`}
-          alt={alt}
-          layout="fill"
-          quality={100}
-        />
+        <Image src={src} alt={alt} layout="fill" quality={100} />
       </div>
       <h2 className="title">{title}</h2>
       <p>{description}</p>

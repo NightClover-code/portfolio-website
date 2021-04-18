@@ -66,13 +66,13 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
             data-aos-delay="1000"
           >
             <div className="hero__avatar">
-              <Image
+              {/* <Image
                 src={hero.image.url}
                 layout="fill"
                 alt="achraf-dev-avatar-preview"
                 objectFit="cover"
                 objectPosition="0% 45%"
-              />
+              /> */}
             </div>
             <div className="hero__dots"></div>
           </div>

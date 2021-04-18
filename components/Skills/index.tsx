@@ -32,8 +32,8 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             <Skill
               key={uuidv4()}
               title={skill.title}
-              normalLogo={skill.normalLogo.url}
-              invertedLogo={skill.invertedLogo.url}
+              normalLogo={skill.normalLogo && skill.normalLogo.url}
+              invertedLogo={skill.invertedLogo && skill.invertedLogo.url}
               alt={skill.alt}
               span={skill.span}
             />
