@@ -15,31 +15,13 @@ export interface ProjectType {
   website: string;
   skill: SkillType[];
 }
-export interface OtherProject {
-  id: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-  title: string;
-  name: string;
-  description: string;
-  github: string;
-  website: string;
-  skills: {
-    // id: string;
-    title: string;
-    logo: string;
-  }[];
-}
-
 export interface Image {
   id: string;
   imageID: string;
   alt: string;
   objectPosition: string;
   animationDelay: number;
-  image: ImageType;
+  imgSource: ImageType;
 }
 
 export interface ImageType {
