@@ -29,9 +29,16 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <NavProvider>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
+      {loading ? (
+        <div className="lds-container">
+          <div className="lds-text">Loading...</div>
+          <div className="lds-dual-ring"></div>
+        </div>
+      ) : (
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      )}
     </NavProvider>
   );
 }
