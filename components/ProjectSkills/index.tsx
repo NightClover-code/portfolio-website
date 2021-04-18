@@ -2,12 +2,12 @@
 import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
 //importing types
-import { Project } from '../../interfaces';
+import { ProjectType } from '../../interfaces';
 //importing components
 import Skill from '../Skills/SkillCard';
 //props interface
 interface ProjectSkillsProps {
-  project: Project;
+  project: ProjectType;
 }
 //project skills
 const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
@@ -32,7 +32,8 @@ const ProjectSkills: React.FC<ProjectSkillsProps> = ({ project }) => {
             <Skill
               key={uuidv4()}
               title={skill.title}
-              logo={skill.normalLogo.url}
+              normalLogo={skill.normalLogo.url}
+              invertedLogo={skill.invertedLogo.url}
               alt={skill.title}
               span={skill.span}
             />

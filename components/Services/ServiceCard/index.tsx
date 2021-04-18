@@ -5,11 +5,12 @@ import jump from 'jump.js';
 import Image from 'next/image';
 //importing types & hooks
 import { useState } from 'react';
+import { ServiceType } from '../../../interfaces';
 //importing components
 import Button from '../../Button';
 //props interface
 interface ServiceCardProps {
-  currentData: any;
+  currentData: ServiceType;
 }
 //service card
 const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
@@ -34,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           data-aos-delay="600"
         >
           <Image
-            src={`/images/services/${currentData.src}.jpg`}
+            src={currentData.image.url}
             alt={currentData.alt}
             layout="fill"
             quality={100}

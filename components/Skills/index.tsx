@@ -1,12 +1,16 @@
 //importing random id's & animations
 import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
-//importing utils
-import { skillsInfo } from '../../utils';
 //importing components
 import Skill from './SkillCard';
+//importing types
+import { SkillType } from '../../interfaces';
+//props interface
+interface SkillsProps {
+  skills: SkillType[];
+}
 //skills
-const Skills = () => {
+const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
     <section className="skills__section">
       <div className="skills__head">
@@ -24,11 +28,12 @@ const Skills = () => {
       </div>
       <div className="skills__grid">
         <div className="container">
-          {skillsInfo.map(skill => (
+          {skills.map(skill => (
             <Skill
               key={uuidv4()}
               title={skill.title}
-              logo={skill.logo}
+              normalLogo={skill.normalLogo.url}
+              invertedLogo={skill.invertedLogo.url}
               alt={skill.alt}
               span={skill.span}
             />

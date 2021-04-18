@@ -4,7 +4,7 @@ export interface isNavHiddenState {
   isNavHidden: boolean;
   setIsNavHidden: setNavHiddenType;
 }
-export interface Project {
+export interface ProjectType {
   id: string;
   projectID: string;
   image: ImageType;
@@ -13,7 +13,7 @@ export interface Project {
   description: string;
   github: string;
   website: string;
-  skill: Skill[];
+  skill: SkillType[];
 }
 export interface OtherProject {
   id: string;
@@ -48,13 +48,13 @@ export interface ImageType {
   url: string;
 }
 
-export interface Hero {
+export interface HeroType {
   title: string;
   description: string;
   image: ImageType;
 }
 
-export interface Advantage {
+export interface AdvantageType {
   title: string;
   description: string;
   alt: string;
@@ -62,14 +62,14 @@ export interface Advantage {
   animationDelay: number;
 }
 
-export interface Service {
+export interface ServiceType {
   title: string;
   description: string;
   alt: string;
   image: ImageType;
 }
 
-export interface Skill {
+export interface SkillType {
   title: string;
   alt: string;
   span: boolean;

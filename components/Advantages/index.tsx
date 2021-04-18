@@ -1,12 +1,16 @@
 //importing random id's & animations
 import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
-//importing utils
-import { advantagesInfo } from '../../utils';
 //importing components
 import AdvantagesCard from './AdvantagesCard';
+//importing types
+import { AdvantageType } from '../../interfaces';
+//props interface
+interface AdvantagesProps {
+  advantages: AdvantageType[];
+}
 //advantages
-const Advantages = () => {
+const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
   return (
     <section className="advantages__section">
       <div className="advantages__head">
@@ -24,11 +28,11 @@ const Advantages = () => {
       </div>
       <div className="advantages__grid">
         <div className="container">
-          {advantagesInfo.map(advantage => (
+          {advantages.map(advantage => (
             <AdvantagesCard
               key={uuidv4()}
               title={advantage.title}
-              src={advantage.src}
+              src={advantage.image.url}
               description={advantage.description}
               alt={advantage.alt}
               animationDelay={advantage.animationDelay}

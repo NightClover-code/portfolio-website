@@ -8,10 +8,10 @@ import ProjectSkills from '../components/ProjectSkills';
 import SEO from '../components/SEO';
 //importing types
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Project } from '../interfaces';
+import { ProjectType } from '../interfaces';
 //props interface
 interface ProjectDetailsProps {
-  project: Project;
+  project: ProjectType;
 }
 
 //project details
@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   //fetching projects
   const projects = await portfolioAPI.get('/projects');
 
-  const paths = projects.data.map((project: Project) => ({
+  const paths = projects.data.map((project: ProjectType) => ({
     params: { id: project.projectID },
   }));
 

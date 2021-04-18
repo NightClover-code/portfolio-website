@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import { NavContext } from '../../context';
 //importing types
-import { Project } from '../../interfaces';
+import { ProjectType } from '../../interfaces';
 //importing utils
 import Image from 'next/image';
 //impoting aos animations & jump
@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 import Button from '../Button';
 //props interface
 interface ProjectHeroProps {
-  project: Project;
+  project: ProjectType;
 }
 //hero
 const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {

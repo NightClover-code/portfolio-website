@@ -8,8 +8,14 @@ import jump from 'jump.js';
 import Image from 'next/image';
 //importing components
 import Button from '../Button';
+//importing types
+import { HeroType } from '../../interfaces';
+//props interface
+interface HeroProps {
+  hero: HeroType;
+}
 //hero
-const Hero = () => {
+const Hero: React.FC<HeroProps> = ({ hero }) => {
   //local state
   const [loading, setLoading] = useState(false);
   //context api state
@@ -43,10 +49,7 @@ const Hero = () => {
               </span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="400">
-              I design and build beautiful websites for businesses around the
-              globe. If you need a modern and powerful website, send me an
-              email. If we are a good fit, I will give you a time and cost
-              estimate.
+              {hero.description}
             </p>
             <Button
               dataAos="fade-up"
@@ -64,7 +67,7 @@ const Hero = () => {
           >
             <div className="hero__avatar">
               <Image
-                src="/images/other/hero.jpeg"
+                src={hero.image.url}
                 layout="fill"
                 alt="achraf-dev-avatar-preview"
                 objectFit="cover"

@@ -12,16 +12,32 @@ import Services from '../components/Services';
 import SEO from '../components/SEO';
 //importing types
 import { GetStaticProps } from 'next';
-import { Image } from '../interfaces';
+import {
+  AdvantageType,
+  HeroType,
+  Image,
+  SkillType,
+  ServiceType,
+} from '../interfaces';
 //importing context & config
 import { NavContext } from '../context';
-import { seoConfig } from '../utils';
+import { seoConfigHome } from '../utils';
 //props interface
 interface HomepageProps {
   images: Image[];
+  skills: SkillType[];
+  hero: HeroType;
+  advantages: AdvantageType[];
+  services: ServiceType[];
 }
 //homepage
-const Homepage: React.FC<HomepageProps> = ({ images }) => {
+const Homepage: React.FC<HomepageProps> = ({
+  images,
+  hero,
+  services,
+  skills,
+  advantages,
+}) => {
   //context api state
   const { setIsNavHidden, isNavHidden } = useContext(NavContext);
   //hiding nav for big screens
@@ -32,20 +48,16 @@ const Homepage: React.FC<HomepageProps> = ({ images }) => {
   useEffect(() => {
     disableScroll(isNavHidden);
   }, [isNavHidden]);
-  //config
-  const portfolioConfig = {
-    images,
-  };
   return (
     <>
-      <SEO {...seoConfig} />
+      <SEO {...seoConfigHome} />
       <main className="app__container">
-        <Hero />
-        <Porfolio {...portfolioConfig} />
-        <Skills />
+        <Hero hero={hero} />
+        <Porfolio images={images} />
+        <Skills skills={skills} />
         <Socials />
-        <Advantages />
-        <Services />
+        <Advantages advantages={advantages} />
+        <Services services={services} />
       </main>
     </>
   );
@@ -58,6 +70,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const skills = await portfolioAPI.get('/skills');
   const advantages = await portfolioAPI.get('/advantages');
   const services = await portfolioAPI.get('/services');
+  const hero = await portfolioAPI.get('/heroes');
 
   return {
     props: {
@@ -65,6 +78,7 @@ export const getStaticProps: GetStaticProps = async () => {
       skills: skills.data,
       advantages: advantages.data,
       services: services.data,
+      hero: hero.data[0],
     },
   };
 };

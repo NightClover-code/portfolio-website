@@ -2,17 +2,21 @@
 import { useRef, useState, useEffect } from 'react';
 //importing aos animations
 import 'aos/dist/aos.css';
-//importing utils
-import { servicesInfo } from '../../utils';
 //importing components
 import ServiceCard from './ServiceCard';
+//importing types
+import { ServiceType } from '../../interfaces';
+//props interface
+interface ServicesProps {
+  services: ServiceType[];
+}
 //services
-const Services = () => {
+const Services: React.FC<ServicesProps> = ({ services }) => {
   //refs
   const listRef = useRef<HTMLUListElement | null>(null);
   //local state
   const [counter, setCounter] = useState(0);
-  const [currentData, setCurrentData] = useState(servicesInfo[0]);
+  const [currentData, setCurrentData] = useState(services[0]);
   //on Click Handler
   const onClickHandler = (
     event: React.MouseEvent<HTMLUListElement, MouseEvent>
@@ -33,7 +37,7 @@ const Services = () => {
   };
   //changing current data based on counter change
   useEffect(() => {
-    setCurrentData(servicesInfo[counter]);
+    setCurrentData(services[counter]);
   }, [counter]);
   return (
     <section className="services__section">

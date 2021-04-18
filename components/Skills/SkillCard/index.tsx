@@ -5,14 +5,16 @@ import Image from 'next/image';
 //props interface
 interface SkillCardInterface {
   title: string;
-  logo: string;
+  normalLogo: string;
+  invertedLogo: string;
   alt: string;
   span: boolean;
 }
 //skill card
 const SkillCard: React.FC<SkillCardInterface> = ({
   title,
-  logo,
+  normalLogo,
+  invertedLogo,
   alt,
   span,
 }) => {
@@ -25,18 +27,18 @@ const SkillCard: React.FC<SkillCardInterface> = ({
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 50)}
     >
       <p>{title}</p>
-      {!isHovered && logo && (
+      {!isHovered && normalLogo && (
         <Image
-          src={`/images/skills-light/${logo}`}
+          src={normalLogo}
           alt={alt}
           width={title === 'Node' ? 25 : 15}
           height={title === 'Node' ? 20 : 15}
           quality={100}
         />
       )}
-      {isHovered && logo && (
+      {isHovered && invertedLogo && (
         <Image
-          src={`/images/skills-dark/${logo}`}
+          src={invertedLogo}
           alt={alt}
           width={title === 'Node' ? 25 : 15}
           height={title === 'Node' ? 20 : 15}
