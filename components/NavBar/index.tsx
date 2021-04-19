@@ -10,12 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
-//props interface
-interface NavProps {
-  loading: boolean;
-}
 //nav bar
-const NavBar: React.FC<NavProps> = ({ loading }) => {
+const NavBar = () => {
   //refs
   const listItemsRef = useRef<HTMLUListElement>(null);
   //context api state & router
