@@ -1,7 +1,7 @@
 //importing hooks
 import { useEffect, useContext } from 'react';
 //importing utils
-import { disableScroll, hideNav, portfolioAPI } from '../utils';
+import { disableScroll, hideNav, portfolioAPI, seoConfigHome } from '../utils';
 //importing components
 import Hero from '../components/Hero';
 import Porfolio from '../components/Porfolio';
@@ -19,9 +19,8 @@ import {
   SkillType,
   ServiceType,
 } from '../interfaces';
-//importing context & config
+//importing context
 import { NavContext } from '../context';
-import { seoConfigHome } from '../utils';
 //props interface
 interface HomepageProps {
   images: Image[];
