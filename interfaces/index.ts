@@ -31,12 +31,14 @@ export interface ImageType {
 }
 
 export interface HeroType {
+  id: string;
   title: string;
   description: string;
   image: ImageType;
 }
 
 export interface AdvantageType {
+  id: string;
   title: string;
   description: string;
   alt: string;
@@ -45,6 +47,7 @@ export interface AdvantageType {
 }
 
 export interface ServiceType {
+  id: string;
   title: string;
   description: string;
   alt: string;
@@ -52,6 +55,7 @@ export interface ServiceType {
 }
 
 export interface SkillType {
+  id: string;
   title: string;
   alt: string;
   span: boolean;

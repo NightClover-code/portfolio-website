@@ -11,8 +11,8 @@ const MainLayout: React.FC = ({ children }) => {
   const [loading, setLoading] = useState(false);
   //router
   const router = useRouter();
+  //Binding events
   useEffect(() => {
-    //Binding events
     router.events.on('routeChangeStart', () => setLoading(true));
     router.events.on('routeChangeComplete', () => setLoading(false));
     router.events.on('routeChangeError', () => setLoading(false));

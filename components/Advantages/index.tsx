@@ -28,14 +28,14 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
       </div>
       <div className="advantages__grid">
         <div className="container">
-          {advantages.map(advantage => (
+          {advantages.map(_advantage => (
             <AdvantagesCard
               key={uuidv4()}
-              title={advantage.title}
-              src={advantage.image.url}
-              description={advantage.description}
-              alt={advantage.alt}
-              animationDelay={advantage.animationDelay}
+              title={_advantage.title}
+              src={_advantage.image.url}
+              description={_advantage.description}
+              alt={_advantage.alt}
+              animationDelay={_advantage.animationDelay}
             />
           ))}
         </div>
