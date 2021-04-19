@@ -1,8 +1,10 @@
 //importing types
-import { setNavHiddenType } from '../types';
-export interface isNavHiddenState {
+import { setBooleanType } from '../types';
+export interface isBooleanState {
   isNavHidden: boolean;
-  setIsNavHidden: setNavHiddenType;
+  setIsNavHidden: setBooleanType;
+  isLoading: boolean;
+  setIsLoading: setBooleanType;
 }
 export interface ProjectType {
   id: string;

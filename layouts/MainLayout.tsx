@@ -8,14 +8,14 @@ import Header from '../components/Header';
 //main layout
 const MainLayout: React.FC = ({ children }) => {
   //global state
-  const [loading, setLoading] = useState(false);
+  const { isLoading, setIsLoading } = useContext(NavContext);
   //router
   const router = useRouter();
   //Binding events
   useEffect(() => {
-    router.events.on('routeChangeStart', () => setLoading(true));
-    router.events.on('routeChangeComplete', () => setLoading(false));
-    router.events.on('routeChangeError', () => setLoading(false));
+    router.events.on('routeChangeStart', () => setIsLoading(true));
+    router.events.on('routeChangeComplete', () => setIsLoading(false));
+    router.events.on('routeChangeError', () => setIsLoading(false));
   }, []);
   //context api state
   const { isNavHidden, setIsNavHidden } = useContext(NavContext);
@@ -29,7 +29,7 @@ const MainLayout: React.FC = ({ children }) => {
   return (
     <div className="main__layout" onClick={onClickHandler}>
       <Header />
-      {loading ? (
+      {isLoading ? (
         <div className="spinner-container">
           <div className="center"></div>
 
