@@ -28,16 +28,20 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
       </div>
       <div className="skills__grid">
         <div className="container">
-          {skills.map(skill => (
-            <Skill
-              key={uuidv4()}
-              title={skill.title}
-              normalLogo={skill.normalLogo && skill.normalLogo.url}
-              invertedLogo={skill.invertedLogo && skill.invertedLogo.url}
-              alt={skill.alt}
-              span={skill.span}
-            />
-          ))}
+          {skills.map(_skill => {
+            //destructuring
+            const { title, normalLogo, invertedLogo, alt, span } = _skill;
+            return (
+              <Skill
+                key={uuidv4()}
+                title={title}
+                normalLogo={normalLogo && normalLogo.url}
+                invertedLogo={invertedLogo && invertedLogo.url}
+                alt={alt}
+                span={span}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

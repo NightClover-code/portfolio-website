@@ -1,8 +1,8 @@
 //importing hooks & context
-import React, { useContext, useRef } from 'react';
+import { useContext, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { NavContext } from '../../context';
-//importing next utils
+//importing utils
 import Link from 'next/link';
 import { disableLinks } from '../../utils';
 //importing font awesome icons

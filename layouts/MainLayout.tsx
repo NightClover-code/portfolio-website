@@ -1,5 +1,5 @@
 //importing hooks & context
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { NavContext } from '../context';
 //importing components

@@ -17,6 +17,8 @@ interface ProjectHeroProps {
 const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
   //context api state
   const { isNavHidden } = useContext(NavContext);
+  //destructuring
+  const { image, website, description, title, github } = project;
   return (
     <section
       className={`project__section ${!isNavHidden ? 'reset__hero' : ''}`}
@@ -25,13 +27,13 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
         <div className="project__content">
           <div className="text__content" data-aos="fade-up">
             <h2>Project Showcase</h2>
-            <h1 data-aos="fade-up">{project.title}</h1>
+            <h1 data-aos="fade-up">{title}</h1>
             <p data-aos="fade-up" data-aos-delay="400">
-              {project.description}
+              {description}
             </p>
             <div className="flex__buttons">
               <a
-                href={`https://github.com/NightClover-code/${project.github}`}
+                href={`https://github.com/NightClover-code/${github}`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -43,8 +45,8 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
                   visit code
                 </Button>
               </a>
-              {project.website && (
-                <a href={project.website} target="_blank" rel="noreferrer">
+              {website && (
+                <a href={website} target="_blank" rel="noreferrer">
                   <Button
                     dataAos="fade-up"
                     animationDelay="600"
@@ -64,13 +66,11 @@ const ProjectHero: React.FC<ProjectHeroProps> = ({ project }) => {
             <div className="hero__project">
               <Image
                 layout="fill"
-                src={project.image.imgSource.url}
-                alt={project.image.alt}
+                src={image.imgSource.url}
+                alt={image.alt}
                 objectFit="cover"
                 objectPosition={
-                  project.image.objectPosition
-                    ? project.image.objectPosition
-                    : '0% 0%'
+                  image.objectPosition ? image.objectPosition : '0% 0%'
                 }
               />
             </div>

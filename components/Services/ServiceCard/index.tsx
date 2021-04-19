@@ -16,6 +16,8 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
   //local state
   const [loading, setLoading] = useState(false);
+  //destructuring
+  const { image, alt, title, description } = currentData;
   //on click handler
   const onClickHandler = () => {
     //preventing spam
@@ -35,8 +37,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
           data-aos-delay="600"
         >
           <Image
-            src={currentData.image.url}
-            alt={currentData.alt}
+            src={image.url}
+            alt={alt}
             layout="fill"
             quality={100}
             objectFit="contain"
@@ -45,10 +47,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ currentData }) => {
         <div className="service__content">
           <h2 data-aos="fade-up" data-aos-delay="800">
             {' '}
-            {currentData.title}
+            {title}
           </h2>
           <p data-aos="fade-up" data-aos-delay="1000">
-            {currentData.description}
+            {description}
           </p>
           <Button
             dataAos="fade-up"

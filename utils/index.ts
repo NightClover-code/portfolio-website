@@ -2,9 +2,9 @@ export * from './api';
 export * from './config';
 
 //importing types
-import { setNavHiddenType } from '../types';
+import { setBooleanType } from '../types';
 //function utils
-export const hideNav = (setIsNavHidden: setNavHiddenType) => {
+export const hideNav = (setIsNavHidden: setBooleanType) => {
   //hide nav
   window.addEventListener('resize', (e: any) => {
     if (e.target.innerWidth > 800) {

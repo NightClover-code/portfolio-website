@@ -28,16 +28,26 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
       </div>
       <div className="advantages__grid">
         <div className="container">
-          {advantages.map(_advantage => (
-            <AdvantagesCard
-              key={uuidv4()}
-              title={_advantage.title}
-              src={_advantage.image.url}
-              description={_advantage.description}
-              alt={_advantage.alt}
-              animationDelay={_advantage.animationDelay}
-            />
-          ))}
+          {advantages.map(_advantage => {
+            //destructuring
+            const {
+              title,
+              alt,
+              description,
+              image,
+              animationDelay,
+            } = _advantage;
+            return (
+              <AdvantagesCard
+                key={uuidv4()}
+                title={title}
+                src={image.url}
+                description={description}
+                alt={alt}
+                animationDelay={animationDelay}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
