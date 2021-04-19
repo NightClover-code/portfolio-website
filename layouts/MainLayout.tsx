@@ -28,7 +28,7 @@ const MainLayout: React.FC = ({ children }) => {
   };
   return (
     <div className="main__layout" onClick={onClickHandler}>
-      <Header />
+      <Header loading={loading} />
       {loading ? (
         <div className="spinner-container">
           <div className="center"></div>

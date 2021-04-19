@@ -1,5 +1,5 @@
 //importing hooks & context
-import { useContext, useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { NavContext } from '../../context';
 //importing next utils
@@ -10,8 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 //importing jump
 import jump from 'jump.js';
+//props interface
+interface NavProps {
+  loading: boolean;
+}
 //nav bar
-const NavBar = () => {
+const NavBar: React.FC<NavProps> = ({ loading }) => {
   //refs
   const listItemsRef = useRef<HTMLUListElement>(null);
   //context api state & router
@@ -32,13 +36,15 @@ const NavBar = () => {
     offset?: number
   ) => {
     if (router.query.id) {
-      router.push('/');
-      setTimeout(() => {
-        jump(className, {
-          duration,
-          offset,
-        });
-      }, 100);
+      router
+        .push('/')
+        .then(() => {
+          jump(className, {
+            duration,
+            offset,
+          });
+        })
+        .catch(err => console.log(err));
     } else {
       jump(className, {
         duration,

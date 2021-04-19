@@ -7,7 +7,7 @@ export interface isNavHiddenState {
 export interface ProjectType {
   id: string;
   projectID: string;
-  image: ImageType;
+  image: Image;
   title: string;
   name: string;
   description: string;
