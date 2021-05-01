@@ -1,4 +1,4 @@
-//importing random id's & animations
+//importing utils
 import { v4 as uuidv4 } from 'uuid';
 import 'aos/dist/aos.css';
 //importing components
