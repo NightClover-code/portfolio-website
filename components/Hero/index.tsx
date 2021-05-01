@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
             <h1 data-aos="fade-up">
               Hi, I’m Achraf, {''}
               <span className="line__container">
-                <span>Front End</span>
+                <span>JAMStack</span>
                 <div className="line" data-aos="scale-animation-first"></div>
               </span>{' '}
               Web Developer and{' '}
