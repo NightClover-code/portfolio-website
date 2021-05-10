@@ -4,11 +4,12 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 //importing context provider
 import { NavProvider } from '../context';
-//importing layout & styles
+//importing layout & styles & types
 import '../styles/css/default.css';
 import MainLayout from '../layouts/MainLayout';
+import {AppProps} from 'next/app';
 //app
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   //initializing aos
   useEffect(() => {
     AOS.init({
