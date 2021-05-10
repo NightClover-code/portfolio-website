@@ -7,7 +7,7 @@ import ProjectHero from '../components/ProjectHero';
 import ProjectSkills from '../components/ProjectSkills';
 import SEO from '../components/SEO';
 //importing types
-import { GetStaticPaths, GetServerSideProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { ProjectType } from '../interfaces';
 //props interface
 interface ProjectDetailsProps {
