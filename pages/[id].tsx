@@ -7,7 +7,7 @@ import ProjectHero from '../components/ProjectHero';
 import ProjectSkills from '../components/ProjectSkills';
 import SEO from '../components/SEO';
 //importing types
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { ProjectType } from '../interfaces';
 //props interface
 interface ProjectDetailsProps {
@@ -37,7 +37,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 };
 
 //getting props
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   //fetching projects & id
   const id = params?.id;
 

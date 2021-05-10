@@ -11,7 +11,7 @@ import Socials from '../components/Socials';
 import Services from '../components/Services';
 import SEO from '../components/SEO';
 //importing types
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import {
   AdvantageType,
   HeroType,
@@ -63,7 +63,7 @@ const Homepage: React.FC<HomepageProps> = ({
 };
 
 //getting props
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   //getting images
   const images = await portfolioAPI.get('/images');
   const skills = await portfolioAPI.get('/skills');
