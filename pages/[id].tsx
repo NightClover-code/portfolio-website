@@ -36,6 +36,20 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   );
 };
 
+//getting paths
+export const getStaticPaths: GetStaticPaths = async () => {
+  //fetching projects
+  const projects = await portfolioAPI.get('/projects');
+
+  const paths = projects.data.map((project: ProjectType) => ({
+    params: { id: project.projectID },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
 //getting props
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   //fetching projects & id
