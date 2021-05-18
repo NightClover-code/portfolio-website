@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
               </span>{' '}
               Web Developer and{' '}
               <span className="line__container">
-                <span>Web Designer</span>
+                <span>UI/UX Designer</span>
                 <div className="line" data-aos="scale-animation-second"></div>
               </span>
             </h1>
