@@ -50,6 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: false,
   };
 };
+
 //getting props
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   //fetching projects & id
