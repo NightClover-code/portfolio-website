@@ -410,7 +410,7 @@ nav .nav__list ul .portfolio__list__item::after {
 }
 
 .hero__section .container .hero__content .illustration__container .hero__dots {
-  background: url("../../public/images/dots/dots-hero.svg") no-repeat;
+  background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1622476395/dots-hero_id8s7i.svg") no-repeat;
   position: absolute;
   right: 40px;
   top: 40px;
@@ -706,7 +706,7 @@ nav .nav__list ul .portfolio__list__item::after {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: url("/images/other/eye.png") no-repeat, rgba(0, 0, 0, 0.1);
+  background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1622476529/eye_gmxedx.png") no-repeat, rgba(0, 0, 0, 0.1);
   background-position: 55% 45%;
   background-size: auto;
   z-index: 10;
@@ -1513,7 +1513,7 @@ button .ghost__btn {
 }
 
 .project__section .container .project__content .illustration__container .hero__dots {
-  background: url("../../public/images/dots/dots-hero-dark.svg") no-repeat;
+  background: url("https://res.cloudinary.com/achraf-dev/image/upload/v1622476395/dots-hero-dark_mrvpac.svg") no-repeat;
   position: absolute;
   right: 40px;
   top: 40px;
