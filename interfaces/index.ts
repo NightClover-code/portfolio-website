@@ -64,3 +64,9 @@ export interface SkillType {
   normalLogo: ImageType;
   invertedLogo: ImageType;
 }
+
+export interface SitemapObject {
+  url: string;
+  changefreq: string;
+  priority: number;
+}
