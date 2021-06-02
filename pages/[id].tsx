@@ -17,20 +17,17 @@ interface ProjectDetailsProps {
 //project details
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   //config
-  const projectConfig = {
-    project,
-  };
   const seoConfig = {
     title: `Achraf Dev | Project | ${project.name}`,
     description: project.description,
-    keywords: `Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}-project, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, Typescript`,
+    keywords: `Projects, Portfolio, Skills, Technologies, eCommerce website, ${project.name}, React, Redux, Javascript, HTML, CSS, Achraf Dev, Web Design , Web Development, SEO, Typescript`,
   };
   return (
     <>
       <SEO {...seoConfig} />
       <main className="app__container">
-        <ProjectHero {...projectConfig} />
-        <ProjectSkills {...projectConfig} />
+        <ProjectHero project={project} />
+        <ProjectSkills project={project} />
       </main>
     </>
   );
